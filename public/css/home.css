@@ -1,0 +1,28 @@
+/* ------------- */
+/* section 1 */
+/* ------------- */
+.home-section-1 {
+  width: 100%;
+  height: 91vh;
+  position: absolute;
+  /* overflow: hidden; */
+  background-color: #ffffff;
+  background-image: url(../assets/home/BG.png);
+  background-size: cover;
+  background-position: center;
+  font-family: "Merriweather Sans", serif;
+  font-weight: 800;
+}
+
+.wave-svg {
+  position: absolute;
+  top: 50%; /* Tetap berada di bawah tulisan */
+  left: 0;
+  width: 100%;
+  z-index: 0; /* SVG tetap berada di bawah elemen lainnya */
+  pointer-events: none; 
+}
+
+/* ------------- */
+/* end section 1 */
+/* ------------- */

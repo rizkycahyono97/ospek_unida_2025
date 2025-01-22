@@ -1,0 +1,26 @@
+body {
+  height: 1000px;
+}
+
+/* warna utama */
+:root {
+  --primary: #1E453E;
+  --secondary: #317F80;
+  --tertiary: #Cc9933;
+}
+
+/* navbar */
+.navbar-transparent {
+  background-color: rgba(255, 255, 255, 0); /* Transparan penuh */
+  position: absolute; /* Agar berada di depan */
+  width: 100%; /* Sesuai lebar layar */
+  z-index: 1000; /* Pastikan berada di atas konten lain */
+}
+
+.navbar-transparent .nav-link {
+  color: black; /* Warna teks menu putih (ubah jika perlu) */
+}
+
+.navbar-transparent .navbar-brand img {
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); /* Bayangan untuk logo */
+}
