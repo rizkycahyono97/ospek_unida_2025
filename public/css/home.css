@@ -11,7 +11,21 @@
   background-size: cover;
   background-position: center;
   font-family: "Merriweather Sans", serif;
-  font-weight: 800;
+}
+
+.home-section-1 img {
+  width: 200px; 
+  height: auto;
+}
+
+.home-section-1 h1 {
+  position: absolute;
+  font-size: 8.5rem;
+}
+
+.logo-ospek {
+  margin: 0;
+  padding: 0;
 }
 
 .wave-svg {
@@ -26,3 +40,70 @@
 /* ------------- */
 /* end section 1 */
 /* ------------- */
+
+
+/* -------------- */
+/* responsive */
+/* -------------- */
+/* Small Phone(max-width: 480px) */
+@media (max-width: 480px) {
+  /* ------------- */
+  /* section 1 */
+  /* ------------- */
+  .home-section-1 {
+    flex-direction: column; /* Tata letak vertikal */
+    gap: 8px; /* Jarak antar elemen diperkecil */
+  }
+
+  .home-section-1 h1 {
+    font-size: 2.5rem; 
+  }
+
+  .logo-ospek img {
+    width: 150px; /* Perkecil logo */
+  }
+
+}
+
+/* Large Phone (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* ------------- */
+  /* section 1 */
+  /* ------------- */  
+  .home-section-1 h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+  }
+
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1025px) {
+  /* ------------- */
+  /* section 1 */
+  /* ------------- */
+  .home-section-1 h1 {
+    font-size: 6rem;
+  }
+}
+
+
+/* Desktop (1441px - 1920px) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  /* ------------- */
+  /* section 1 */
+  /* ------------- */
+  .home-section-1 h1 {
+    font-size: 12.5rem;
+  }
+}
+
+/* Large Monitor +1921px */
+@media (min-width: 1921px) {
+  /* ------------- */
+  /* section 1 */
+  /* ------------- */
+  .home-section-1 h1 {
+    font-size: 14rem;
+  }
+}
