@@ -1,5 +1,15 @@
-body {
-  height: 1000px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 5000px;
+  /* overscroll-behavior: none; Mencegah efek overscroll di mobile */
+  /* -webkit-font-smoothing: antialiased;
+  /* overflow: hidden; */
+  scroll-behavior: smooth; 
 }
 
 /* warna utama */

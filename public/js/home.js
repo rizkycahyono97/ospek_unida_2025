@@ -1,5 +1,6 @@
-// section 1
 document.addEventListener("DOMContentLoaded", () => {
+  const homeSectionSatu = document.getElementById("home-section-1");
+  const homeSectionDua = document.getElementById("home-section-2");
   const logo = document.getElementById("logo-ospek");
   const textKiri = document.getElementById("text-kiri");
   const textKanan = document.getElementById("text-kanan");
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // section 1
   // --------------
 
-  // animated
+  // power2.out animation
   // Animasi teks "OSPEK"
   gsap.matchMedia().add(breakpoints.desktop, () => {
     gsap.fromTo(
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   gsap.matchMedia().add(breakpoints.smallPhone, () => {
-    gsap.fromTo(textKiri, {x: -250, y: -80}, {x: -70, y:-170, duration: 2, delay: 2.3, ease: "power2.out"});
+    gsap.fromTo(textKiri, {x: -350, y: -80}, {x: -70, y:-170, duration: 2, delay: 2.3, ease: "power2.out"});
   });
     
   // Animasi teks "2025"
@@ -84,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   gsap.matchMedia().add(breakpoints.smallPhone, () => {
-    gsap.fromTo(textKanan, {x: 250, y: -60}, {x: 70, y:-170, duration: 2, delay: 2.3, ease: "power2.out"});
+    gsap.fromTo(textKanan, {x: 350, y: -60}, {x: 70, y:-170, duration: 2, delay: 2.3, ease: "power2.out"});
   });
 
 
@@ -102,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Tambahkan animasi berdasarkan breakpoint
   gsap.matchMedia().add(breakpoints.smallPhone, () => {
-    gsap.fromTo(logo, { scale: 1.3 }, { scale: 0.9, duration: 5, delay: 1.5, ease: "power2.out" });
+    gsap.fromTo(logo, { scale: 1.5 }, { scale: 1, duration: 5, delay: 1.5, ease: "power2.out" });
   });
 
   gsap.matchMedia().add(breakpoints.largePhone, () => {
@@ -128,7 +129,6 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.fromTo(logo, { scale: 3.5 }, { scale: 3, duration: 5, delay: 1.5, ease: "power2.out" });
   });  
 
-
   // wave svg
   gsap.matchMedia().add(breakpoints.desktop, () => {
     gsap.fromTo(
@@ -137,7 +137,8 @@ document.addEventListener("DOMContentLoaded", () => {
         y: "100%",
       },
       {
-        y: 80, 
+        y: -340, 
+        x: 4,
         duration: 2,
         ease: "power2.out",
         delay: 2
@@ -147,30 +148,89 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.matchMedia().add(breakpoints.smallLaptop, () => {
     gsap.fromTo(
-      waveSvg, {y: "100%",}, {y: 30, duration: 2, delay: 2, ease: "power2.out"}
+      waveSvg, {y: "100%",}, {y: -300, duration: 2, delay: 2, ease: "power2.out"}
     )
   });
 
   gsap.matchMedia().add(breakpoints.tablet, () => {
     gsap.fromTo(
-      waveSvg, {y: "100%",}, {y: -20, duration: 2, delay: 2, ease: "power2.out"}
+      waveSvg, {y: "100%",}, {y: -250, duration: 2, delay: 2, ease: "power2.out"}
     )
   });
 
   gsap.matchMedia().add(breakpoints.largePhone, () => {
     gsap.fromTo(
-      waveSvg, {y: "100%",}, {y: -70, duration: 2, delay: 2, ease: "power2.out"}
+      waveSvg, {y: "100%",}, {y: -250, duration: 2, delay: 2, ease: "power2.out"}
     )
   });
 
   gsap.matchMedia().add(breakpoints.smallPhone, () => {
     gsap.fromTo(
-      waveSvg, {y: "100%",}, {y: -80, duration: 2, delay: 2, ease: "power2.out"}
+      waveSvg, {y: "100%",}, {y: -250, duration: 2, delay: 2, ease: "power2.out"}
     )
   });
   // --------------
   // end section 1
   // --------------
+  
+  // --------------
+  // section 2
+  // --------------
+
+  // Inisialisasi Locomotive Scroll, scrollTrigger GSAP animation
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true, // Mengaktifkan smooth scrolling
+    multiplier: 1, // Kecepatan scroll (bisa disesuaikan)
+  });
+  gsap.registerPlugin(ScrollTrigger);
+  
+
+  // integrasi Locomotive scroll dengan GSAP
+  scroll.on("scroll", ScrollTrigger.update);
+  ScrollTrigger.scrollerProxy("[data-scroll-container]", {
+    scrollTop(value) {
+      return arguments.length
+        ? scroll.scrollTo(value, 0, 0)
+        : scroll.scroll.instance.scroll.y;
+    },
+    getBoundingClientRect() {
+      return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+    },
+    pinType: document.querySelector("[data-scroll-container]").style.transform ? "transform" : "fixed",
+  });
+  ScrollTrigger.addEventListener("refresh", () => scroll.update());
+  ScrollTrigger.refresh();
+
+  // Buat home-section-1 tetap di tempatnya
+  gsap.to(".home-section-1", {
+    yPercent: 70, 
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".home-section-2",
+      start: "top bottom",        
+      end: "top top",             
+      scrub: true,
+    },
+  });
+
+  // Efek wave pada transition antara section 1 dan 2
+  gsap.to(".home-section-2", {
+    yPercent: -150,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".home-section-2",
+      scroller: "[data-scroll-container]",
+      start: "top bottom",
+      end: "top top",
+      scrub: true,
+    },
+  });
+
+  
+
+
+
 
 });
 
@@ -185,7 +245,7 @@ var height = container.offsetHeight;
 var wave = document.getElementById('wave');
 
 var waveWidth = container.offsetWidth;  // Wave SVG width (usually container width)
-var waveHeight = 250;                   // Position from the top of container
+var waveHeight = 200;                   // Position from the top of container
 var waveDelta = 20;                     // Wave amplitude
 var speed = 1.1;                        // Wave animation speed
 var wavePoints = 6;                     // How many point will be used to compute our wave
