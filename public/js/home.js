@@ -160,13 +160,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.matchMedia().add(breakpoints.largePhone, () => {
     gsap.fromTo(
-      waveSvg, {y: "100%",}, {y: -250, duration: 2, delay: 2, ease: "power2.out"}
+      waveSvg, {y: "100%",}, {y: -300, duration: 2, delay: 2, ease: "power2.out"}
     )
   });
 
   gsap.matchMedia().add(breakpoints.smallPhone, () => {
     gsap.fromTo(
-      waveSvg, {y: "100%",}, {y: -250, duration: 2, delay: 2, ease: "power2.out"}
+      waveSvg, {y: "100%",}, {y: -300, duration: 2, delay: 2, ease: "power2.out"}
     )
   });
   // --------------
@@ -176,7 +176,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // --------------
   // section 2
   // --------------
-
   // Inisialisasi Locomotive Scroll, scrollTrigger GSAP animation
   const scroll = new LocomotiveScroll({
     el: document.querySelector("[data-scroll-container]"),
@@ -202,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ScrollTrigger.addEventListener("refresh", () => scroll.update());
   ScrollTrigger.refresh();
 
-  // Buat home-section-1 tetap di tempatnya
+  // Efek Scrolling
   gsap.to(".home-section-1", {
     yPercent: 70, 
     ease: "none",
@@ -214,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  // Efek wave pada transition antara section 1 dan 2
+  // Efek Scrolling
   gsap.to(".home-section-2", {
     yPercent: -150,
     ease: "none",
@@ -226,12 +225,6 @@ document.addEventListener("DOMContentLoaded", () => {
       scrub: true,
     },
   });
-
-  
-
-
-
-
 });
 
 

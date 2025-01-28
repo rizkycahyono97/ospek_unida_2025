@@ -39,11 +39,6 @@
   position: absolute;
   width: 100%;
   z-index: 1;
-  /* top: 50%;  */
-  /* margin-bottom: 200px;
-  display: block;
-  left: 0;
-  pointer-events: none;  */
 }
 /* ------------- */
 /* end section 1 */
@@ -53,9 +48,13 @@
 /* section 2 */
 /* ------------- */
 .home-section-2 {
+  background-image: url(../assets/home/kertas-sobek-4.png);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   display: flex;
-  background-color: red;
+  /* background-color: red; */
   width: 100%;
   height: 100vh; 
   z-index: 2;
@@ -93,6 +92,20 @@
    /* ------------- */
   /* end section 1 */
   /* ------------- */
+
+  /* ------------- */
+  /* section 2 */
+  /* ------------- */  
+  .home-section-2 {
+    /* background-size: 120%;
+    background-position: center top;
+    height: 110vh;  */
+    /* background-size: contain; */
+  }
+
+  /* ------------- */
+  /* end of section 2 */
+  /* ------------- */  
   
 
 }
@@ -106,7 +119,20 @@
     font-size: 4.5rem;
     font-weight: 700;
   }
+  /* ------------- */
+  /* end section 1 */
+  /* ------------- */  
 
+  /* ------------- */
+  /* section 2 */
+  /* ------------- */  
+  .home-section-2 {
+    background-size: 150%;
+  }
+
+  /* ------------- */
+  /* end of section 2 */
+  /* ------------- */  
 }
 
 /* tablet */
@@ -117,6 +143,21 @@
   .home-section-1 h1 {
     font-size: 6rem;
   }
+
+  /* ------------- */
+  /* end of section 1 */
+  /* ------------- */  
+
+  /* ------------- */
+  /* section 2 */
+  /* ------------- */  
+  .home-section-2 {
+    
+  }
+
+  /* ------------- */
+  /* end of section 2 */
+  /* ------------- */  
 }
 
 
