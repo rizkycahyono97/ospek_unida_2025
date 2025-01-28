@@ -26,7 +26,7 @@
 
     <!-- Wave SVG -->
     <svg class="wave-svg" width="100%" height="50%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="intro">
-      <path id="wave" d="" fill="#1E453E"/>
+      <path id="wave" d="" fill="#317F80"/>
     </svg>  
 
     {{-- Content --}}

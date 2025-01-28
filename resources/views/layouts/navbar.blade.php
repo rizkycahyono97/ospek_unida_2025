@@ -35,22 +35,22 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#jurusan">Jurusan</a>
+            <a class="nav-link" href="{{ route('jurusan') }}">Jurusan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#timeline">Timeline</a>
+            <a class="nav-link" href="{{ route('timeline') }}">Timeline</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#pembayaran">Pembayaran DU</a>
+            <a class="nav-link" href="{{ route('pembayaran') }}">Pembayaran DU</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#faq">FAQ</a>
+            <a class="nav-link" href="{{ route('faq') }}">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#kontak">Kontak Kami</a>
+            <a class="nav-link" href="{{ route('contact') }}">Kontak Kami</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#pusat-informasi">Pusat Informasi</a>
+            <a class="nav-link" href="{{ route('pusatinformasi') }}">Pusat Informasi</a>
           </li>
         </ul>
       </div>
