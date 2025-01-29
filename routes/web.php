@@ -10,7 +10,8 @@ use Illuminate\Support\Facades\Route;
 // index (home)
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
+
 
 // jurusan
 Route::get('/jurusan', function () {
