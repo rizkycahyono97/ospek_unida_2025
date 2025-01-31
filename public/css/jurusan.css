@@ -1,0 +1,122 @@
+/* font use */
+/* .font {
+    font-family: "Baskervville SC", serif;
+    font-family: "Spectral SC", serif;
+    font-family: "Merriweather Sans", serif;
+} */
+
+/* --------- */
+/* Section 1 */
+/* --------- */
+.fakultas-section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    z-index: 1;
+    background-color: #ffffff;
+    background-image: url(../assets/jurusan/jurusan-bg.png);
+    background-size: cover;
+    background-position: center;
+    font-family: "Spectral SC", serif;
+}
+
+.fakultas-banner {
+    width: 100%;
+    height: 60rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.fakultas-section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 17%;
+    top: 0;
+    background: linear-gradient(to top, rgba(231, 229, 229, 0), rgb(255, 253, 253));
+}
+
+.fakultas-section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    background: linear-gradient(to top, black, rgba(24, 24, 24, 0));
+}
+
+.fakultas-header {
+    margin-top: 7.5rem;
+}
+
+.fakultas-banner h1,
+.fakultas-banner h2 {
+    font-family: "Spectral SC", serif;
+}
+
+.fakultas-banner .slider {
+    position: absolute;
+    margin-top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+    animation: autoRun 49s linear infinite;
+    z-index: 2;
+}
+
+@keyframes autoRun {
+    from {
+        transform: perspective(1200px) rotateX(-2deg) rotateY(0deg);
+    }
+
+    /* X vertikal Y horizontal Z -back-front */
+    to {
+        transform: perspective(1200px) rotateX(-2deg) rotateY(360deg);
+    }
+}
+
+.fakultas-banner .slider .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(500px);
+}
+
+.fakultas-banner .slider .item p {
+    padding-top: 0.8rem;
+    margin: auto;
+    font-size: 0.9rem;
+}
+
+.fakultas-banner .slider .item h4 {
+    border-radius: 10px 10px 40px 40px;
+    margin: auto;
+    padding: 1rem;
+    box-shadow: 1px 1px 11px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 11px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 11px 4px rgba(0, 0, 0, 0.75);
+    width: 12rem;
+    height: 18rem;
+    font-family: "Spectral SC", serif;
+    text-align: center;
+    background-color: rgba(189, 207, 196, 0.7);
+}
+
+
+/* --------- */
+/* section 2 */
+/* --------- */
+
+.prodi-section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    z-index: 1;
+    background-color: #ffffff;
+    background-image: url(../assets/jurusan/jurusan-bg.png);
+    background-size: cover;
+    background-position: center;
+    font-family: "Spectral SC", serif;
+}
