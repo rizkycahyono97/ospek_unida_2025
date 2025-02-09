@@ -48,7 +48,8 @@
 /* section 2 */
 /* ------------- */
 .home-section-2 {
-  background-image: url(../assets/home/kertas-sobek-4.png);
+  background-image: url(../assets/home/bg-4.png);
+  background-color: #317F80;
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
@@ -61,7 +62,39 @@
 }
 
 .home-section-2 .content {
-  margin-top: 30px;
+  margin-top: 60px;
+}
+
+.home-section-2 h2 {
+  font-family: "Yellowtail", serif;
+  font-weight: 700;
+  font-style: normal;
+  /* color: var(--tertiary); */
+  color: #FFF455;
+  font-size: 50px;
+}
+
+.home-section-2 h1 {
+  /*font-family: "Cormorant Garamond", serif;
+  */font-weight: 700;
+  font-size: 80px;
+  font-style: normal;
+  color: transparent;
+  -webkit-text-stroke: 2px #09d5d8;
+  display: inline-block;
+  transform: scaleY(1.5);
+  -webkit-transform: scaleY(1.5);
+  -moz-transform: scaleY(1.5);
+  -ms-transform: scaleY(1.5);
+  -o-transform: scaleY(1.5);
+}
+
+.home-section-2 p {
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: #FFFFFFFF;
 }
 /* ------------- */
 /* end section 2 */
@@ -96,13 +129,13 @@
   /* ------------- */
   /* section 2 */
   /* ------------- */  
-  .home-section-2 {
-    /* background-size: 120%;
-    background-position: center top;
-    height: 110vh;  */
-    /* background-size: contain; */
+  .home-section-2 h1 {
+    font-size:30px;
   }
 
+  .home-section-2 h2 {
+    font-size: 25px;
+  }
   /* ------------- */
   /* end of section 2 */
   /* ------------- */  
@@ -130,6 +163,13 @@
     background-size: 150%;
   }
 
+  .home-section-2 h1 {
+    font-size: 45px;
+  }
+
+  .home-section-2 h2 {
+    font-size: 30px;
+  }
   /* ------------- */
   /* end of section 2 */
   /* ------------- */  
@@ -151,10 +191,9 @@
   /* ------------- */
   /* section 2 */
   /* ------------- */  
-  .home-section-2 {
-    
+  .home-section-2 h1 {
+    font-size: 60px;
   }
-
   /* ------------- */
   /* end of section 2 */
   /* ------------- */  
@@ -169,6 +208,18 @@
   .home-section-1 h1 {
     font-size: 12.5rem;
   }
+
+  /* -------------- */
+  /* section 2 */
+  /* ------------- */
+  .home-section-2 .content {
+    margin-top: 150px;
+  }
+
+  .home-section-2 h1 {
+  font-size: 100px;
+  }
+
 }
 
 /* Large Monitor +1921px */

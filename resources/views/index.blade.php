@@ -31,8 +31,11 @@
 
     {{-- Content --}}
     <div class="content" id="home-section-2-content">
-      <h1>home section 2</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas alias sit obcaecati mollitia dignissimos, sapiente id consequatur voluptas perferendis consectetur, asperiores saepe doloribus delectus ea exercitationem! Accusamus delectus maxime nam?</p>
+      <h2 class="d-flex justify-content-center">Pengenalan</h2>
+      <h1 class="d-flex justify-content-center">OSPEK SYAAHEEN 2025</h1>
+      <div class="col-md-8 mx-auto mt-5">
+        <p class="text-center fs-5">Ospek <span class="fw-bold">SYAAHEEN</span> adalah Orientasi mahasiswa baru dikenal juga dengan istilah Orientasi Studi dan pengenalan Kampus atau OSPEK. Kegiatan ini bertujuan untuk mengenal dan memahami lingkungan kampus sebagai suatu lingkungan akademis serta memahami mekanisme yang berlaku didalamnya.</p>
+      </div>
     </div>
   </section>
   {{-- end section 2 --}}
