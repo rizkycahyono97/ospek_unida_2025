@@ -229,8 +229,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
 // svg
 var container = document.body;
 var width = container.offsetWidth;
