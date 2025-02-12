@@ -90,7 +90,6 @@
   <script src={{ asset('js/jurusan.js') }}></script>
   <script src={{ asset('js/pembayaran.js') }}></script>
   <script src={{ asset('js/pusatinformasi.js') }}></script>
-  <script src={{ asset('js/home.js') }}></script>
 </body>
 
 </html>

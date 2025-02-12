@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const textKiri = document.getElementById("text-kiri");
   const textKanan = document.getElementById("text-kanan");
   const waveSvg = document.getElementById("intro");
+  const waveSvgDua = document.getElementById("wave-2");
 
   // responsive
   const breakpoints = {
@@ -148,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.matchMedia().add(breakpoints.smallLaptop, () => {
     gsap.fromTo(
-      waveSvg, {y: "100%",}, {y: -300, duration: 2, delay: 2, ease: "power2.out"}
+      waveSvg, {y: "100%",}, {y: -250, duration: 2, delay: 2, ease: "power2.out"}
     )
   });
 
@@ -176,138 +177,235 @@ document.addEventListener("DOMContentLoaded", () => {
   // --------------
   // section 2
   // --------------
-  // Inisialisasi Locomotive Scroll, scrollTrigger GSAP animation
-  const scroll = new LocomotiveScroll({
-    el: document.querySelector("[data-scroll-container]"),
-    smooth: true, // Mengaktifkan smooth scrolling
-    multiplier: 1, // Kecepatan scroll (bisa disesuaikan)
-  });
   gsap.registerPlugin(ScrollTrigger);
-  
 
-  // integrasi Locomotive scroll dengan GSAP
-  scroll.on("scroll", ScrollTrigger.update);
-  ScrollTrigger.scrollerProxy("[data-scroll-container]", {
-    scrollTop(value) {
-      return arguments.length
-        ? scroll.scrollTo(value, 0, 0)
-        : scroll.scroll.instance.scroll.y;
-    },
-    getBoundingClientRect() {
-      return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-    },
-    pinType: document.querySelector("[data-scroll-container]").style.transform ? "transform" : "fixed",
-  });
-  ScrollTrigger.addEventListener("refresh", () => scroll.update());
-  ScrollTrigger.refresh();
-
-  // Efek Scrolling
+  // Efek parallax untuk section 1 tenggelam saat section 2 muncul
   gsap.to(".home-section-1", {
-    yPercent: 70, 
+    yPercent: 100, 
     ease: "none",
     scrollTrigger: {
-      trigger: ".home-section-2",
+      trigger: ".home-section-2", // Mulai saat section 2 muncul
       start: "top bottom",        
       end: "top top",             
       scrub: true,
     },
   });
 
-  // Efek Scrolling
-  gsap.to(".home-section-2", {
-    yPercent: -150,
+  // animasi text h1
+  gsap.to(".text-animation", {
+    y: -100, // Animasi naik ke atas
     ease: "none",
     scrollTrigger: {
-      trigger: ".home-section-2",
-      scroller: "[data-scroll-container]",
-      start: "top bottom",
-      end: "top top",
-      scrub: true,
-    },
+        trigger: ".home-section-2",
+        start: "top center", // Mulai animasi ketika bagian atas .home-section-2 masuk ke tengah layar
+        end: "bottom top", // Selesai animasi ketika bagian bawah .home-section-2 keluar dari layar atas
+        scrub: 1, // Animasi mengikuti scroll
+    }
   });
+  // --------------
+  // end section 2
+  // --------------
+
+  // ------------
+  // section 3
+  // ------------
+
+  // wave-svg-2
+  gsap.matchMedia().add(breakpoints.desktop, () => {
+    gsap.to(waveSvgDua, {
+      yPercent: -9, // Efek parallax tetap
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".home-section-2", // Menggunakan section 2 sebagai pemicu
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true
+      }
+    });
+  });
+
+  gsap.matchMedia().add(breakpoints.smallLaptop, () => {
+    gsap.to(waveSvgDua, {yPercent: -9, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
+  });
+  
 });
 
+// scroll parralax effect
+window.addEventListener("scroll", function () {
+  let section2 = document.querySelector(".home-section-2");
+  let section3 = document.querySelector(".home-section-3");
 
+  let section3Top = section3.offsetTop;
+  let windowHeight = window.innerHeight;
+  let stopPosition = windowHeight * 0.8; // 80vh dari atas
 
-// svg
-var container = document.body;
-var width = container.offsetWidth;
-var height = container.offsetHeight;
-var wave = document.getElementById('wave');
+  if (window.scrollY >= section3Top - stopPosition) {
+    section2.style.position = "fixed";
+    section2.style.top = "0";
+    section2.style.width = "100%";
+    section2.style.zIndex = "2";
 
-var waveWidth = container.offsetWidth;  // Wave SVG width (usually container width)
-var waveHeight = 200;                   // Position from the top of container
-var waveDelta = 20;                     // Wave amplitude
-var speed = 1.1;                        // Wave animation speed
-var wavePoints = 6;                     // How many point will be used to compute our wave
-
-var points = [];
-
-function calculateWavePoints(factor) {
-  var points = [];
-  
-  for (var i = 0; i <= wavePoints; i++) {
-    var x = i/wavePoints * waveWidth;
-    var sinSeed = (factor + (i + i % wavePoints)) * speed * 100;
-    var sinHeight = Math.sin(sinSeed / 100) * waveDelta;
-    var yPos = Math.sin(sinSeed / 100) * sinHeight  + waveHeight;
-    points.push({x: x, y: yPos});
-  }
-
-  return points;
-}
-
-function buildPath(points) {
-  var SVGString = 'M ' + points[0].x + ' ' + points[0].y;
-
-  var cp0 = {
-    x: (points[1].x - points[0].x) / 2,
-    y: (points[1].y - points[0].y) + points[0].y + (points[1].y - points[0].y)
-  };
-
-  SVGString += ' C ' + cp0.x + ' ' + cp0.y + ' ' + cp0.x + ' ' + cp0.y + ' ' + points[1].x + ' ' + points[1].y;
-
-  var prevCp = cp0;
-  var inverted = -1;
-
-  for (var i = 1; i < points.length-1; i++) {
-    var cpLength = Math.sqrt(prevCp.x * prevCp.x + prevCp.y * prevCp.y);
-    var cp1 = {
-      x: (points[i].x - prevCp.x) + points[i].x,
-      y: (points[i].y - prevCp.y) + points[i].y
-    };
-
-    SVGString += ' C ' + cp1.x + ' ' + cp1.y + ' ' + cp1.x + ' ' + cp1.y + ' ' + points[i+1].x + ' ' + points[i+1].y;
-    prevCp = cp1;
-    inverted = -inverted;
-  };
-
-  SVGString += ' L ' + width + ' ' + height;
-  SVGString += ' L 0 ' + height + ' Z';
-  return SVGString;
-}
-
-var lastUpdate;
-var totalTime = 0;
-
-function tick() {
-  var now = window.Date.now();
-
-  if (lastUpdate) {
-    var elapsed = (now-lastUpdate) / 1000;
-    lastUpdate = now;
-
-    totalTime += elapsed;
-    
-    var factor = totalTime*Math.PI;
-    wave.setAttribute('d', buildPath(calculateWavePoints(factor)));
+    // Beri ruang agar section 3 muncul perlahan, bukan langsung naik
+    section3.style.marginTop = `${section2.offsetHeight}px`;
   } else {
-    lastUpdate = now;
+    section2.style.position = "relative";
+    section3.style.marginTop = "0";
+  }
+});
+
+// wave svg
+function animateWave(waveId, waveHeight, waveDelta, speed) {
+  var wave = document.getElementById(waveId);
+  var container = document.body;
+  var width = container.offsetWidth;
+  var height = container.offsetHeight;
+  var waveWidth = width;
+  var wavePoints = 6;
+  var lastUpdate;
+  var totalTime = 0;
+
+  function calculateWavePoints(factor) {
+      var points = [];
+      for (var i = 0; i <= wavePoints; i++) {
+          var x = (i / wavePoints) * waveWidth;
+          var sinSeed = (factor + (i % wavePoints)) * speed * 100;
+          var sinHeight = Math.sin(sinSeed / 100) * waveDelta;
+          var yPos = Math.sin(sinSeed / 100) * sinHeight + waveHeight;
+          points.push({ x: x, y: yPos });
+      }
+      return points;
+  }
+
+  function buildPath(points) {
+      var SVGString = 'M ' + points[0].x + ' ' + points[0].y;
+      var cp0 = {
+          x: (points[1].x - points[0].x) / 2,
+          y: (points[1].y - points[0].y) + points[0].y + (points[1].y - points[0].y)
+      };
+
+      SVGString += ' C ' + cp0.x + ' ' + cp0.y + ' ' + cp0.x + ' ' + cp0.y + ' ' + points[1].x + ' ' + points[1].y;
+
+      var prevCp = cp0;
+      var inverted = -1;
+
+      for (var i = 1; i < points.length - 1; i++) {
+          var cp1 = {
+              x: (points[i].x - prevCp.x) + points[i].x,
+              y: (points[i].y - prevCp.y) + points[i].y
+          };
+          SVGString += ' C ' + cp1.x + ' ' + cp1.y + ' ' + cp1.x + ' ' + cp1.y + ' ' + points[i + 1].x + ' ' + points[i + 1].y;
+          prevCp = cp1;
+          inverted = -inverted;
+      }
+
+      SVGString += ' L ' + width + ' ' + height;
+      SVGString += ' L 0 ' + height + ' Z';
+      return SVGString;
+  }
+
+  function tick() {
+      var now = window.Date.now();
+
+      if (lastUpdate) {
+          var elapsed = (now - lastUpdate) / 1000;
+          lastUpdate = now;
+          totalTime += elapsed;
+
+          var factor = totalTime * Math.PI;
+          wave.setAttribute('d', buildPath(calculateWavePoints(factor)));
+      } else {
+          lastUpdate = now;
+      }
+
+      window.requestAnimationFrame(tick);
   }
   
-  window.requestAnimationFrame(tick);
-};
-tick();
+  tick();
+}
+// Menjalankan animasi untuk masing-masing wave
+animateWave('wave', 100, 20, 1.1);  // Wave di section 2
+animateWave('wave-2', 300, 30, 1.5); // Wave di section 3
+
+
+// // svg
+// var container = document.body;
+// var width = container.offsetWidth;
+// var height = container.offsetHeight;
+// var wave = document.getElementById('wave');
+
+// var waveWidth = container.offsetWidth;  // Wave SVG width (usually container width)
+// var waveHeight = 200;                   // Position from the top of container
+// var waveDelta = 20;                     // Wave amplitude
+// var speed = 1.1;                        // Wave animation speed
+// var wavePoints = 6;                     // How many point will be used to compute our wave
+
+// var points = [];
+
+// function calculateWavePoints(factor) {
+//   var points = [];
+  
+//   for (var i = 0; i <= wavePoints; i++) {
+//     var x = i/wavePoints * waveWidth;
+//     var sinSeed = (factor + (i + i % wavePoints)) * speed * 100;
+//     var sinHeight = Math.sin(sinSeed / 100) * waveDelta;
+//     var yPos = Math.sin(sinSeed / 100) * sinHeight  + waveHeight;
+//     points.push({x: x, y: yPos});
+//   }
+
+//   return points;
+// }
+
+// function buildPath(points) {
+//   var SVGString = 'M ' + points[0].x + ' ' + points[0].y;
+
+//   var cp0 = {
+//     x: (points[1].x - points[0].x) / 2,
+//     y: (points[1].y - points[0].y) + points[0].y + (points[1].y - points[0].y)
+//   };
+
+//   SVGString += ' C ' + cp0.x + ' ' + cp0.y + ' ' + cp0.x + ' ' + cp0.y + ' ' + points[1].x + ' ' + points[1].y;
+
+//   var prevCp = cp0;
+//   var inverted = -1;
+
+//   for (var i = 1; i < points.length-1; i++) {
+//     var cpLength = Math.sqrt(prevCp.x * prevCp.x + prevCp.y * prevCp.y);
+//     var cp1 = {
+//       x: (points[i].x - prevCp.x) + points[i].x,
+//       y: (points[i].y - prevCp.y) + points[i].y
+//     };
+
+//     SVGString += ' C ' + cp1.x + ' ' + cp1.y + ' ' + cp1.x + ' ' + cp1.y + ' ' + points[i+1].x + ' ' + points[i+1].y;
+//     prevCp = cp1;
+//     inverted = -inverted;
+//   };
+
+//   SVGString += ' L ' + width + ' ' + height;
+//   SVGString += ' L 0 ' + height + ' Z';
+//   return SVGString;
+// }
+
+// var lastUpdate;
+// var totalTime = 0;
+
+// function tick() {
+//   var now = window.Date.now();
+
+//   if (lastUpdate) {
+//     var elapsed = (now-lastUpdate) / 1000;
+//     lastUpdate = now;
+
+//     totalTime += elapsed;
+    
+//     var factor = totalTime*Math.PI;
+//     wave.setAttribute('d', buildPath(calculateWavePoints(factor)));
+//   } else {
+//     lastUpdate = now;
+//   }
+  
+//   window.requestAnimationFrame(tick);
+// };
+// tick();
 
 
 // end section 1
