@@ -161,13 +161,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.matchMedia().add(breakpoints.largePhone, () => {
     gsap.fromTo(
-      waveSvg, {y: "100%",}, {y: -200, duration: 2, delay: 2, ease: "power2.out"}
+      waveSvg, {y: "100%",}, {y: -250, duration: 2, delay: 2, ease: "power2.out"}
     )
   });
 
   gsap.matchMedia().add(breakpoints.smallPhone, () => {
     gsap.fromTo(
-      waveSvg, {y: "100%",}, {y: -150, duration: 2, delay: 2, ease: "power2.out"}
+      waveSvg, {y: "100%",}, {y: -250, duration: 2, delay: 2, ease: "power2.out"}
     )
   });
   // --------------
@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // wave-svg-2
   gsap.matchMedia().add(breakpoints.desktop, () => {
     gsap.to(waveSvgDua, {
-      yPercent: -9, // Efek parallax tetap
+      yPercent: -4, // Efek parallax tetap
       ease: "none",
       scrollTrigger: {
         trigger: ".home-section-2", // Menggunakan section 2 sebagai pemicu
@@ -225,20 +225,48 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   gsap.matchMedia().add(breakpoints.smallLaptop, () => {
-    gsap.to(waveSvgDua, {yPercent: -8, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
+    gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
   });
 
   gsap.matchMedia().add(breakpoints.tablet, () => {
-    gsap.to(waveSvgDua, {yPercent: -8, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
+    gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
   });
   
   gsap.matchMedia().add(breakpoints.largePhone, () => {
-    gsap.to(waveSvgDua, {yPercent: -8, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
+    gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
+  });
+  
+  gsap.matchMedia().add(breakpoints.smallPhone, () => {
+    gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
+  });
+  // --------------
+  // end section 3
+  // --------------
+  
+  // --------------
+  // section 4
+  // --------------
+
+  // scroll kesamping
+  let sections = gsap.utils.toArray(".panel");
+
+  gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".home-section-4",
+      pin: true,
+      scrub: 1,
+      snap: 1 / (sections.length - 1),
+      // base vertical scrolling on how wide the container is so it feels more natural.
+      end: "+=3500",
+    }
   });
 
-  gsap.matchMedia().add(breakpoints.smallPhone, () => {
-    gsap.to(waveSvgDua, {yPercent: -8, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
-  });
+  // -------------
+  // end section 4
+  // -------------
+
 });
 
 // scroll parralax effect
@@ -262,6 +290,7 @@ window.addEventListener("scroll", function () {
     section2.style.position = "relative";
     section3.style.marginTop = "0";
   }
+
 });
 
 // wave svg
@@ -335,7 +364,7 @@ function animateWave(waveId, waveHeight, waveDelta, speed) {
 }
 // Menjalankan animasi untuk masing-masing wave
 animateWave('wave', 100, 20, 1.1);  // Wave di section 2
-animateWave('wave-2', 300, 30, 1.5); // Wave di section 3
+animateWave('wave-2', 300, 20, 1.1); // Wave di section 3
 
 
 // // svg

@@ -62,4 +62,90 @@
   </section>
   {{-- end section 3 --}}
 
+  {{-- section 4 --}}
+  <section class="home-section-4" id="home-section-4">
+    <div class="logo-scroll-container">
+      <section class="logo-section bg-light d-flex align-items-center panel">
+        <div class="logo-container">
+          <div class="row">
+            <div class="col-md-6 logo-text">
+              <h1>Judul</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, eaque ipsum adipisci asperiores dolorem in aliquid, assumenda ipsam quidem totam aspernatur est libero odio expedita perspiciatis sapiente, provident explicabo. Molestiae!</p>
+            </div>
+            <div class="col-md-6 text-center logo">
+              <img src="logo1.img" alt="logo 1">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="logo-section bg-dark text-white d-flex align-items-center panel">
+        <div class="logo-container">
+            <div class="row">
+                <div class="col-md-6 logo-text">
+                    <h1>Judul 2</h1>
+                    <p>Deskripsi kedua</p>
+                </div>
+                <div class="col-md-6 text-center logo">
+                    <img src="logo2.png" alt="Logo 2">
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="logo-section bg-primary text-white d-flex align-items-center panel">
+          <div class="logo-container">
+              <div class="row">
+                  <div class="col-md-6 logo-text">
+                      <h1>Judul 3</h1>
+                      <p>Deskripsi ketiga</p>
+                  </div>
+                  <div class="col-md-6 text-center logo">
+                      <img src="logo3.png" alt="Logo 3">
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="logo-section bg-success text-white d-flex align-items-center panel">
+          <div class="logo-container">
+              <div class="row">
+                  <div class="col-md-6 logo-text">
+                      <h1>Judul 4</h1>
+                      <p>Deskripsi keempat</p>
+                  </div>
+                  <div class="col-md-6 text-center logo">
+                      <img src="logo4.png" alt="Logo 4">
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="logo-section bg-warning d-flex align-items-center panel">
+          <div class="logo-container">
+              <div class="row">
+                  <div class="col-md-6 logo-text">
+                      <h1>Judul 5</h1>
+                      <p>Deskripsi kelima</p>
+                  </div>
+                  <div class="col-md-6 text-center logo">
+                      <img src="logo5.png" alt="Logo 5">
+                  </div>
+              </div>
+          </div>
+      </section>
+    </div>    
+  </section>
+
+  
+  {{-- end section 4 --}}
+
+  {{-- section 5 --}}
+  <section class="home-section-5 bg-danger last-section" id="home-section-5">
+    <div class="">
+      <h1>section 5</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse impedit provident illum laudantium ullam commodi sapiente dolore quia ab reprehenderit repellendus iure minus, laborum eum numquam obcaecati assumenda nihil est.</p>
+    </div>
+  </section>
+
 @endsection
