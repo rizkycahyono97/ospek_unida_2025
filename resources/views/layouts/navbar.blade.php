@@ -26,14 +26,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144274538-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-144274538-1');
-  </script>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
@@ -107,7 +99,6 @@
   <script src={{ asset('js/jurusan.js') }}?v={{ time() }}></script>
   <script src={{ asset('js/pembayaran.js') }}?v={{ time() }}></script>
   <script src={{ asset('js/pusatinformasi.js') }}?v={{ time() }}></script>
-  <script src={{ asset('js/home.js') }}?v={{ time() }}></script>
 </body>
 
 </html>
