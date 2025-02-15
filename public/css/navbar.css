@@ -12,6 +12,7 @@ html, body {
   scroll-behavior: smooth; 
   /* overflow-x: hidden; */
   margin: 0;
+  font-family: "Spectral SC", serif;
 }
 
 /* warna utama */

@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.fromTo(logo, { scale: 3.5 }, { scale: 3, duration: 5, delay: 1.5, ease: "power2.out" });
   });  
 
-  // wave svg
+  // wave svg 1
   gsap.matchMedia().add(breakpoints.desktop, () => {
     gsap.fromTo(
       waveSvg,
@@ -161,13 +161,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.matchMedia().add(breakpoints.largePhone, () => {
     gsap.fromTo(
-      waveSvg, {y: "100%",}, {y: -300, duration: 2, delay: 2, ease: "power2.out"}
+      waveSvg, {y: "100%",}, {y: -200, duration: 2, delay: 2, ease: "power2.out"}
     )
   });
 
   gsap.matchMedia().add(breakpoints.smallPhone, () => {
     gsap.fromTo(
-      waveSvg, {y: "100%",}, {y: -300, duration: 2, delay: 2, ease: "power2.out"}
+      waveSvg, {y: "100%",}, {y: -150, duration: 2, delay: 2, ease: "power2.out"}
     )
   });
   // --------------
@@ -225,9 +225,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   gsap.matchMedia().add(breakpoints.smallLaptop, () => {
-    gsap.to(waveSvgDua, {yPercent: -9, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
+    gsap.to(waveSvgDua, {yPercent: -8, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
+  });
+
+  gsap.matchMedia().add(breakpoints.tablet, () => {
+    gsap.to(waveSvgDua, {yPercent: -8, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
   });
   
+  gsap.matchMedia().add(breakpoints.largePhone, () => {
+    gsap.to(waveSvgDua, {yPercent: -8, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
+  });
+
+  gsap.matchMedia().add(breakpoints.smallPhone, () => {
+    gsap.to(waveSvgDua, {yPercent: -8, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
+  });
 });
 
 // scroll parralax effect

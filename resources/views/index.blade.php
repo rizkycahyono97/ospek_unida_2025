@@ -46,6 +46,19 @@
       <path id="wave-2" d="" fill="#317F80"/>
     </svg>  
     
+    <div>
+      <h2 class="d-flex justify-content-center">Filosofi Kata</h2>
+      <h1 class="d-flex justify-content-center">SYAAHEEN</h1>
+      <div class="col-sm-10 col-md-8 col-lg-10 mx-auto mt-5">
+        <p class="text-center fs-5">
+          Syaaheen (شَاهِيْنٌ) yang berarti burung elang dalam Bahasa Arab. Nama ini melambangkan sifat elang yang memiliki pandangan tajam, strategi matang, dan kemampuan beradaptasi dengan alam. Syaaheen diharapkan menjadi simbol mahasiswa tangguh yang berdedikasi, mengedepankan ketekunan dan kegigihan dalam akademik. 
+        </p>
+
+        <p class="text-center fs-5">
+          Ketika dunia mulai hancur, dekadensi moral yang terus merajalela, sehingga memicu rusaknya nilai-nilai kehidupan, kebudayaan global menggulung segala yang ada, peradaban mulai kehilangan arah. Manusia tak lagi berpegang pada prinsip-prinsip dasar kemanusiaan; keadilan, kejujuran, dan empati tergerus oleh keserakahan dan egoisme. Nilai-nilai tradisional yang pernah menjadi fondasi komunitas dan budaya perlahan terkikis, digantikan oleh individualisme ekstrem dan materialisme yang mendominasi. Dalam kekacauan ini, harapan akan masa depan tampak memudar, sementara tatanan sosial yang rapuh berada di ambang kehancuran total.
+        </p>
+    </div>
+    </div>
   </section>
   {{-- end section 3 --}}
 
