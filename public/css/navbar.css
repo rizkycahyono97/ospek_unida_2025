@@ -5,11 +5,14 @@
 }
 
 html, body {
-  height: 5000px;
+  height: 8000px;
   /* overscroll-behavior: none; Mencegah efek overscroll di mobile */
   /* -webkit-font-smoothing: antialiased;
   /* overflow: hidden; */
   scroll-behavior: smooth; 
+  /* overflow-x: hidden; */
+  margin: 0;
+  font-family: "Spectral SC", serif;
 }
 
 /* warna utama */
