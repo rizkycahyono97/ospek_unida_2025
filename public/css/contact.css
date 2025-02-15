@@ -1,0 +1,209 @@
+.kontak-section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    z-index: 1;
+    background-color: #ffffff;
+    background-image: url(../assets/jurusan/jurusan-bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Spectral SC", serif;
+}
+
+.kontak-banner {
+    width: 100%;
+    min-height: inherit;
+}
+
+.kontak-section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 13%;
+    top: 0;
+    background: linear-gradient(to top, rgba(231, 229, 229, 0), rgb(255, 253, 253));
+}
+
+.kontak-section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(19, 29, 20, 1), rgba(21, 34, 22, 0));
+}
+
+.kontak-header {
+    margin-top: 7.5rem;
+    text-align: center;
+}
+
+.kontak-column {
+    display: flex;
+    gap: 1rem;
+}
+
+.kontak-form {
+    padding: 2rem;
+    width: 65%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(17px);
+    border-radius: 23px;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+}
+
+.kontak-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(17px);
+    border-radius: 23px;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+}
+
+.kontak-form input,
+.kontak-form select,
+.kontak-form textarea {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.kontak-info iframe {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    /* Bisa disesuaikan */
+    border: none;
+    border-radius: 10px;
+}
+
+.kontak-info .email-pmb {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.kontak-info .number,
+.kontak-info .email-pmb {
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 5px;
+}
+
+.kontak-info p a {
+    padding: 5px;
+    background-color: #317F80;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.kontak-info p a:hover {
+    color: #d6db89;
+    box-shadow: inset 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: inset 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 1px 1px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* regular smartphone */
+@media (max-width: 480px) {
+    .kontak-section::before {
+        height: 5%;
+    }
+
+    .kontak-section::after {
+        height: 5%;
+    }
+
+    .kontak-header {
+        margin-top: 3.5rem;
+        text-align: center;
+    }
+
+    .kontak-column {
+        display: contents;
+        gap: 0;
+        font-size: 0.9rem;
+    }
+
+    .kontak-form {
+        padding: 0.7rem;
+        width: 100%;
+        border-radius: 13px;
+    }
+
+    .kontak-form p {
+        text-align: justify;
+    }
+
+    .kontak-info {
+        padding: 0.7rem;
+        width: 100%;
+        margin: 3rem 0;
+        border-radius: 13px;
+    }
+
+    .kontak-info p {
+        text-align: justify;
+    }
+
+}
+
+/* Large Phone (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .kontak-section::before {
+        height: 5%;
+    }
+
+    .kontak-section::after {
+        height: 5%;
+    }
+
+    .kontak-header {
+        margin-top: 3.5rem;
+        text-align: center;
+    }
+
+    .kontak-column {
+        display: contents;
+        gap: 0;
+    }
+
+    .kontak-form {
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .kontak-info {
+        padding: 1.5rem;
+        width: 100%;
+        margin: 3rem 0;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1025px) {
+    .kontak-column {
+        display: contents;
+        gap: 0;
+    }
+
+    .kontak-form {
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .kontak-info {
+        padding: 1.5rem;
+        width: 100%;
+        margin: 3rem 0;
+    }
+}
