@@ -65,79 +65,126 @@
   {{-- section 4 --}}
   <section class="home-section-4" id="home-section-4">
     <div class="logo-scroll-container">
-      <section class="logo-section bg-light d-flex align-items-center panel">
-        <div class="logo-container">
-          <div class="row">
-            <div class="col-md-6 logo-text">
-              <h1>Judul</h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, eaque ipsum adipisci asperiores dolorem in aliquid, assumenda ipsam quidem totam aspernatur est libero odio expedita perspiciatis sapiente, provident explicabo. Molestiae!</p>
+      <section class="logo-section d-flex align-items-center panel">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Gambar di kiri -->
+                <div class="col-md-4 text-center scroll-img">
+                    <img src="{{ asset('assets/home/logo-ospek-2025.png') }}" alt="logo ospek" class="img-fluid">
+                </div>
+                <!-- Teks di kanan -->
+                <div class="col-md-8 scroll-text">
+                    <h1>REVEAL THE</h1>
+                    <h1>FUTURE OF STYLE</h1>
+                    <p>SYAAHEEN LOGO PHILOSOPHY</p>
+                </div>
             </div>
-            <div class="col-md-6 text-center logo">
-              <img src="logo1.img" alt="logo 1">
-            </div>
+        </div>
+      </section>
+    
+
+      <section class="logo-section text-dark d-flex align-items-center panel">
+        <div class="container">
+          <div class="row align-items-center">
+              <!-- Gambar di kiri -->
+              <div class="col-md-6 text-center position-relative">
+                  <div class="logo-container d-flex flex-column align-items-center">
+                      <img src="{{ asset('assets/home/logo-sayap.png') }}" alt="Logo 2" class="logo" class="logo tilt-effect" data-tilt data-tilt-max="70" data-tilt-speed="50" data-tilt-glare="false">
+                      <img src="{{ asset('assets/home/tatakan.png') }}" alt="tatakan" class="tatakan">
+                  </div>
+              </div>
+              <!-- Teks di kanan -->
+              <div class="col-md-6 logo-text">
+                  <h1>Enam Rukun Iman</h1>
+                  <p>Rukun iman mengajarkan landasan keimanan yang menjadi pondasi utama dalam pembentukan karakter mahasiswa. Sebagai inti dari kepercayaan Islam, Rukun Iman menanamkan nilai-nilai keyakinan, kesadaran spiritual, tanggung jawab, dan penerimaan terhadap takdir.</p>
+                  <p>Harapannya dapat menciptakan kegiatan yang dapat mengarahkan mahasiswa untuk memahami pentingnya keikhlasan, disiplin, dan kebersamaan, sekaligus memotivasi mereka untuk menjunjung tinggi etika, mengembangkan ilmu pengetahuan, dan menghadapi tantangan dengan visi misinya.</p>
+              </div>
           </div>
         </div>
       </section>
+    
 
-      <section class="logo-section bg-dark text-white d-flex align-items-center panel">
-        <div class="logo-container">
-            <div class="row">
+      <section class="logo-section text-dark d-flex align-items-center panel">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Gambar di kiri -->
+                <div class="col-md-6 text-center position-relative">
+                    <div class="logo-container d-flex flex-column align-items-center">
+                        <img src="{{ asset('assets/home/logo-pangkal-2.png') }}" alt="Logo 2" class="logo" class="logo tilt-effect" data-tilt data-tilt-max="70" data-tilt-speed="50" data-tilt-glare="false">
+                        <img src="{{ asset('assets/home/tatakan.png') }}" alt="tatakan" class="tatakan">
+                    </div>
+                </div>
+                <!-- Teks di kanan -->
                 <div class="col-md-6 logo-text">
-                    <h1>Judul 2</h1>
-                    <p>Deskripsi kedua</p>
-                </div>
-                <div class="col-md-6 text-center logo">
-                    <img src="logo2.png" alt="Logo 2">
+                    <h1>Empat Pangkal Sayap</h1>
+                    <p>Melambangkan 4 motto PMDG yang berbunyi: berbudi tinggi, berbadan sehat, berpengetahuan luas, dan berpikiran bebas, menekankan bahwa keseimbangan antara akhlak, kesehatan, ilmu, dan kebebasan berpikir adalah kunci untuk menggapai kehidupan yang sukses dan bermakna, seperti burung yang dapat terbang tinggi dengan kedua sayapnya yang kuat dan seimbang.</p>
                 </div>
             </div>
         </div>
       </section>
 
-      <section class="logo-section bg-primary text-white d-flex align-items-center panel">
-          <div class="logo-container">
-              <div class="row">
-                  <div class="col-md-6 logo-text">
-                      <h1>Judul 3</h1>
-                      <p>Deskripsi ketiga</p>
-                  </div>
-                  <div class="col-md-6 text-center logo">
-                      <img src="logo3.png" alt="Logo 3">
-                  </div>
-              </div>
-          </div>
+      <section class="logo-section text-dark d-flex align-items-center panel">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Gambar di kiri -->
+                <div class="col-md-6 text-center position-relative">
+                    <div class="logo-container d-flex flex-column align-items-center">
+                        <img src="{{ asset('assets/home/logo-pena.png') }}" alt="Logo 2" class="logo" class="logo tilt-effect" data-tilt data-tilt-max="70" data-tilt-speed="50" data-tilt-glare="false">
+                        <img src="{{ asset('assets/home/tatakan.png') }}" alt="tatakan" class="tatakan">
+                    </div>
+                </div>
+                <!-- Teks di kanan -->
+                <div class="col-md-6 logo-text">
+                    <h1>Pena Bulu Yang Berbentuk Kobaran Api</h1>
+                    <p>Pena Bulu berbentuk kobaran api dan Inisial “S”, melambangkan singkatan dari SYAAHEEN dan semangat yang membara, kekuatan intelektual, dan inspirasi yang tak pernah padam. Api mencerminkan energi, pencerahan, dan transformasi, sedangkan pena adalah simbol pengetahuan, tulisan, dan perjuangan melalui ilmu.</p>
+                    <p>
+                      Nama "Syaaheen", yang berarti elang atau burung yang tangguh, merepresentasikan visi yang tajam, keberanian, dan kemampuan untuk mencapai ketinggian tertinggi. Dikaitkan dengan pena berbentuk kobaran api melambangkan semangat elang yang gigih, di mana setiap tulisan dan gagasan yang dihasilkan mampu menembus batas, menyulut perubahan, dan menerangi jalan bagi orang lain.
+                    </p>
+                </div>
+            </div>
+        </div>
       </section>
 
-      <section class="logo-section bg-success text-white d-flex align-items-center panel">
-          <div class="logo-container">
-              <div class="row">
-                  <div class="col-md-6 logo-text">
-                      <h1>Judul 4</h1>
-                      <p>Deskripsi keempat</p>
-                  </div>
-                  <div class="col-md-6 text-center logo">
-                      <img src="logo4.png" alt="Logo 4">
-                  </div>
-              </div>
-          </div>
+      <section class="logo-section text-dark d-flex align-items-center panel">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Gambar di kiri -->
+                <div class="col-md-6 text-center position-relative">
+                    <div class="logo-container d-flex flex-column align-items-center">
+                        <img src="{{ asset('assets/home/logo-menara.png') }}" alt="Logo 2" class="logo" class="logo tilt-effect" data-tilt data-tilt-max="70" data-tilt-speed="50" data-tilt-glare="false">
+                        <img src="{{ asset('assets/home/tatakan.png') }}" alt="tatakan" class="tatakan">
+                    </div>
+                </div>
+                <!-- Teks di kanan -->
+                <div class="col-md-6 logo-text">
+                    <h1>Menara Gontor</h1>
+                    <p>Menara Gontor melambangkan cita-cita tinggi, wawasan luas, dan keteguhan prinsip yang menjadi nilai dasar Pondok Modern Darussalam Gontor. Ketinggiannya menggambarkan visi besar untuk mencetak generasi yang berpikir global tanpa meninggalkan akar Islam. Keteguhannya mencerminkan konsistensi dalam menjalankan prinsip, sebagaimana pesan K.H. Imam Zarkasyi: “Gontor berdiri karena cita-cita, hidup karena perjuangan, dan kekal karena keikhlasan.” Juga dapat menjadi suatu symbol kebesaran PMDG.</p>
+                </div>
+            </div>
+        </div>
       </section>
 
-      <section class="logo-section bg-warning d-flex align-items-center panel">
-          <div class="logo-container">
-              <div class="row">
-                  <div class="col-md-6 logo-text">
-                      <h1>Judul 5</h1>
-                      <p>Deskripsi kelima</p>
-                  </div>
-                  <div class="col-md-6 text-center logo">
-                      <img src="logo5.png" alt="Logo 5">
-                  </div>
-              </div>
-          </div>
+      <section class="logo-section text-dark d-flex align-items-center panel">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Gambar di kiri -->
+                <div class="col-md-6 text-center position-relative">
+                    <div class="logo-container d-flex flex-column align-items-center">
+                        <img src="{{ asset('assets/home/logo-menara.png') }}" alt="Logo 2" class="logo" class="logo tilt-effect" data-tilt data-tilt-max="70" data-tilt-speed="50" data-tilt-glare="false">
+                        <img src="{{ asset('assets/home/tatakan.png') }}" alt="tatakan" class="tatakan">
+                    </div>
+                </div>
+                <!-- Teks di kanan -->
+                <div class="col-md-6 logo-text">
+                    <h1>Mencetak Generasi Solutif,</h1> <br>
+                    <h1>Membangun ide-ide Inovatif,</h1> <br>
+                    <h1>Mencapai Kemajuan Progresi.</h1>
+                </div>
+            </div>
+        </div>
       </section>
     </div>    
   </section>
-
-  
   {{-- end section 4 --}}
 
   {{-- section 5 --}}

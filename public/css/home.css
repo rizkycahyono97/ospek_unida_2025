@@ -162,24 +162,79 @@ section {
 /* section 4 */
 /* --------------- */
 .home-section-4 {
+  background-image: url(../assets/home/bg-11.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   overflow-x: hidden;
   z-index: 8;
   position: relative;
+  height: 100vh
+}
+
+/* tidak tahu darimana */
+.pin-spacer {
+  background-image: url(../assets/home/bg-11.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .logo-scroll-container {
   display: flex;
-  width: 500vw;
+  width: 550vw;
   height: 100vh;
 }
 
 .logo-section {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.logo-section img {
+  width: 300px;
+  height: auto;
+  margin: 10px;
+}
+
+.logo-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  max-width: 500px;
+  z-index: 2;
+}
+
+.tatakan {
+  max-width: 500px;
+  z-index: 1;
+}
+
+.scroll-text h1 {
+  /* font-family: "Open Sans", serif; */
+  font-weight: 600;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 70px;
+  font-style: normal;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--primary);
+  transform: scaleY(1.5);
+}
+
+.scroll-text p {
+  font-size: 25px;
+  color: var(--primary);
+  font-weight: 700;
+}
+
 /* --------------- */
 /* end section 4 */
 /* --------------- */
@@ -222,7 +277,7 @@ section {
   /* section 2 */
   /* ------------- */  
   .home-section-2 h1 {
-    font-size:30px;
+    font-size: 30px;
   }
 
   .home-section-2 h2 {
@@ -243,7 +298,54 @@ section {
     font-size: 12px !important;
   }
   
+  /* ------------- */
+  /* section 4 */
+  /* ------------- */
+  .logo-scroll-container {
+    width: 600vw;
+    height: 100vh;
+  }
 
+  /* Logo Section */
+  .logo-section {
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  /* Mengatur ukuran logo agar tidak terlalu besar */
+  .logo-section img {
+    width: 130px;
+    height: auto;
+    margin: 5px;
+  }
+
+  /* Mengurangi ukuran teks agar tetap nyaman dibaca */
+  .scroll-text h1 {
+    font-size: 30px;
+  }
+
+  .scroll-text p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  /* Mengatur ulang posisi elemen agar tetap seimbang */
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-text h1 {
+    font-size: 24px;
+  }
+
+  .logo-text p {
+    font-size: 12px;
+  }
 }
 
 /* Large Phone (481px - 767px) */
@@ -283,6 +385,55 @@ section {
   .home-section-3 p {
     font-size: 14px !important;
   }
+
+  /* ------------- */
+  /* section 4 */
+  /* ------------- */
+  .logo-scroll-container {
+    width: 600vw;
+    height: 100vh;
+  }
+
+  /* Logo Section */
+  .logo-section {
+    width: 100vw;
+    height: auto;
+    flex-direction: column; /* Stack item secara vertikal */
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  /* Mengatur ukuran logo agar tidak terlalu besar */
+  .logo-section img {
+    width: 150px;
+    height: auto;
+    margin: 5px;
+  }
+
+  /* Mengurangi ukuran teks agar tetap nyaman dibaca */
+  .scroll-text h1 {
+    font-size: 40px;
+  }
+
+  .scroll-text p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  /* Mengatur ulang posisi elemen agar tetap seimbang */
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-text h1 {
+    font-size: 26px;
+  }
+
+  .logo-text p {
+    font-size: 14px;
+  }
 }
 
 /* tablet */
@@ -313,6 +464,21 @@ section {
   /* ----------------- */
   .home-section-3 p {
     font-size: 18px !important;
+  }
+
+  /* ------------- */
+  /* section 4 */
+  /* ------------- */
+  .scroll-text h1 {
+    font-size: 45px;
+  }
+
+  .logo-text h1 {
+    font-size: 30px !important;
+  }
+
+  .logo-text p {
+    font-size: 14px !important;
   }
 }
 
@@ -348,6 +514,28 @@ section {
     font-size: 120px;
   }
 
+  /* ------------- */
+  /* section 4 */
+  /* ------------- */
+  .scroll-text h1 {
+    font-size: 85px;
+  }
+
+  .scroll-img img {
+    width: 350px;
+  }
+
+  .logo-section img {
+    width: 450px;
+  }
+
+  .logo-text h1 {
+    font-size: 60px !important;
+  }
+
+  .logo-text p {
+    font-size: 20px !important;
+  }
 }
 
 /* Large Monitor +1921px */
