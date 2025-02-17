@@ -111,8 +111,8 @@ section {
 /* section 3 */
 /* -------------- */
 .home-section-3 {
-  /* background-color: #317F80; */
-  background-image: url(../assets/home/bg-10.png);
+  /* background-color: #122b26; */
+  background-image: url(../assets/home/bg-17.png);
   min-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -157,6 +157,28 @@ section {
 /* --------------- */
 /* end section 3 */
 /* --------------- */
+
+/* batas */
+.custom-shape-divider-top-1739805712 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1739805712 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 76px;
+}
+
+.custom-shape-divider-top-1739805712 .shape-fill {
+  fill: #122B26;
+}
 
 /* --------------- */
 /* section 4 */
@@ -389,6 +411,11 @@ section {
   /* ------------- */
   /* section 4 */
   /* ------------- */
+  .custom-shape-divider-top-1739805712 svg {
+    width: calc(100% + 1.3px);
+    height: 110px;
+  }
+
   .logo-scroll-container {
     width: 600vw;
     height: 100vh;
