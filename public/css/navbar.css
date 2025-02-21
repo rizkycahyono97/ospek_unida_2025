@@ -4,9 +4,8 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-
+html, body {
+  /* height: 8000px; */
   /* overscroll-behavior: none; Mencegah efek overscroll di mobile */
   /* -webkit-font-smoothing: antialiased;
   /* overflow: hidden; */
