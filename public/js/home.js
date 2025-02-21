@@ -211,34 +211,34 @@ document.addEventListener("DOMContentLoaded", () => {
   // ------------
 
   // wave-svg-2
-  gsap.matchMedia().add(breakpoints.desktop, () => {
-    gsap.to(waveSvgDua, {
-      yPercent: -4, // Efek parallax tetap
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".home-section-2", // Menggunakan section 2 sebagai pemicu
-        start: "top bottom",
-        end: "bottom top",
-        scrub: true
-      }
-    });
-  });
+  // gsap.matchMedia().add(breakpoints.desktop, () => {
+  //   gsap.to(waveSvgDua, {
+  //     yPercent: -4, // Efek parallax tetap
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       trigger: ".home-section-2", // Menggunakan section 2 sebagai pemicu
+  //       start: "top bottom",
+  //       end: "bottom top",
+  //       scrub: true
+  //     }
+  //   });
+  // });
 
-  gsap.matchMedia().add(breakpoints.smallLaptop, () => {
-    gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
-  });
+  // // gsap.matchMedia().add(breakpoints.smallLaptop, () => {
+  // //   gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
+  // // });
 
-  gsap.matchMedia().add(breakpoints.tablet, () => {
-    gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
-  });
+  // gsap.matchMedia().add(breakpoints.tablet, () => {
+  //   gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
+  // });
   
-  gsap.matchMedia().add(breakpoints.largePhone, () => {
-    gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
-  });
+  // gsap.matchMedia().add(breakpoints.largePhone, () => {
+  //   gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
+  // });
   
-  gsap.matchMedia().add(breakpoints.smallPhone, () => {
-    gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
-  });
+  // gsap.matchMedia().add(breakpoints.smallPhone, () => {
+  //   gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
+  // });
   // --------------
   // end section 3
   // --------------

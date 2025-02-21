@@ -18,7 +18,7 @@ section {
   background-image: url(../assets/home/BG.png);
   background-size: cover;
   background-position: center;
-  font-family: "Merriweather Sans", serif;
+  /* font-family: "Merriweather Sans", serif; */
 }
 
 .home-section-1 img {
@@ -78,7 +78,7 @@ section {
 }
 
 .home-section-2 h1 {
-  font-family: "Open Sans", serif;
+  /* font-family: "Open Sans", serif; */
   font-weight: 800;
   font-variation-settings:
     "wdth" 100;
@@ -97,22 +97,13 @@ section {
 /* ------------- */
 /* end section 2 */
 /* ------------- */
-.wave-svg-2 {
-  position: absolute !important ;
-  top: -150px;
-  left: 0;
-  height: auto;
-  width: 100%;
-  z-index: 7;
-  pointer-events: none;
-}
 
 /* -------------- */
 /* section 3 */
 /* -------------- */
 .home-section-3 {
-  /* background-color: #122b26; */
-  background-image: url(../assets/home/bg-17.png);
+  background-color: #122b26;
+  /* background-image: url(../assets/home/bg-17.png); */
   min-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -127,6 +118,16 @@ section {
   transform: translateY(100px); */
 }
 
+.wave-svg-2 {
+  position: absolute !important ;
+  top: -370px;
+  left: 0;
+  /* height: auto; */
+  width: 100%;
+  /* z-index: -1; */
+  pointer-events: none;
+}
+
 .home-section-3 h2 {
   font-family: "Yellowtail", serif;
   font-weight: 700;
@@ -137,7 +138,7 @@ section {
 }
 
 .home-section-3 h1 {
-  font-family: "Open Sans", serif;
+  /* font-family: "Open Sans", serif; */
   font-weight: 800;
   font-variation-settings:
     "wdth" 100;
@@ -153,6 +154,13 @@ section {
 
 .home-section-3 p {
   color: #FFFFFFFF;
+}
+
+.home-section-3 h1,
+.home-section-3 h2,
+.home-section-3 p {
+  position: relative; /* Pastikan elemen ini di atas */
+  z-index: 5; /* Lebih tinggi dari SVG */
 }
 /* --------------- */
 /* end section 3 */
@@ -195,12 +203,12 @@ section {
 }
 
 /* tidak tahu darimana */
-.pin-spacer {
+/* .pin-spacer {
   background-image: url(../assets/home/bg-11.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 .logo-scroll-container {
   display: flex;
@@ -257,19 +265,170 @@ section {
   font-weight: 700;
 }
 
+.custom-shape-divider-bottom-1739863208 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1739863208 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.custom-shape-divider-bottom-1739863208 .shape-fill {
+  fill: #FFFFFF;
+}
 /* --------------- */
 /* end section 4 */
 /* --------------- */
+
 
 /* ------------- */
 /* section 5 */
 /* ----------- */
 .home-section-5 {
+  background-color: #FFFFFF;
+  background-image: url(../assets/home/bg-20.png);
   position: relative;
-  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
   z-index: 9;
 }
 
+.home-section-5 h1 {
+  /* font-family: "Open Sans", serif; */
+  font-weight: 800;
+  /* font-variation-settings:    "wdth" 100; */
+  font-size: 70px;
+  font-style: normal;
+  color: transparent;
+  -webkit-text-stroke: 2px #11c7a6;
+  top: 0;
+  margin-top: 50px;
+  transform: scaleY(1.5);
+  transform-origin: top;
+  -webkit-transform: scaleY(1.5);
+  -moz-transform: scaleY(1.5);
+  -ms-transform: scaleY(1.5);
+  -o-transform: scaleY(1.5);
+  line-height: 0.8;
+}
+
+.text-container {
+  padding-top: 60px;
+  margin-bottom: 20px; /* Beri jarak antara teks dan gambar */
+}
+
+/* card */
+.wallet {
+  --bg-color: #52AD9C;
+  --bg-color-light: #f0e7ff;
+  --text-color-hover: #fff;
+  --box-shadow-color: rgba(206, 178, 252, 0.48);
+}
+
+.card {
+  width: 220px;
+  height: 321px;
+  background: #fff;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+}
+
+.card:hover .overlay {
+  transform: scale(4) translateZ(0);
+}
+
+.card:hover .circle {
+  border-color: var(--bg-color-light);
+  background: var(--bg-color);
+}
+
+.card:hover .circle:after {
+  background: var(--bg-color-light);
+}
+
+.card:hover p {
+  color: var(--text-color-hover);
+}
+
+.card p {
+  font-size: 17px;
+  color: #4c5656;
+  margin-top: 30px;
+  z-index: 1000;
+  transition: color 0.3s ease-out;
+}
+
+.circle {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+
+.circle:after {
+  content: "";
+  width: 118px;
+  height: 118px;
+  display: block;
+  position: absolute;
+  background: var(--bg-color);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+  transition: opacity 0.3s ease-out;
+}
+
+.card-content {
+  position: relative;
+  z-index: 3;
+}
+
+.overlay {
+  width: 118px;
+  position: absolute;
+  height: 118px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  top: 70px;
+  left: 50px;
+  z-index: 0;
+  transition: transform 0.3s ease-out;
+}
+/* --------------- */
+/* end section 5 */
+/* --------------- */
 
 /* -------------- */
 /* responsive */

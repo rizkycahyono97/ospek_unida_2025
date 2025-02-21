@@ -5,7 +5,7 @@
 }
 
 html, body {
-  height: 8000px;
+  /* height: 8000px; */
   /* overscroll-behavior: none; Mencegah efek overscroll di mobile */
   /* -webkit-font-smoothing: antialiased;
   /* overflow: hidden; */

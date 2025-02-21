@@ -21,7 +21,7 @@
   {{-- end section 1 --}}
 
   {{-- section 2 --}}
-  <section class="home-section-2" data-scroll-container>
+  <section class="home-section-2">
     <!-- Wave SVG -->
     <svg class="wave-svg" width="100%" height="50%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="intro">
         <path id="wave" d="" fill="#1E453E"/>
@@ -42,11 +42,11 @@
 
   
   {{-- section 3 --}}
-  <section class="home-section-3" id="home-section-3" data-scroll-container>
+  <section class="home-section-3" id="home-section-3">
     <svg class="wave-svg-2" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="intro-2">
       <path id="wave-2" d="" fill="#122b26"/>
     </svg>  
-    
+
     <div>
       <h2 class="d-flex justify-content-center">Filosofi Kata</h2>
       <h1 class="d-flex justify-content-center">SYAAHEEN</h1>
@@ -193,15 +193,120 @@
         </div>
       </section>
     </div>    
+
+    <div class="custom-shape-divider-bottom-1739863208">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
   </section>
   {{-- end section 4 --}}
 
   {{-- section 5 --}}
-  <section class="home-section-5 bg-danger last-section" id="home-section-5">
-    <div class="">
-      <h1>section 5</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse impedit provident illum laudantium ullam commodi sapiente dolore quia ab reprehenderit repellendus iure minus, laborum eum numquam obcaecati assumenda nihil est.</p>
+  <section class="home-section-5 justify-content-center align-items-center" id="home-section-5">
+
+    {{-- unida --}}
+    <div class="text-container text-center container">
+      <h1 class="mb-4">UNIVERSITAS <br> DARUSSALAM GONTOR</h1>
+      <div class="mt-5">
+        <img src="{{ asset('assets/home/unida-logo.png') }}" alt="Universitas Darussalam Gontor" class="img-fluid pt-5">
+      </div>
+      <p class="mt-4 fs-4">
+        <span class="text-primary fw-bold">UNIDA GONTOR (Universitas Darussalam Gontor)</span> merupakan perguruan tinggi waqaf yang berada di bawah naungan Pondok Modern Darussalam Gontor. Oleh sebab itu, dalam melaksanakan Tri Dharmanya, UNIDA Gontor mempertahankan visi, misi, dan jiwa pesantren.
+      </p>
+      <a href="https://unida.gontor.ac.id" class="btn btn-primary mt-3 d-inline-flex align-items-center">
+        Kunjungi Website UNIDA GONTOR
+        <span class="material-icons ms-2">open_in_new</span>
+      </a>
+    </div>
+
+    {{-- pmb --}}
+    <div class="text-container text-center container">
+      <h1 class="mb-4">PENERIMAAN <br> MAHASISWA BARU</h1>
+      <div class="mt-5">
+        <img src="{{ asset('assets/home/pmb-logo-2.png') }}" alt="pmb" class="img-fluid pt-5">
+      </div>
+      <p class="mt-4 fs-4">
+        <span class="text-primary fw-bold">"Panitia Penerimaan Mahasiswa Baru" atau disingkat "PMB".</span>
+        Mereka adalah tim di perguruan tinggi yang menangani proses penerimaan siswa baru. Mereka menilai aplikasi, mengatur ujian masuk (jika diperlukan), dan membuat keputusan tentang penerimaan siswa baru. Selain itu, PMB juga bertanggung jawab atas pendataan mahasiswa baru yang diterima untuk keperluan administratif dan akademis.
+      </p>
+      <a href="https://unida.gontor.ac.id/admission/" class="btn btn-primary mt-3 d-inline-flex align-items-center">
+        Kunjungi Website PMB
+        <span class="material-icons ms-2">open_in_new</span>
+      </a>
+    </div>
+
+    {{-- barang lain --}}
+    <div class="text-center container">
+      <h3>Hal Lain <br> Yang Perlu Diketahui</h3>
+      <div class="row">
+
+        {{-- card 1 --}}
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <div class="card wallet">
+              <div class="overlay"></div>
+                <div class="circle">
+                  <div class="card-content">
+                    <img src="{{ asset('assets/home/barang-2.png') }}" alt="barang bawaan">
+                  </div>
+                </div>
+              <p>Barang</p>
+            </div>          
+          </div>
+        </div>
+
+        {{-- card 1 --}}
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <div class="card wallet">
+              <div class="overlay"></div>
+                <div class="circle">
+                  <div class="card-content">
+                    <img src="{{ asset('assets/home/timeline-2.png') }}" alt="barang bawaan">
+                  </div>
+                </div>
+              <p>Timeline</p>
+            </div>          
+          </div>
+        </div>
+
+        {{-- card 1 --}}
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <div class="card wallet">
+              <div class="overlay"></div>
+                <div class="circle">
+                  <div class="card-content">
+                    <img src="{{ asset('assets/home/baju.png') }}" alt="baju">
+                  </div>
+            
+                </div>
+              <p>Attribute</p>
+            </div>          
+          </div>
+        </div>
+
+        {{-- card 1 --}}
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card">
+            <div class="card wallet">
+              <div class="overlay"></div>
+                <div class="circle">
+                  <div class="card-content">
+                    <img src="{{ asset('assets/home/lainya.png') }}" alt="lainya">
+                  </div>
+            
+                </div>
+              <p>Lainya</p>
+            </div>          
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </section>
+
 
 @endsection
