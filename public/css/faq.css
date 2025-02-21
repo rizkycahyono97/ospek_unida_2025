@@ -1,13 +1,13 @@
 .info-section {
-    max-width: 100vw;
+    max-width: 100%;
     position: relative;
     display: flex;
     z-index: 1;
-    height: auto;
+    min-height: 180vh;
     background-color: #ffffff;
     background-image: url(../assets/pusatinformasi/info-bg.jpeg);
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     font-family: "Spectral SC", serif;
     overflow-x: hidden;
@@ -18,7 +18,7 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 13%;
+    height: 7%;
     top: 0;
     background: linear-gradient(to top, rgba(231, 229, 229, 0), rgb(255, 253, 253));
 }
@@ -28,7 +28,7 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 10%;
+    height: 5%;
     bottom: 0;
     background: linear-gradient(to top, rgba(19, 29, 20, 1), rgba(21, 34, 22, 0));
 } */
@@ -49,8 +49,7 @@
 
 .info-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     margin-top: 3rem;
     padding: 0;
     z-index: 1;
@@ -61,15 +60,11 @@
     /* Efek 3D */
 }
 
-.menu-cards-1,
-.menu-cards-2 {
+.menu-cards-1 {
     justify-items: center;
     align-items: center;
     margin: auto;
     margin-top: 0;
-}
-
-.menu-cards-2 {
     margin-bottom: 10rem;
 }
 
@@ -82,7 +77,7 @@ input {
 }
 
 .label {
-    width: 525px;
+    width: 1025px;
     height: 75px;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
@@ -170,6 +165,10 @@ input:checked+label .description {
         margin-top: 3.5rem;
     }
 
+    .info-header h5 {
+        font-size: 1rem;
+    }
+
     .info-cards {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 0;
@@ -177,23 +176,13 @@ input:checked+label .description {
     }
 
     .label {
-        width: 325px;
-        height: 45px;
+        max-width: 300px;
+        height: 65px;
         border-radius: 1.35rem;
     }
 
     .label .row .icon {
-        border-radius: 50%;
-        font-family: sans-serif;
-        font-weight: 600;
-        color: rgb(206, 194, 180);
-        background-color: #497a6f;
-        width: 35px;
-        height: 35px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 5px 0px;
+        display: none;
     }
 
     .label .row h4 {
@@ -221,26 +210,16 @@ input:checked+label .description {
 
     .label {
         width: 435px;
-        height: 60px;
-        border-radius: 1.8rem;
+        height: 70px;
+        border-radius: 1.3rem;
     }
 
     .label .row .icon {
-        border-radius: 50%;
-        font-family: sans-serif;
-        font-weight: 600;
-        color: rgb(206, 194, 180);
-        background-color: #497a6f;
-        width: 45px;
-        height: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 8px 0px;
+        display: none;
     }
 
     .label .row h4 {
-        padding-top: 18px;
+        padding-top: 13px;
         font-size: 1.2rem;
         padding-left: 8px;
     }
@@ -255,6 +234,10 @@ input:checked+label .description {
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 999px) {
+    .info-section {
+        min-height: 140vh;
+    }
+
     .info-cards {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 0;
@@ -262,7 +245,7 @@ input:checked+label .description {
     }
 
     .label {
-        width: 435px;
+        width: 670px;
         height: 65px;
         border-radius: 1.9rem;
     }
@@ -283,7 +266,7 @@ input:checked+label .description {
 
     .label .row h4 {
         padding-top: 22px;
-        font-size: 1.2rem;
+        font-size: 1.12rem;
         padding-left: 8px;
     }
 
@@ -303,7 +286,7 @@ input:checked+label .description {
     }
 
     .label {
-        width: 435px;
+        width: 845px;
         height: 65px;
         border-radius: 1.9rem;
     }
