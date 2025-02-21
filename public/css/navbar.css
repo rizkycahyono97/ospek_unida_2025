@@ -9,7 +9,7 @@ html, body {
   /* overscroll-behavior: none; Mencegah efek overscroll di mobile */
   /* -webkit-font-smoothing: antialiased;
   /* overflow: hidden; */
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
   /* overflow-x: hidden; */
   margin: 0;
   font-family: "Spectral SC", serif;
@@ -24,16 +24,22 @@ html, body {
 
 /* navbar */
 .navbar-transparent {
-  background-color: rgba(255, 255, 255, 0); /* Transparan penuh */
-  position: absolute; /* Agar berada di depan */
-  width: 100%; /* Sesuai lebar layar */
-  z-index: 1000; /* Pastikan berada di atas konten lain */
+  background-color: rgba(255, 255, 255, 0);
+  /* Transparan penuh */
+  position: absolute;
+  /* Agar berada di depan */
+  width: 100%;
+  /* Sesuai lebar layar */
+  z-index: 1000;
+  /* Pastikan berada di atas konten lain */
 }
 
 .navbar-transparent .nav-link {
-  color: black; /* Warna teks menu putih (ubah jika perlu) */
+  color: black;
+  /* Warna teks menu putih (ubah jika perlu) */
 }
 
 .navbar-transparent .navbar-brand img {
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); /* Bayangan untuk logo */
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+  /* Bayangan untuk logo */
 }
