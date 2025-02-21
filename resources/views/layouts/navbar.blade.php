@@ -11,27 +11,17 @@
   {{-- bootstrap --}}
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   {{-- Locomotive.js --}}
-  @if(Request::is('/'))
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
-  @endif
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
   {{-- Custom Css --}}
   <link rel="stylesheet" href="{{ asset('css/navbar.css') }}?v={{ time() }}">
   {{-- CSS for each page --}}
-  @if(Request::is(''))
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}?v={{ time() }}">
-  @elseif(Request::is('contact'))
-    <link rel="stylesheet" href="{{ asset('css/contact.css') }}?v={{ time() }}">
-  @elseif(Request::is('jurusan'))
-    <link rel="stylesheet" href="{{ asset('css/jurusan.css') }}?v={{ time() }}">
-  @elseif(Request::is('pembayaran'))
-    <link rel="stylesheet" href="{{ asset('css/pembayaran.css') }}?v={{ time() }}">
-  @elseif(Request::is('pusatinformasi')) 
-    <link rel="stylesheet" href="{{ asset('css/pusatinformasi.css') }}?v={{ time() }}">
-  @elseif(Request::is('timeline'))
-    <link rel="stylesheet" href="{{ asset('css/timeline.css') }}?v={{ time() }}">
-  @elseif(Request::is('faq'))
-    <link rel="stylesheet" href="{{ asset('css/faq.css') }}?v={{ time() }}">
-  @endif
+  <link rel="stylesheet" href="{{ asset('css/home.css') }}?v={{ time() }}">
+  <link rel="stylesheet" href="{{ asset('css/contact.css') }}?v={{ time() }}">
+  <link rel="stylesheet" href="{{ asset('css/jurusan.css') }}?v={{ time() }}">
+  <link rel="stylesheet" href="{{ asset('css/pembayaran.css') }}?v={{ time() }}">
+  <link rel="stylesheet" href="{{ asset('css/pusatinformasi.css') }}?v={{ time() }}">
+  <link rel="stylesheet" href="{{ asset('css/timeline.css') }}?v={{ time() }}">
+  <link rel="stylesheet" href="{{ asset('css/faq.css') }}?v={{ time() }}">
   {{-- Google Fonts --}}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,18 +81,16 @@
   @yield('content')
 
   {{-- script --}}
-  @if(Request::is(''))
-    <!-- GSAP Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
-    {{-- Locomotive.js --}}
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
-    crossorigin="anonymous"></script>
-    <script nomodule
-    src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
-    crossorigin="anonymous"></script>
-  @endif
+  <!-- GSAP Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  {{-- Locomotive.js --}}
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
+  crossorigin="anonymous"></script>
+  <script nomodule
+  src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
+  crossorigin="anonymous"></script>
   {{-- tilt.js --}}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
   <!-- Bootstrap JS -->
@@ -110,19 +98,12 @@
   {{-- Jquery--}}
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   {{-- Custom Script --}}
-  @if(Request::is(''))
-    <script src={{ asset('js/home.js') }}?v={{ time() }}></script>
-  @elseif(Request::is('contact'))
-    <script src={{ asset('js/contact.js') }}?v={{ time() }}></script>
-  @elseif(Request::is('jurusan'))
-    <script src={{ asset('js/jurusan.js') }}?v={{ time() }}></script>
-  @elseif(Request::is('pembayaran'))
-    <script src={{ asset('js/pembayaran.js') }}?v={{ time() }}></script>
-  @elseif(Request::is('pusatinformasi'))
-    <script src={{ asset('js/pusatinformasi.js') }}?v={{ time() }}></script>
-  @elseif(Request::is('faq'))
-    <script src={{ asset('js/faq.js') }}?v={{ time() }}></script>
-  @endif
+  <script src={{ asset('js/home.js') }}?v={{ time() }}></script>
+  <script src={{ asset('js/contact.js') }}?v={{ time() }}></script>
+  <script src={{ asset('js/jurusan.js') }}?v={{ time() }}></script>
+  <script src={{ asset('js/pembayaran.js') }}?v={{ time() }}></script>
+  <script src={{ asset('js/pusatinformasi.js') }}?v={{ time() }}></script>
+  <script src={{ asset('js/faq.js') }}?v={{ time() }}></script>
 </body>
 
 </html>
