@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="{{ asset('css/navbar.css') }}?v={{ time() }}">
   {{-- CSS for each page --}}
   <link rel="stylesheet" href="{{ asset('css/home.css') }}?v={{ time() }}">
+  <link rel="stylesheet" href="{{ asset('css/barang.css') }}?v={{ time() }}">
   <link rel="stylesheet" href="{{ asset('css/contact.css') }}?v={{ time() }}">
   <link rel="stylesheet" href="{{ asset('css/jurusan.css') }}?v={{ time() }}">
   <link rel="stylesheet" href="{{ asset('css/pembayaran.css') }}?v={{ time() }}">
@@ -101,6 +102,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   {{-- Custom Script --}}
   <script src={{ asset('js/home.js') }}?v={{ time() }}></script>
+  <script src={{ asset('js/barang.js') }}?v={{ time() }}></script>
   <script src={{ asset('js/contact.js') }}?v={{ time() }}></script>
   <script src={{ asset('js/jurusan.js') }}?v={{ time() }}></script>
   <script src={{ asset('js/pembayaran.js') }}?v={{ time() }}></script>

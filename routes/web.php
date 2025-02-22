@@ -12,6 +12,19 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
+// Hal lain yang perlu diketahui
+Route::get('/barang', function () {
+    return view('barang');
+})->name('barang');
+
+Route::get('/attribute', function () {
+    return view('attribute');
+})->name('attribute');
+
+Route::get('/others', function () {
+    return view('others');
+})->name('others');
+
 
 // jurusan
 Route::get('/jurusan', function () {
