@@ -64,7 +64,7 @@
     left: 50%;
     margin-left: -3px;
     z-index: -1;
-    animation: moveline 10s linear forwards;
+    animation: moveline 8s linear forwards;
     box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
@@ -95,51 +95,51 @@
 }
 
 .cont:nth-child(2) {
-    animation-delay: 0.8s;
+    animation-delay: 0.6s;
 }
 
 .cont:nth-child(3) {
-    animation-delay: 1.6s;
+    animation-delay: 1.2s;
 }
 
 .cont:nth-child(4) {
-    animation-delay: 2.4s;
+    animation-delay: 1.8s;
 }
 
 .cont:nth-child(5) {
-    animation-delay: 3.2s;
+    animation-delay: 2.4s;
 }
 
 .cont:nth-child(6) {
-    animation-delay: 4s;
+    animation-delay: 3s;
 }
 
 .cont:nth-child(7) {
-    animation-delay: 4.8s;
+    animation-delay: 3.6s;
 }
 
 .cont:nth-child(8) {
-    animation-delay: 5.6s;
+    animation-delay: 4.2s;
 }
 
 .cont:nth-child(9) {
-    animation-delay: 6.4s;
+    animation-delay: 4.8s;
 }
 
 .cont:nth-child(10) {
-    animation-delay: 7.2s;
+    animation-delay: 5.4s;
 }
 
 .cont:nth-child(11) {
-    animation-delay: 8s;
+    animation-delay: 6s;
 }
 
 .cont:nth-child(12) {
-    animation-delay: 8.8s;
+    animation-delay: 6.6s;
 }
 
 .cont:nth-child(13) {
-    animation-delay: 9.6s;
+    animation-delay: 7.2s;
 }
 
 .text-box {
