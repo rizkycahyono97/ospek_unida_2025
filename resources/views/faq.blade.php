@@ -249,5 +249,4 @@
         </section>
         {{-- end section 2 --}}
     </div>
-
 @endsection

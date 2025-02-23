@@ -118,7 +118,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Mau tau rentetan kegiatan & acara selama ospek?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <a href="{{ route('timeline') }}" class="link-entry">Cari tahu lebih lanjut</a>
                                         </div>
                                     </div>
                                 </label>
@@ -148,7 +148,8 @@
                                         </div>
                                         <div class="description">
                                             <p>Penasaran dengan para penggerak Ospek Syaaheen?</p>
-                                            <a href="#" class="link-entry">Cek Susunan Kepanitiaan</a>
+                                            <a href="#" class="link-entry">Lihat Susunan
+                                                Kepanitiaan</a>
                                         </div>
                                     </div>
                                 </label>
@@ -178,7 +179,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Mencari Pertanyaan yang sering diajukan? </p>
-                                            <a href="#" class="link-entry">Cek FAQ</a>
+                                            <a href="{{ route('faq') }}" class="link-entry">Cek FAQ</a>
                                         </div>
                                     </div>
                                 </label>
@@ -206,5 +207,4 @@
         </section>
         {{-- end section 2 --}}
     </div>
-
 @endsection

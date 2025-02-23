@@ -42,3 +42,8 @@ Route::get('/contact', function () {
 Route::get('/pusatinformasi', function () {
     return view('pusatinformasi');
 })->name('pusatinformasi');
+
+// panitia
+Route::get('/panitia', function () {
+    return view('panitia');
+})->name('panitia');
