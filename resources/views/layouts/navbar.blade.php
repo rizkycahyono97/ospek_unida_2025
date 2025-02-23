@@ -122,7 +122,6 @@
     @elseif (Request::is('faq'))
         <script src="{{ asset('js/faq.js') }}?v={{ time() }}"></script>
     @endif
-
 </body>
 
 </html>

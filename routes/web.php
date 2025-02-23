@@ -12,6 +12,19 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
+// Hal lain yang perlu diketahui
+Route::get('/barang', function () {
+    return view('barang');
+})->name('barang');
+
+Route::get('/attribute', function () {
+    return view('attribute');
+})->name('attribute');
+
+Route::get('/others', function () {
+    return view('others');
+})->name('others');
+
 
 // jurusan
 Route::get('/jurusan', function () {
@@ -47,3 +60,24 @@ Route::get('/pusatinformasi', function () {
 Route::get('/panitia', function () {
     return view('panitia');
 })->name('panitia');
+
+// ukm
+Route::get('/ukm', function () {
+    return view('ukm');
+})->name('ukm');
+
+// galeri
+Route::get('/galeri', function () {
+    return view('galeri');
+})->name('galeri');
+
+// linktree
+Route::get('/linktree', function () {
+    return view('linktree');
+})->name('linktree');
+
+// pengumuman
+Route::get('/pengumuman', function () {
+    return view('pengumuman');
+})->name('pengumuman');
+

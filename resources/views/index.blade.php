@@ -1,7 +1,6 @@
 @extends('layouts.navbar')
 
 @section('content')
-{{-- locomotive scroll --}}
 
   {{-- section 1 --}}
   <section class="home-section-1 d-flex flex-column justify-content-center align-items-center vh-100" id="home-section-1" data-scroll-container>
@@ -244,62 +243,68 @@
         {{-- card 1 --}}
         <div class="col-md-3 col-sm-6 mb-3">
           <div class="card">
-            <div class="card wallet">
-              <div class="overlay"></div>
-                <div class="circle">
-                  <div class="card-content">
-                    <img src="{{ asset('assets/home/barang-2.png') }}" alt="barang bawaan">
+            <a href="{{ route('barang') }}">
+              <div class="card wallet">
+                <div class="overlay"></div>
+                  <div class="circle">
+                    <div class="card-content">
+                      <img src="{{ asset('assets/home/barang-2.png') }}" alt="barang bawaan">
+                    </div>
                   </div>
-                </div>
-              <p>Barang</p>
-            </div>          
+                <p>Barang</p>
+              </div>          
+            </a>
           </div>
         </div>
 
         {{-- card 1 --}}
         <div class="col-md-3 col-sm-6 mb-3">
           <div class="card">
-            <div class="card wallet">
-              <div class="overlay"></div>
-                <div class="circle">
-                  <div class="card-content">
-                    <img src="{{ asset('assets/home/timeline-2.png') }}" alt="barang bawaan">
+            <a href="{{ route('timeline') }}">
+              <div class="card wallet">
+                <div class="overlay"></div>
+                  <div class="circle">
+                    <div class="card-content">
+                      <img src="{{ asset('assets/home/timeline-2.png') }}" alt="barang bawaan">
+                    </div>
                   </div>
-                </div>
-              <p>Timeline</p>
-            </div>          
+                <p>Timeline</p>
+              </div>          
+            </a>
           </div>
         </div>
 
         {{-- card 1 --}}
         <div class="col-md-3 col-sm-6 mb-3">
           <div class="card">
-            <div class="card wallet">
-              <div class="overlay"></div>
-                <div class="circle">
-                  <div class="card-content">
-                    <img src="{{ asset('assets/home/baju.png') }}" alt="baju">
+            <a href="{{ route('attribute') }}">
+              <div class="card wallet">
+                <div class="overlay"></div>
+                  <div class="circle">
+                    <div class="card-content">
+                      <img src="{{ asset('assets/home/baju.png') }}" alt="baju">
+                    </div>
                   </div>
-            
-                </div>
-              <p>Attribute</p>
-            </div>          
+                <p>Attribute</p>
+              </div>          
+            </a>
           </div>
         </div>
 
         {{-- card 1 --}}
         <div class="col-md-3 col-sm-6 mb-3">
           <div class="card">
-            <div class="card wallet">
-              <div class="overlay"></div>
-                <div class="circle">
-                  <div class="card-content">
-                    <img src="{{ asset('assets/home/lainya.png') }}" alt="lainya">
+            <a href="{{ route('others') }}">
+              <div class="card wallet">
+                <div class="overlay"></div>
+                  <div class="circle">
+                    <div class="card-content">
+                      <img src="{{ asset('assets/home/lainya.png') }}" alt="lainya">
+                    </div>
                   </div>
-            
-                </div>
-              <p>Lainya</p>
-            </div>          
+                <p>Lainya</p>
+              </div>          
+            </a>
           </div>
         </div>
 
