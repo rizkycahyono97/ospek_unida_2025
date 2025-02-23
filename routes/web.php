@@ -60,3 +60,23 @@ Route::get('/pusatinformasi', function () {
 Route::get('/panitia', function () {
     return view('panitia');
 })->name('panitia');
+
+// ukm
+Route::get('/ukm', function () {
+    return view('ukm');
+})->name('ukm');
+
+// galeri
+Route::get('/galeri', function () {
+    return view('galeri');
+})->name('galeri');
+
+// linktree
+Route::get('/linktree', function () {
+    return view('linktree');
+})->name('linktree');
+
+// pengumuman
+Route::get('/pengumuman', function () {
+    return view('pengumuman');
+})->name('pengumuman');
