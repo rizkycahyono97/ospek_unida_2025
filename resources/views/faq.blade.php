@@ -24,8 +24,10 @@
                                             <h4>Apa itu OSPEK dan mengapa wajib diikuti?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Mau tau lebih lanjut tentang UNIDA?</p>
-                                            <a href="#" class="link-entry">Pergi Ke Laman WEB</a>
+                                            <p>OSPEK (Orientasi Studi dan Pengenalan Kampus) adalah kegiatan pengenalan
+                                                lingkungan kampus bagi mahasiswa baru. OSPEK wajib diikuti karena membantu
+                                                mahasiswa beradaptasi dengan sistem perkuliahan, mengenal fasilitas, serta
+                                                memahami budaya dan etika akademik di kampus.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -39,8 +41,9 @@
                                             <h4>Kapan dan di mana OSPEK akan dilaksanakan?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Mau masuk UNIDA tapi bingung harus bawa apa?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
+                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
+                                                repudiandae quia earum quos fugiat voluptas.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -54,8 +57,9 @@
                                             <h4>Bagaimana cara mendaftar dan mendapatkan jadwal OSPEK?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Bingung baju kesehariannya gimana?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
+                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
+                                                repudiandae quia earum quos fugiat voluptas.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -69,8 +73,9 @@
                                             <h4>Apakah OSPEK dilakukan secara online atau offline?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Mencari informasi lengkap terkait Pembayaran?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
+                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
+                                                repudiandae quia earum quos fugiat voluptas.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -84,8 +89,9 @@
                                             <h4>Apa saja yang perlu dipersiapkan sebelum OSPEK?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Mau aktif tapi bingung ikut apa pas di kampus?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
+                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
+                                                repudiandae quia earum quos fugiat voluptas.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -99,8 +105,9 @@
                                             <h4>Apakah kehadiran dalam OSPEK wajib?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Mau aktif tapi bingung ikut apa pas di kampus?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
+                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
+                                                repudiandae quia earum quos fugiat voluptas.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -115,8 +122,9 @@
                                             <h4>Apa konsekuensi jika tidak mengikuti OSPEK?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Mau tau rentetan kegiatan & acara selama ospek?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
+                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
+                                                repudiandae quia earum quos fugiat voluptas.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -130,8 +138,9 @@
                                             <h4>Apakah ada dispensasi bagi yang tidak bisa hadir?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Penasaran dengan kegiatan seputar kampus?</p>
-                                            <a href="#" class="link-entry">Cek Galeri</a>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
+                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
+                                                repudiandae quia earum quos fugiat voluptas.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -145,8 +154,9 @@
                                             <h4>Bagaimana jika ada jadwal bentrok dengan kegiatan lain?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Penasaran dengan para penggerak Ospek Syaaheen?</p>
-                                            <a href="#" class="link-entry">Cek Susunan Kepanitiaan</a>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
+                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
+                                                repudiandae quia earum quos fugiat voluptas.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -160,8 +170,9 @@
                                             <h4>Apakah OSPEK memiliki dress code tertentu?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Cari tautan-tautan penting terkait ospek tahun ini?</p>
-                                            <a href="#" class="link-entry">Cek Link Tree</a>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
+                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
+                                                repudiandae quia earum quos fugiat voluptas.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -175,8 +186,9 @@
                                             <h4>Apa saja kegiatan yang akan dilakukan selama OSPEK?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Mencari Pertanyaan yang sering diajukan? </p>
-                                            <a href="#" class="link-entry">Cek FAQ</a>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
+                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
+                                                repudiandae quia earum quos fugiat voluptas.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -190,8 +202,9 @@
                                             <h4>Apakah panitia menyediakan konsumsi selama OSPEK?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Mencari Informasi lain terkait kegiatan ospek?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
+                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
+                                                repudiandae quia earum quos fugiat voluptas.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -205,8 +218,9 @@
                                             <h4>Apakah ada tugas yang harus dikerjakan selama OSPEK?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Mencari Informasi lain terkait kegiatan ospek?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
+                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
+                                                repudiandae quia earum quos fugiat voluptas.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -220,8 +234,9 @@
                                             <h4>Apakah ada media sosial resmi OSPEK yang bisa diikuti?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Mencari Informasi lain terkait kegiatan ospek?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
+                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
+                                                repudiandae quia earum quos fugiat voluptas.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -235,8 +250,9 @@
                                             <h4>Bagaimana cara menghubungi panitia ?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Mencari Informasi lain terkait kegiatan ospek?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
+                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
+                                                repudiandae quia earum quos fugiat voluptas.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -249,5 +265,4 @@
         </section>
         {{-- end section 2 --}}
     </div>
-
 @endsection

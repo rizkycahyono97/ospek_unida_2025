@@ -1,0 +1,112 @@
+.panitia-section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    z-index: 1;
+    background-color: #ffffff;
+    background-image: url(../assets/jurusan/jurusan-bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Spectral SC", serif;
+}
+
+.panitia-section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    background: linear-gradient(to top, rgba(231, 229, 229, 0), rgb(255, 253, 253));
+}
+
+.panitia-section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(19, 29, 20, 1), rgba(21, 34, 22, 0));
+}
+
+.panitia-banner {
+    margin: auto;
+    min-height: inherit;
+}
+
+.panitia-header {
+    margin-top: 7.5rem;
+    text-align: center;
+}
+
+.tabel-rasio {
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(17px);
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.kontak-form {
+    width: 65%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(17px);
+    border-radius: 23px;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+}
+
+.tabel-rasio tr:nth-child(1) {
+    text-align: center;
+}
+
+
+.tabel-rasio tr td,
+.tabel-rasio tr th {
+    border: 1px solid black;
+    padding: 2px 5px;
+
+}
+
+/* regular smartphone */
+@media (max-width: 480px) {
+    .panitia-section::before {
+        height: 5%;
+    }
+
+    .panitia-section::after {
+        height: 5%;
+    }
+
+    .panitia-header {
+        margin-top: 3.5rem;
+        text-align: center;
+    }
+}
+
+/* Large Phone (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .panitia-section::before {
+        height: 5%;
+    }
+
+    .panitia-section::after {
+        height: 5%;
+    }
+
+    .panitia-header {
+        margin-top: 3.5rem;
+        text-align: center;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1025px) {}

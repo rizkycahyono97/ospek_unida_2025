@@ -80,3 +80,4 @@ Route::get('/linktree', function () {
 Route::get('/pengumuman', function () {
     return view('pengumuman');
 })->name('pengumuman');
+
