@@ -294,7 +294,7 @@
         {{-- card 1 --}}
         <div class="col-md-3 col-sm-6 mb-3">
           <div class="card">
-            <a href="{{ route('others') }}">
+            <a href="{{ route('pusatinformasi') }}">
               <div class="card wallet">
                 <div class="overlay"></div>
                   <div class="circle">
