@@ -836,52 +836,182 @@
                             <td>KKK</td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td>160</td>
                             <td rowspan="6">Penanggung Jawab Fakultas Tarbiyah</td>
                             <td>Muhammad Thabathaba'i</td>
                             <td>MNJ</td>
                         </tr>
                         <tr>
-                            <td>7</td>
+                            <td>161</td>
+                            <td>Muhamad Firdaus</td>
+                            <td>PAI</td>
+                        </tr>
+                        <tr>
+                            <td>162</td>
+                            <td>Yoza Wirayuda</td>
+                            <td>PBA</td>
+                        </tr>
+                        <tr>
+                            <td>163</td>
+                            <td>Agus Faisal</td>
+                            <td>PBA</td>
+                        </tr>
+                        <tr>
+                            <td>164</td>
+                            <td>Heldy Hasfid Hariri</td>
+                            <td>TBI</td>
+                        </tr>
+                        <tr>
+                            <td>165</td>
+                            <td>Dzil Izzat Kurniawan</td>
+                            <td>TBI</td>
+                        </tr>
+                        <tr>
+                            <td>166</td>
                             <td rowspan="6">Penanggung Jawab Fakultas Ushuluddin</td>
                             <td>Muhammad Dhiyaul Kasyfi</td>
                             <td>MNJ</td>
                         </tr>
                         <tr>
-                            <td>7</td>
+                            <td>167</td>
+                            <td>Muhammad Gaffa akram</td>
+                            <td>IQT</td>
+                        </tr>
+                        <tr>
+                            <td>168</td>
+                            <td>Zahin Zahid Faza</td>
+                            <td>AFI</td>
+                        </tr>
+                        <tr>
+                            <td>169</td>
+                            <td>Afkaar Gilang Awantoro</td>
+                            <td>AFI</td>
+                        </tr>
+                        <tr>
+                            <td>170</td>
+                            <td>Khalid Brahma</td>
+                            <td>SAA</td>
+                        </tr>
+                        <tr>
+                            <td>171</td>
+                            <td>Muhammad Khalaf Fadhlurrahman</td>
+                            <td>SAA</td>
+                        </tr>
+                        <tr>
+                            <td>172</td>
                             <td rowspan="4">Penanggung Jawab Fakultas Syariah</td>
                             <td>Muhammad Ihsan Maulana</td>
                             <td>MNJ</td>
                         </tr>
                         <tr>
-                            <td>7</td>
+                            <td>173</td>
+                            <td>Fata Nashrul Hadi</td>
+                            <td>HES</td>
+                        </tr>
+                        <tr>
+                            <td>174</td>
+                            <td>Muhammad Akbar Hilman</td>
+                            <td>PM</td>
+                        </tr>
+                        <tr>
+                            <td>175</td>
+                            <td>Anjas Putra Asnur</td>
+                            <td>PM</td>
+                        </tr>
+                        <tr>
+                            <td>176</td>
                             <td rowspan="4">Penanggung Jawab Fakultas Ekonomi Manajamen</td>
                             <td>Raihan Fahrur Haq</td>
                             <td>MNJ</td>
                         </tr>
                         <tr>
-                            <td>7</td>
+                            <td>177</td>
+                            <td>Muhammad Rizki Ar-Rasyid</td>
+                            <td>MB</td>
+                        </tr>
+                        <tr>
+                            <td>178</td>
+                            <td>Ahmad Adn Suryadana</td>
+                            <td>EI</td>
+                        </tr>
+                        <tr>
+                            <td>179</td>
+                            <td>Dimitri ulung</td>
+                            <td>EI</td>
+                        </tr>
+                        <tr>
+                            <td>180</td>
                             <td rowspan="4">Penanggung Jawab Fakultas Ekonomi Humaniora</td>
-                            <td>Muhammad RAzaq Puaries</td>
+                            <td>Muhammad Razaq Puaries</td>
                             <td>MNJ</td>
                         </tr>
                         <tr>
-                            <td>7</td>
+                            <td>181</td>
+                            <td>Raja Muda Mubaraq</td>
+                            <td>HI</td>
+                        </tr>
+                        <tr>
+                            <td>182</td>
+                            <td>Yahya Haqqul Mubin</td>
+                            <td>ILKOM</td>
+                        </tr>
+                        <tr>
+                            <td>183</td>
+                            <td>Ghifari Arryaman</td>
+                            <td>ILKOM</td>
+                        </tr>
+                        <tr>
+                            <td>184</td>
                             <td rowspan="6">Penanggung Jawab Fakultas Sains & Teknologi</td>
                             <td>Hasbi Abdullah</td>
                             <td>MNJ</td>
                         </tr>
                         <tr>
-                            <td>7</td>
+                            <td>185</td>
+                            <td>Farel ghozy</td>
+                            <td>TI</td>
+                        </tr>
+                        <tr>
+                            <td>186</td>
+                            <td>Ilham Wahyudi</td>
+                            <td>TIP</td>
+                        </tr>
+                        <tr>
+                            <td>187</td>
+                            <td>Amirul Al Aziz</td>
+                            <td>TIP</td>
+                        </tr>
+                        <tr>
+                            <td>188</td>
+                            <td>MUHAMMAD AHDA SABILA</td>
+                            <td>AGRO</td>
+                        </tr>
+                        <tr>
+                            <td>189</td>
+                            <td>Akhmad Nawfal Azmi</td>
+                            <td>AGRO</td>
+                        </tr>
+                        <tr>
+                            <td>190</td>
                             <td rowspan="2">Penanggung Jawab Fakultas Ilmu Kesehatan</td>
                             <td>Ahmad Faiq Noerjantoro</td>
                             <td>MNJ</td>
                         </tr>
                         <tr>
-                            <td>7</td>
+                            <td>191</td>
+                            <td>Fadil Muta'asimbillah</td>
+                            <td>KKK</td>
+                        </tr>
+                        <tr>
+                            <td>192</td>
                             <td rowspan="2">Penanggung Jawab Fakultas Kedokteran</td>
                             <td>Achmad Kahlil Gibran</td>
                             <td>MNJ</td>
+                        </tr>
+                        <tr>
+                            <td>193</td>
+                            <td>Robby Dzikru Azfar Pado</td>
+                            <td>Kedokteran</td>
                         </tr>
                     </table>
                 </div>

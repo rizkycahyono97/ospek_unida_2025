@@ -20,6 +20,8 @@
     {{-- CSS for each page --}}
     @if (Request::is('/'))
         <link rel="stylesheet" href="{{ asset('css/home.css') }}?v={{ time() }}">
+    @elseif (Request::is('barang'))
+        <link rel="stylesheet" href="{{ asset('css/barang.css') }}?v={{ time() }}">
     @elseif (Request::is('contact'))
         <link rel="stylesheet" href="{{ asset('css/contact.css') }}?v={{ time() }}">
     @elseif (Request::is('jurusan'))
@@ -118,6 +120,8 @@
     {{-- Custom Script --}}
     @if (Request::is('/'))
         <script src={{ asset(path: 'js/home.js') }}?v={{ time() }}></script>
+    @elseif (Request::is('barang'))
+        <script src="{{ asset('js/barang.js') }}?v={{ time() }}"></script>
     @elseif (Request::is('contact'))
         <script src="{{ asset('js/contact.js') }}?v={{ time() }}"></script>
     @elseif (Request::is('jurusan'))
