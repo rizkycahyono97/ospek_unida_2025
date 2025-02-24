@@ -148,7 +148,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Penasaran dengan para penggerak Ospek Syaaheen?</p>
-                                            <a href="#" class="link-entry">Lihat Susunan
+                                            <a href="{{ route('panitia') }}" class="link-entry">Lihat Susunan
                                                 Kepanitiaan</a>
                                         </div>
                                     </div>

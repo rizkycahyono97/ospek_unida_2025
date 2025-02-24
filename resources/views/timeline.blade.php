@@ -21,7 +21,7 @@
                             </h5>
                             <small>Selasa | <span> 11</span> Maret<span> 2025 / 11</span> Ramadhan
                                 <span>1446<span></small>
-                            <span class="left-cont-arrow"></span>
+
                         </div>
                     </div>
                     <div class="cont right-cont">
@@ -33,7 +33,7 @@
                                 Selasa | <span> 28</span> Maret<span> 2025 / 28</span> Ramadhan
                                 <span>1446<span></small>
                         </div>
-                        <span class="right-cont-arrow"></span>
+
                     </div>
                     <div class="cont left-cont">
                         <div class="icon">3</div>
@@ -42,7 +42,7 @@
                             </h5>
                             <small>Jum'at | <span> 4</span> April<span> 2025 / 5</span> Syawwal
                                 <span>1446<span></small>
-                            <span class="left-cont-arrow"></span>
+
                         </div>
                     </div>
                     <div class="cont right-cont">
@@ -52,7 +52,7 @@
                             <small>Ahad | <span> 6</span> April<span> 2025 / 7</span> Syawwal <span>1446</span>
                             </small>
                         </div>
-                        <span class="right-cont-arrow"></span>
+
                     </div>
                     <div class="cont left-cont">
                         <div class="icon">5</div>
@@ -61,7 +61,7 @@
                             </h5>
                             <small>Kamis | <span> 10</span> April<span> 2025 / 11</span> Syawwal
                                 <span>1446<span></small>
-                            <span class="left-cont-arrow"></span>
+
                         </div>
                     </div>
                     <div class="cont right-cont">
@@ -71,7 +71,7 @@
                             <small>Jum'at | <span> 11</span> April<span> 2025 / 12</span> Syawwal <span>1446</span>
                             </small>
                         </div>
-                        <span class="right-cont-arrow"></span>
+
                     </div>
                     <div class="cont left-cont">
                         <div class="icon">7</div>
@@ -80,7 +80,7 @@
                             </h5>
                             <small>Sabtu | <span> 12</span> April<span> 2025 / 13</span> Syawwal
                                 <span>1446<span></small>
-                            <span class="left-cont-arrow"></span>
+
                         </div>
                     </div>
                     <div class="cont right-cont">
@@ -90,7 +90,7 @@
                             <small>Ahad | <span> 13</span> April<span> 2025 / 14</span> Syawwal <span>1446</span>
                             </small>
                         </div>
-                        <span class="right-cont-arrow"></span>
+
                     </div>
                     <div class="cont left-cont">
                         <div class="icon">9</div>
@@ -98,7 +98,7 @@
                             <h5>Perfotoan Personal Mahasiswa Baru</h5>
                             <small>Senin | <span> 14</span> April<span> 2025 / 15</span> Syawwal
                                 <span>1446<span></small>
-                            <span class="left-cont-arrow"></span>
+
                         </div>
                     </div>
                     <div class="cont right-cont">
@@ -108,7 +108,7 @@
                             <small>Selasa | <span> 15</span> April<span> 2025 / 16</span> Syawwal <span>1446</span>
                             </small>
                         </div>
-                        <span class="right-cont-arrow"></span>
+
                     </div>
                     <div class="cont left-cont">
                         <div class="icon">11</div>
@@ -119,7 +119,7 @@
                                 sampai <br>
                                 Sabtu | <span> 19</span> April<span> 2025 / 20</span> Syawwal
                                 <span>1446<span></small>
-                            <span class="left-cont-arrow"></span>
+
                         </div>
                     </div>
                     <div class="cont right-cont">
@@ -129,7 +129,7 @@
                             <small>Jum'at | <span> 18</span> April<span> 2025 / 19</span> Syawwal <span>1446</span>
                             </small>
                         </div>
-                        <span class="right-cont-arrow"></span>
+
                     </div>
                     <div class="cont left-cont">
                         <div class="icon">13</div>
@@ -138,7 +138,7 @@
                             </h5>
                             <small>Ahad | <span> 20</span> April<span> 2025 / 21</span> Syawwal
                                 <span>1446<span></small>
-                            <span class="left-cont-arrow"></span>
+
                         </div>
                     </div>
                 </div>

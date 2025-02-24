@@ -11,7 +11,10 @@
     {{-- bootstrap --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     {{-- Locomotive.js --}}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    @if (Request::is('/'))
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    @endif
     {{-- Custom Css --}}
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}?v={{ time() }}">
     {{-- CSS for each page --}}
@@ -29,6 +32,8 @@
         <link rel="stylesheet" href="{{ asset('css/timeline.css') }}?v={{ time() }}">
     @elseif (Request::is('faq'))
         <link rel="stylesheet" href="{{ asset('css/faq.css') }}?v={{ time() }}">
+    @elseif (Request::is('panitia'))
+        <link rel="stylesheet" href="{{ asset('css/panitia.css') }}?v={{ time() }}">
     @endif
 
     {{-- Google Fonts --}}
@@ -93,17 +98,19 @@
 
     {{-- script --}}
     <!-- GSAP Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
-    {{-- Locomotive.js --}}
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
-        crossorigin="anonymous"></script>
-    <script nomodule
-        src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
-        crossorigin="anonymous"></script>
-    {{-- tilt.js --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    @if (Request::is('/'))
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+        {{-- Locomotive.js --}}
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+        <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
+            crossorigin="anonymous"></script>
+        <script nomodule
+            src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
+            crossorigin="anonymous"></script>
+        {{-- tilt.js --}}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    @endif
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     {{-- Jquery --}}
