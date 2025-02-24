@@ -3,6 +3,18 @@
 /* ------------ */
 .barang-section-1 {
     /* margin-top: 100px; */
+    max-width: 100%;
+    /* position: relative;
+    display: flex; */
+    z-index: 1;
+    min-height: 180vh;
+    background-color: #ffffff;
+    background-image: url(../assets/pusatinformasi/info-bg.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Spectral SC", serif;
+    overflow-x: hidden;
     padding-top: 100px;
 }
 
@@ -33,11 +45,26 @@
 .barang-card {
     overflow: hidden;
     position: relative;
+    /* width: 1025px;
+    height: 75px; */
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 10px 10px;
+    /* display: flex; */
+    align-items: flex-start;
+    padding: 0rem 0.5rem;
+    box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease;
 }
 
-.barang-card {
-    transition: box-shadow 0.3s ease;
-}
+/* .card-img-top {
+    background-color: transparent;
+} */
 
 .barang-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -45,6 +72,8 @@
 
 .barang-card img {
     transition: transform 0.3s ease;
+    /* background-color: transparent !important; */
+    mix-blend-mode: darken;
 }
 
 .barang-card img:hover {
