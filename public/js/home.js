@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const textKanan = document.getElementById("text-kanan");
   const waveSvg = document.getElementById("intro");
   const waveSvgDua = document.getElementById("wave-2");
+  var navbar = document.querySelector('.navbar');
 
   // responsive
   const breakpoints = {
@@ -173,35 +174,36 @@ document.addEventListener("DOMContentLoaded", () => {
   // --------------
   // end section 1
   // --------------
+
   
   // --------------
   // section 2
   // --------------
   gsap.registerPlugin(ScrollTrigger);
 
-  // Efek parallax untuk section 1 tenggelam saat section 2 muncul
-  gsap.to(".home-section-1", {
-    yPercent: 100, 
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".home-section-2", // Mulai saat section 2 muncul
-      start: "top bottom",        
-      end: "top top",             
-      scrub: true,
-    },
-  });
+  // // Efek parallax untuk section 1 tenggelam saat section 2 muncul
+  // gsap.to(".home-section-1", {
+  //   yPercent: 100, 
+  //   ease: "none",
+  //   scrollTrigger: {
+  //     trigger: ".home-section-2", // Mulai saat section 2 muncul
+  //     start: "top bottom",        
+  //     end: "top top",             
+  //     scrub: true,
+  //   },
+  // });
 
-  // animasi text h1
-  gsap.to(".text-animation", {
-    y: -100, // Animasi naik ke atas
-    ease: "none",
-    scrollTrigger: {
-        trigger: ".home-section-2",
-        start: "top center", // Mulai animasi ketika bagian atas .home-section-2 masuk ke tengah layar
-        end: "bottom top", // Selesai animasi ketika bagian bawah .home-section-2 keluar dari layar atas
-        scrub: 1, // Animasi mengikuti scroll
-    }
-  });
+  // // animasi text h1
+  // gsap.to(".text-animation", {
+  //   y: -100, // Animasi naik ke atas
+  //   ease: "none",
+  //   scrollTrigger: {
+  //       trigger: ".home-section-2",
+  //       start: "top center", // Mulai animasi ketika bagian atas .home-section-2 masuk ke tengah layar
+  //       end: "bottom top", // Selesai animasi ketika bagian bawah .home-section-2 keluar dari layar atas
+  //       scrub: 1, // Animasi mengikuti scroll
+  //   }
+  // });
   // --------------
   // end section 2
   // --------------
@@ -270,28 +272,28 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // scroll parralax effect
-window.addEventListener("scroll", function () {
-  let section2 = document.querySelector(".home-section-2");
-  let section3 = document.querySelector(".home-section-3");
+// window.addEventListener("scroll", function () {
+//   let section2 = document.querySelector(".home-section-2");
+//   let section3 = document.querySelector(".home-section-3");
 
-  let section3Top = section3.offsetTop;
-  let windowHeight = window.innerHeight;
-  let stopPosition = windowHeight * 0.8; // 80vh dari atas
+//   let section3Top = section3.offsetTop;
+//   let windowHeight = window.innerHeight;
+//   let stopPosition = windowHeight * 0.8; // 80vh dari atas
 
-  if (window.scrollY >= section3Top - stopPosition) {
-    section2.style.position = "fixed";
-    section2.style.top = "0";
-    section2.style.width = "100%";
-    section2.style.zIndex = "2";
+//   if (window.scrollY >= section3Top - stopPosition) {
+//     section2.style.position = "fixed";
+//     section2.style.top = "0";
+//     section2.style.width = "100%";
+//     section2.style.zIndex = "2";
 
-    // Beri ruang agar section 3 muncul perlahan, bukan langsung naik
-    section3.style.marginTop = `${section2.offsetHeight}px`;
-  } else {
-    section2.style.position = "relative";
-    section3.style.marginTop = "0";
-  }
+//     // Beri ruang agar section 3 muncul perlahan, bukan langsung naik
+//     section3.style.marginTop = `${section2.offsetHeight}px`;
+//   } else {
+//     section2.style.position = "relative";
+//     section3.style.marginTop = "0";
+//   }
 
-});
+// });
 
 // wave svg
 function animateWave(waveId, waveHeight, waveDelta, speed) {

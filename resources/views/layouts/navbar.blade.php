@@ -10,6 +10,8 @@
     <link rel="icon" href="{{ asset('assets/navbar/icon-logo.png') }}">
     {{-- bootstrap --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    {{-- aos --}}
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     {{-- Locomotive.js --}}
     @if (Request::is('/'))
         <link rel="stylesheet"
@@ -54,11 +56,6 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbar-transparent">
         <div class="container">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="{{ asset('assets/navbar/icon-logo.png') }}" alt="Logo"
-                    style="width: 24px; height: auto;">
-            </a>
 
             <!-- Button Toggle -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -67,31 +64,33 @@
             </button>
 
             <!-- Menu -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-center w-100 rounded-pill text-light gap-5 fs-6 ">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('index') }}">Home</a>
+                        <a class="nav-link text-light" href="{{ route('jurusan') }}">Jurusan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('jurusan') }}">Jurusan</a>
+                        <a class="nav-link text-light" href="{{ route('timeline') }}">Timeline</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('timeline') }}">Timeline</a>
+                        <a class="nav-link text-light" href="{{ route('pembayaran') }}">Pembayaran DU</a>
+                    </li>
+                    <!-- Logo -->
+                    <a class="navbar-brand mx-3" href="{{ route('index') }}">
+                        <img src="{{ asset('assets/navbar/icon-logo.png') }}" alt="Logo" style="width: 24px; height: auto;">
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="{{ route('faq') }}">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('pembayaran') }}">Pembayaran DU</a>
+                        <a class="nav-link text-light" href="{{ route('contact') }}">Kontak Kami</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('faq') }}">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('contact') }}">Kontak Kami</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('pusatinformasi') }}">Pusat Informasi</a>
+                        <a class="nav-link text-light" href="{{ route('pusatinformasi') }}">Pusat Informasi</a>
                     </li>
                 </ul>
             </div>
+            
         </div>
     </nav>
 
@@ -115,6 +114,11 @@
     @endif
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    {{-- aos --}}
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     {{-- Jquery --}}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     {{-- Custom Script --}}
@@ -133,6 +137,7 @@
     @elseif (Request::is('faq'))
         <script src="{{ asset('js/faq.js') }}?v={{ time() }}"></script>
     @endif
+    <script src="{{ asset('js/navbar.js') }}"></script>
 </body>
 
 </html>
