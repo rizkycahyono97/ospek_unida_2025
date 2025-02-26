@@ -10,6 +10,7 @@
     <link rel="icon" href="{{ asset('assets/navbar/icon-logo.png') }}">
     {{-- bootstrap --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     {{-- Locomotive.js --}}
     @if (Request::is('/'))
         <link rel="stylesheet"
@@ -34,6 +35,8 @@
         <link rel="stylesheet" href="{{ asset('css/timeline.css') }}?v={{ time() }}">
     @elseif (Request::is('faq'))
         <link rel="stylesheet" href="{{ asset('css/faq.css') }}?v={{ time() }}">
+    @elseif (Request::is('ukm'))
+        <link rel="stylesheet" href="{{ asset('css/ukm.css') }}?v={{ time() }}">
     @elseif (Request::is('panitia'))
         <link rel="stylesheet" href="{{ asset('css/panitia.css') }}?v={{ time() }}">
     @endif
@@ -95,8 +98,60 @@
         </div>
     </nav>
 
-    <!-- Tempat untuk Konten -->
+    {{-- <!-- Tempat untuk Konten --> --}}
     @yield('content')
+
+    {{-- footer --}}
+    <footer>
+        <div class="footer-section">
+            <div class="footer-logo">
+                <img src="{{ asset('assets/navbar/white-logo.png') }}" alt="">
+            </div>
+            <div class="footer-index">
+                <div class="footer-navbar">
+                    <a class="nav-link" href="{{ route('index') }}">Home</a>
+                    <a class="nav-link" href="{{ route('jurusan') }}">Jurusan</a>
+                    <a class="nav-link" href="{{ route('timeline') }}">Timeline</a>
+                    <a class="nav-link" href="{{ route('pembayaran') }}">Pembayaran DU</a>
+                    <a class="nav-link" href="{{ route('faq') }}">FAQ</a>
+                    <a class="nav-link" href="{{ route('contact') }}">Kontak Kami</a>
+                    <a class="nav-link" href="{{ route('pusatinformasi') }}">Pusat Informasi</a>
+                </div>
+                <div class="footer-path">
+                    <div class="footer-contact">
+                        <p>Jl. Raya Siman, Dusun I, Demangan, Kec. Siman, Kabupaten Ponorogo, Jawa Timur
+                            <span class="number">63471</span>
+                        </p>
+                        <p>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pmb@unida.gontor.ac.id&su=Pendaftaran Mahasiswa Baru&body=Halo PMB,%0A%0ASaya ingin bertanya tentang pendaftaran.%0A%0ATerima kasih."
+                                target="_blank" rel="noopener noreferrer">
+                                Kirim Email ke PMB
+                            </a>
+                            <span class="email-pmb"> [ pmb@unida.gontor.ac.id ]</span>
+                        </p>
+                        <p>
+                            <a href="https://wa.me/6282139703726" target="_blank" rel="noopener noreferrer">
+                                Chat via WhatsApp
+                            </a>
+                            <span class="number"> [ +62 821 3970 3726 ]</span>
+                        </p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/ospek.2025/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/people/Universitas-Darussalam-UNIDA-Gontor/100068099603761/"
+                            target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@ospekunida2025" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/school/universitas-darussalam-gontor/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://unida.gontor.ac.id/" target="_blank"><img
+                                src="{{ asset('assets/navbar/white-unida.png') }}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     {{-- script --}}
     <!-- GSAP Script -->
@@ -122,6 +177,10 @@
         <script src={{ asset(path: 'js/home.js') }}?v={{ time() }}></script>
     @elseif (Request::is('barang'))
         <script src="{{ asset('js/barang.js') }}?v={{ time() }}"></script>
+    @elseif (Request::is('ukm'))
+        <script src="{{ asset('js/ukm.js') }}?v={{ time() }}"></script>
+    @elseif (Request::is('panitia'))
+        <script src="{{ asset('js/panitia.js') }}?v={{ time() }}"></script>
     @elseif (Request::is('contact'))
         <script src="{{ asset('js/contact.js') }}?v={{ time() }}"></script>
     @elseif (Request::is('jurusan'))

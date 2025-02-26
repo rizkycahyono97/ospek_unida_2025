@@ -1,0 +1,89 @@
+/* ------------ */
+/* section 1 */
+/* ------------ */
+.barang-section-1 {
+    /* margin-top: 100px; */
+    max-width: 100%;
+    /* position: relative;
+    display: flex; */
+    z-index: 1;
+    min-height: 180vh;
+    background-color: #ffffff;
+    background-image: url(../assets/pusatinformasi/info-bg.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Spectral SC", serif;
+    overflow-x: hidden;
+    padding-top: 100px;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.btn-transparent.active {
+    color: #317F80;
+}
+
+/* Garis bawah untuk tombol yang aktif */
+.btn-transparent.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #317F80;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.barang-card {
+    overflow: hidden;
+    position: relative;
+    /* width: 1025px;
+    height: 75px; */
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 10px 10px;
+    /* display: flex; */
+    align-items: flex-start;
+    padding: 0rem 0.5rem;
+    box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+/* .card-img-top {
+    background-color: transparent;
+} */
+
+.barang-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.barang-card img {
+    transition: transform 0.3s ease;
+    /* background-color: transparent !important; */
+    mix-blend-mode: darken;
+}
+
+.barang-card img:hover {
+    transform: scale(1.05);
+}
+
+/* .barang-card .card-body {
+    background-color: #4DA1A9;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+} */

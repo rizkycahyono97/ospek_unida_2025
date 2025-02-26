@@ -13,16 +13,49 @@
                     <div class="panitia-header">
                         <h1>Struktur Panitia Ospek Syaaheen</h1>
                     </div>
-                    <table class="tabel-rasio">
+
+                    {{-- pilihan --}}
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-transparent active" onclick="showTable('mahasiswa')"
+                            id="btn-mahasiswa">Kampus Siman</button>
+                        <button type="button" class="btn btn-transparent" onclick="showTable('mahasiswi')"
+                            id="btn-mahasiswi">Kampus Mantingan</button>
+                    </div>
+                    {{-- tabel --}}
+                    <table id="tabel-mahasiswa">
                         <tr>
-                            <th>No</th>
                             <th>Bagian</th>
                             <th>Nama</th>
-                            <th>Program Studi</th>
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td rowspan="3">Ketua</td>
+                            <td rowspan="5" class="sections">Steering Committee</td>
+                            <td>Prof. Dr. KH. Hamid Fahmy Zarkasyi, M.A.Ed., M.Phil. </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Assoc. Prof. Dr. Abdul Hafidz Zaid, M.A. </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Assoc. Prof. Dr. Setiawan bin Lahuri, M.A. </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Assoc. Prof. Dr. Khoirul Umam, M.Ec. Royyan </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Royyan Ramdhani Djayusman, Ph.D. </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td rowspan="3" class="sections">Ketua</td>
                             <td>Mochamad Renov Dwi Adityas Putra Wahid</td>
                             <td>KKK</td>
                         </tr>
@@ -38,7 +71,7 @@
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td rowspan="2">Koordinator Umum</td>
+                            <td rowspan="2" class="sections">Koordinator Umum</td>
                             <td>Husni Mubarak</td>
                             <td>PAI</td>
                         </tr>
@@ -49,7 +82,7 @@
                         </tr>
                         <tr>
                             <td>6</td>
-                            <td rowspan="7">Sekertaris</td>
+                            <td rowspan="7" class="sections">Sekertaris</td>
                             <td>Satriawan</td>
                             <td>MNJ</td>
                         </tr>
@@ -85,7 +118,7 @@
                         </tr>
                         <tr>
                             <td>13</td>
-                            <td rowspan="5">Bendahara</td>
+                            <td rowspan="5" class="sections">Bendahara</td>
                             <td>Muhammad Nabil Hanif</td>
                             <td>EI</td>
                         </tr>
@@ -111,9 +144,9 @@
                         </tr>
                         <tr>
                             <td>18</td>
-                            <td rowspan="18">Keamanan & Ketertiban</td>
+                            <td rowspan="18" class="sections">Keamanan & Ketertiban</td>
                             <td>Muhammad RIfki Hidayat</td>
-                            <td>MNJ</td>
+                            <td>KKK</td>
                         </tr>
                         <tr>
                             <td>19</td>
@@ -202,7 +235,7 @@
                         </tr>
                         <tr>
                             <td>36</td>
-                            <td rowspan="5">Fotografi</td>
+                            <td rowspan="5" class="sections">Fotografi</td>
                             <td>Naufal Fitrah</td>
                             <td>MNJ</td>
                         </tr>
@@ -228,9 +261,9 @@
                         </tr>
                         <tr>
                             <td>41</td>
-                            <td rowspan="5">Videografi</td>
+                            <td rowspan="5" class="sections">Videografi</td>
                             <td>Muhammad Musa Hidayatullah</td>
-                            <td>MNJ</td>
+                            <td>ILKOM</td>
                         </tr>
                         <tr>
                             <td>42</td>
@@ -254,9 +287,9 @@
                         </tr>
                         <tr>
                             <td>46</td>
-                            <td rowspan="3">Publikasi</td>
+                            <td rowspan="3" class="sections">Publikasi</td>
                             <td>Khalid Brahma</td>
-                            <td>MNJ</td>
+                            <td>SAA</td>
                         </tr>
                         <tr>
                             <td>47</td>
@@ -270,9 +303,9 @@
                         </tr>
                         <tr>
                             <td>49</td>
-                            <td rowspan="2">Publikasi Web</td>
+                            <td rowspan="2" class="sections">Publikasi Web</td>
                             <td>Iqbal Maulana</td>
-                            <td>MNJ</td>
+                            <td>TI</td>
                         </tr>
                         <tr>
                             <td>50</td>
@@ -281,9 +314,9 @@
                         </tr>
                         <tr>
                             <td>51</td>
-                            <td rowspan="7">Designer</td>
+                            <td rowspan="7" class="sections">Designer</td>
                             <td>Rafki Fauzan</td>
-                            <td>MNJ</td>
+                            <td>PAI</td>
                         </tr>
                         <tr>
                             <td>52</td>
@@ -317,9 +350,9 @@
                         </tr>
                         <tr>
                             <td>58</td>
-                            <td rowspan="11">Keilmuan</td>
+                            <td rowspan="11" class="sections">Keilmuan</td>
                             <td>Adam Saipurrohman</td>
-                            <td>MNJ</td>
+                            <td>HI</td>
                         </tr>
                         <tr>
                             <td>59</td>
@@ -373,9 +406,9 @@
                         </tr>
                         <tr>
                             <td>69</td>
-                            <td rowspan="13">Kerohanian</td>
+                            <td rowspan="13" class="sections">Kerohanian</td>
                             <td>Halim Tohari</td>
-                            <td>MNJ</td>
+                            <td>IQT</td>
                         </tr>
                         <tr>
                             <td>70</td>
@@ -439,9 +472,9 @@
                         </tr>
                         <tr>
                             <td>82</td>
-                            <td rowspan="9">Olahraga</td>
+                            <td rowspan="9" class="sections">Olahraga</td>
                             <td>Rizki Mulya Jaya</td>
-                            <td>MNJ</td>
+                            <td>HI</td>
                         </tr>
                         <tr>
                             <td>83</td>
@@ -485,9 +518,9 @@
                         </tr>
                         <tr>
                             <td>91</td>
-                            <td rowspan="10">Kemahasiswaan</td>
+                            <td rowspan="10" class="sections">Kemahasiswaan</td>
                             <td>Faris Kalya Syafei</td>
-                            <td>MNJ</td>
+                            <td>ILKOM</td>
                         </tr>
                         <tr>
                             <td>92</td>
@@ -536,9 +569,9 @@
                         </tr>
                         <tr>
                             <td>101</td>
-                            <td rowspan="16">Perlengkapan & Logistik</td>
+                            <td rowspan="16" class="sections">Perlengkapan & Logistik</td>
                             <td>Syafiq Nur Umam</td>
-                            <td>MNJ</td>
+                            <td>KKK</td>
                         </tr>
                         <tr>
                             <td>102</td>
@@ -617,9 +650,9 @@
                         </tr>
                         <tr>
                             <td>117</td>
-                            <td rowspan="8">Konsumsi</td>
+                            <td rowspan="8" class="sections">Konsumsi</td>
                             <td>Zalfa Nawwaf</td>
-                            <td>MNJ</td>
+                            <td>AFI</td>
                         </tr>
                         <tr>
                             <td>118</td>
@@ -658,7 +691,7 @@
                         </tr>
                         <tr>
                             <td>125</td>
-                            <td rowspan="6">Bazzar</td>
+                            <td rowspan="6" class="sections">Bazzar</td>
                             <td>Dzakwan Rahmatullah</td>
                             <td>MNJ</td>
                         </tr>
@@ -689,9 +722,9 @@
                         </tr>
                         <tr>
                             <td>131</td>
-                            <td rowspan="9">Hubungan Masyarakat</td>
+                            <td rowspan="9" class="sections">Hubungan Masyarakat</td>
                             <td>Tegar Adi Prasetya</td>
-                            <td>MNJ</td>
+                            <td>PAI</td>
                         </tr>
                         <tr>
                             <td>132</td>
@@ -735,9 +768,9 @@
                         </tr>
                         <tr>
                             <td>140</td>
-                            <td rowspan="6">Pertolongan Pertama Pada Kecelakaan</td>
+                            <td rowspan="6" class="sections">Pertolongan Pertama Pada Kecelakaan</td>
                             <td>Muhammad Ramadhan</td>
-                            <td>MNJ</td>
+                            <td>KKK</td>
                         </tr>
                         <tr>
                             <td>141</td>
@@ -766,9 +799,9 @@
                         </tr>
                         <tr>
                             <td>146</td>
-                            <td rowspan="14">Perimaan Mahasiswa Baru</td>
+                            <td rowspan="14" class="sections">Perimaan Mahasiswa Baru</td>
                             <td>Muhammad Ihsan</td>
-                            <td>MNJ</td>
+                            <td>EI</td>
                         </tr>
                         <tr>
                             <td>147</td>
@@ -837,9 +870,9 @@
                         </tr>
                         <tr>
                             <td>160</td>
-                            <td rowspan="6">Penanggung Jawab Fakultas Tarbiyah</td>
+                            <td rowspan="6" class="sections">Penanggung Jawab Fakultas Tarbiyah</td>
                             <td>Muhammad Thabathaba'i</td>
-                            <td>MNJ</td>
+                            <td>PAI</td>
                         </tr>
                         <tr>
                             <td>161</td>
@@ -868,9 +901,9 @@
                         </tr>
                         <tr>
                             <td>166</td>
-                            <td rowspan="6">Penanggung Jawab Fakultas Ushuluddin</td>
+                            <td rowspan="6" class="sections">Penanggung Jawab Fakultas Ushuluddin</td>
                             <td>Muhammad Dhiyaul Kasyfi</td>
-                            <td>MNJ</td>
+                            <td>IQT</td>
                         </tr>
                         <tr>
                             <td>167</td>
@@ -899,9 +932,9 @@
                         </tr>
                         <tr>
                             <td>172</td>
-                            <td rowspan="4">Penanggung Jawab Fakultas Syariah</td>
+                            <td rowspan="4" class="sections">Penanggung Jawab Fakultas Syariah</td>
                             <td>Muhammad Ihsan Maulana</td>
-                            <td>MNJ</td>
+                            <td>HES</td>
                         </tr>
                         <tr>
                             <td>173</td>
@@ -920,9 +953,9 @@
                         </tr>
                         <tr>
                             <td>176</td>
-                            <td rowspan="4">Penanggung Jawab Fakultas Ekonomi Manajamen</td>
+                            <td rowspan="4" class="sections">Penanggung Jawab Fakultas Ekonomi Manajamen</td>
                             <td>Raihan Fahrur Haq</td>
-                            <td>MNJ</td>
+                            <td>MB</td>
                         </tr>
                         <tr>
                             <td>177</td>
@@ -941,9 +974,9 @@
                         </tr>
                         <tr>
                             <td>180</td>
-                            <td rowspan="4">Penanggung Jawab Fakultas Ekonomi Humaniora</td>
+                            <td rowspan="4" class="sections">Penanggung Jawab Fakultas Humaniora</td>
                             <td>Muhammad Razaq Puaries</td>
-                            <td>MNJ</td>
+                            <td>HI</td>
                         </tr>
                         <tr>
                             <td>181</td>
@@ -962,9 +995,9 @@
                         </tr>
                         <tr>
                             <td>184</td>
-                            <td rowspan="6">Penanggung Jawab Fakultas Sains & Teknologi</td>
+                            <td rowspan="6" class="sections">Penanggung Jawab Fakultas Sains & Teknologi</td>
                             <td>Hasbi Abdullah</td>
-                            <td>MNJ</td>
+                            <td>TI</td>
                         </tr>
                         <tr>
                             <td>185</td>
@@ -993,9 +1026,9 @@
                         </tr>
                         <tr>
                             <td>190</td>
-                            <td rowspan="2">Penanggung Jawab Fakultas Ilmu Kesehatan</td>
+                            <td rowspan="2" class="sections">Penanggung Jawab Fakultas Ilmu Kesehatan</td>
                             <td>Ahmad Faiq Noerjantoro</td>
-                            <td>MNJ</td>
+                            <td>KKK</td>
                         </tr>
                         <tr>
                             <td>191</td>
@@ -1004,14 +1037,130 @@
                         </tr>
                         <tr>
                             <td>192</td>
-                            <td rowspan="2">Penanggung Jawab Fakultas Kedokteran</td>
+                            <td rowspan="2" class="sections">Penanggung Jawab Fakultas Kedokteran</td>
                             <td>Achmad Kahlil Gibran</td>
-                            <td>MNJ</td>
+                            <td>Kedokteran</td>
                         </tr>
                         <tr>
                             <td>193</td>
                             <td>Robby Dzikru Azfar Pado</td>
                             <td>Kedokteran</td>
+                        </tr>
+                    </table>
+                    <table id="tabel-mahasiswi">
+                        <tr>
+                            <th>Bagian</th>
+                            <th>Nama</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Pembimbing Umum</td>
+                            <td>Assoc. Prof. Dr. Nur Hadi Ihsan, MIRKH</td>
+                        </tr>
+                        <tr>
+                            <td>Ahmad Setiyono, M.M</td>
+                        </tr>
+                        <tr>
+                            <td>Cela Petty Susanti, M.Pd</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">Ketua</td>
+                            <td>Dwi Purwati, S.Pd.</td>
+                        </tr>
+                        <tr>
+                            <td>Firda Utami</td>
+                        </tr>
+                        <tr>
+                            <td>Rizka Akzia</td>
+                        </tr>
+                        <tr>
+                            <td>Fairuz Habibah Imtinan</td>
+                        </tr>
+                        <tr>
+                            <td>Ahsanu Nadiyya</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">Sekretaris</td>
+                            <td>Alifah Yasmin, M.Ag.</td>
+                        </tr>
+                        <tr>
+                            <td>Shindidah Lady Aqila</td>
+                        </tr>
+                        <tr>
+                            <td>Sakhiya Mufida</td>
+                        </tr>
+                        <tr>
+                            <td>Kayla Syukrina</td>
+                        </tr>
+                        <tr>
+                            <td>Saskia Najma</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">Bendahara</td>
+                            <td>Mamluatus Sa’diyah, S.E.</td>
+                        </tr>
+                        <tr>
+                            <td>Nafsa Izzaturrahma</td>
+                        </tr>
+                        <tr>
+                            <td>Nabila Nova</td>
+                        </tr>
+                        <tr>
+                            <td>Fatimah Firstly Al-ghina</td>
+                        </tr>
+                        <tr>
+                            <td>Aini Istiqomah</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="17">Sie Giat</td>
+                            <td>Dzatu Aliviatin Nuha, M.Ag.</td>
+                        </tr>
+                        <tr>
+                            <td>Khaylila Adiya Ramadhani</td>
+                        </tr>
+                        <tr>
+                            <td>Siti Salwa</td>
+                        </tr>
+                        <tr>
+                            <td>Diana Anggraini</td>
+                        </tr>
+                        <tr>
+                            <td>Zahra Syifaul</td>
+                        </tr>
+                        <tr>
+                            <td>Fidela Sabrina</td>
+                        </tr>
+                        <tr>
+                            <td>Afifah Thohiroh</td>
+                        </tr>
+                        <tr>
+                            <td>Fitri Hidayatul</td>
+                        </tr>
+                        <tr>
+                            <td>Aldha Putri</td>
+                        </tr>
+                        <tr>
+                            <td>Nandratul Jariah</td>
+                        </tr>
+                        <tr>
+                            <td>Wafda Faazatul</td>
+                        </tr>
+                        <tr>
+                            <td>Naura Adila</td>
+                        </tr>
+                        <tr>
+                            <td>Bella Putri</td>
+                        </tr>
+                        <tr>
+                            <td>Salsabila Lifdhita</td>
+                        </tr>
+                        <tr>
+                            <td>Nadia Elhaq</td>
+                        </tr>
+                        <tr>
+                            <td>Erlita Widya</td>
+                        </tr>
+                        <tr>
+                            <td>Fatma Azilia</td>
                         </tr>
                     </table>
                 </div>

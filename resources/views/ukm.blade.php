@@ -5,7 +5,7 @@
     <section class="barang-section-1" id="barang-section-1">
         {{-- header --}}
         <div class="barang-header justify-content-center text-center">
-            <h2>Apa saja barang yang harus dibawa ?</h2>
+            <h2>Kegiatan & Organisasi Mahasiswa</h2>
 
             {{-- pilihan --}}
             <div class="btn-group mt-3" role="group">

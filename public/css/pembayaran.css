@@ -1,0 +1,155 @@
+.pembayaran-section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    z-index: 1;
+    background-color: #ffffff;
+    background-image: url(../assets/jurusan/jurusan-bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Spectral SC", serif;
+}
+
+.pembayaran-banner {
+    width: 100%;
+    min-height: inherit;
+}
+
+.pembayaran-section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 13%;
+    top: 0;
+    background: linear-gradient(to top, rgba(231, 229, 229, 0), rgb(255, 253, 253));
+}
+
+.pembayaran-section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(19, 29, 20, 1), rgba(21, 34, 22, 0));
+}
+
+.pembayaran-header {
+    margin-top: 7.5rem;
+    text-align: center;
+}
+
+.pembayaran-column {
+    padding: 2rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(17px);
+    border-radius: 23px;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+}
+
+.pembayaran-title {
+    justify-content: center;
+    display: flex;
+}
+
+
+/* regular smartphone */
+@media (max-width: 480px) {
+    .pembayaran-section::before {
+        height: 5%;
+    }
+
+    .pembayaran-section::after {
+        height: 5%;
+    }
+
+    .pembayaran-header {
+        margin-top: 3.5rem;
+        text-align: center;
+    }
+
+    .pembayaran-column {
+        display: contents;
+        gap: 0;
+        font-size: 0.9rem;
+    }
+
+    .pembayaran-form {
+        padding: 0.7rem;
+        width: 100%;
+        border-radius: 13px;
+    }
+
+    .pembayaran-form p {
+        text-align: justify;
+    }
+
+    .pembayaran-info {
+        padding: 0.7rem;
+        width: 100%;
+        margin: 3rem 0;
+        border-radius: 13px;
+    }
+
+    .pembayaran-info p {
+        text-align: justify;
+    }
+
+}
+
+/* Large Phone (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .pembayaran-section::before {
+        height: 5%;
+    }
+
+    .pembayaran-section::after {
+        height: 5%;
+    }
+
+    .pembayaran-header {
+        margin-top: 3.5rem;
+        text-align: center;
+    }
+
+    .pembayaran-column {
+        display: contents;
+        gap: 0;
+    }
+
+    .pembayaran-form {
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .pembayaran-info {
+        padding: 1.5rem;
+        width: 100%;
+        margin: 3rem 0;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1025px) {
+    .pembayaran-column {
+        display: contents;
+        gap: 0;
+    }
+
+    .pembayaran-form {
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .pembayaran-info {
+        padding: 1.5rem;
+        width: 100%;
+        margin: 3rem 0;
+    }
+}

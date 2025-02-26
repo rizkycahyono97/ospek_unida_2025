@@ -37,7 +37,7 @@ body {
     display: block;
     position: absolute;
     width: 100%;
-    height: 13%;
+    height: 100px;
     top: 0;
     background: linear-gradient(to top, rgba(231, 229, 229, 0), rgb(255, 253, 253));
 }
@@ -47,7 +47,7 @@ body {
     display: block;
     position: absolute;
     width: 100%;
-    height: 20%;
+    height: 100px;
     bottom: 0;
     background: linear-gradient(to top, rgb(19, 29, 20), rgba(21, 34, 22, 0));
 }
@@ -124,6 +124,7 @@ body {
     background-image: url(../assets/jurusan/jurusan-bg2.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .prodi-section::before {
@@ -131,9 +132,19 @@ body {
     display: block;
     position: absolute;
     width: 150%;
-    height: 10%;
+    height: 100px;
     top: 0;
     background: linear-gradient(to top, rgba(231, 229, 229, 0), rgb(19, 29, 20));
+}
+
+.prodi-section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background: linear-gradient(to top, rgb(19, 29, 20), rgba(21, 34, 22, 0));
 }
 
 .prodi-header {

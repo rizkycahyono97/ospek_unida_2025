@@ -35,6 +35,8 @@
 .panitia-banner {
     margin: auto;
     min-height: inherit;
+    justify-content: center;
+    align-items: center;
 }
 
 .panitia-header {
@@ -42,64 +44,103 @@
     text-align: center;
 }
 
-.tabel-rasio {
+.btn-group {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.btn-transparent.active {
+    color: #317F80;
+}
+
+/* Garis bawah untuk tombol yang aktif */
+.btn-transparent.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #317F80;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#tabel-mahasiswa,
+#tabel-mahasiswi {
     border-collapse: collapse;
+    width: 100%;
     margin-top: 10px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(17px);
     box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
     padding: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 7rem;
 }
 
-.kontak-form {
-    width: 65%;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(17px);
-    border-radius: 23px;
-    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
-}
-
-.tabel-rasio tr:nth-child(1) {
+#tabel-mahasiswa tr:nth-child(1) {
     text-align: center;
 }
 
+#tabel-mahasiswa tr .sections {
+    text-align: center;
+}
 
-.tabel-rasio tr td,
-.tabel-rasio tr th {
+#tabel-mahasiswa tr td:nth-child(1),
+#tabel-mahasiswa tr td:nth-last-child(1) {
+    display: none;
+}
+
+
+#tabel-mahasiswa tr td,
+#tabel-mahasiswa tr th,
+#tabel-mahasiswi tr td,
+#tabel-mahasiswi tr th {
     border: 1px solid black;
     padding: 2px 5px;
-
 }
 
 /* regular smartphone */
 @media (max-width: 480px) {
     .panitia-section::before {
-        height: 5%;
+        height: 70px;
     }
 
     .panitia-section::after {
-        height: 5%;
+        height: 70px;
+    }
+
+    #tabel-mahasiswa tr td,
+    #tabel-mahasiswa tr th {
+        font-size: 0.7rem;
     }
 
     .panitia-header {
         margin-top: 3.5rem;
         text-align: center;
     }
+
+
 }
 
 /* Large Phone (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
     .panitia-section::before {
-        height: 5%;
+        height: 70px;
     }
 
     .panitia-section::after {
-        height: 5%;
+        height: 70px;
     }
 
     .panitia-header {

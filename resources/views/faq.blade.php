@@ -41,9 +41,9 @@
                                             <h4>Kapan dan di mana OSPEK akan dilaksanakan?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
-                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
-                                                repudiandae quia earum quos fugiat voluptas.</p>
+                                            <p>Ospek akan dilaksanakan rentetan acara ospek akan dilaksanakan mulai dari
+                                                tanggal 10 syawwal sampai dengan 21 syawwal yang bertempatan dikampus
+                                                masing-masing </p>
                                         </div>
                                     </div>
                                 </label>
@@ -73,9 +73,9 @@
                                             <h4>Apakah OSPEK dilakukan secara online atau offline?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
-                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
-                                                repudiandae quia earum quos fugiat voluptas.</p>
+                                            <p>OSPEK dilaksanakan secara offline di kampus UNIDA Gontor, sesuai dengan
+                                                lokasi yang telah ditetapkan oleh panitia. Seluruh peserta diwajibkan hadir
+                                                secara langsung untuk mengikuti rangkaian kegiatan yang telah disiapkan.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -89,9 +89,9 @@
                                             <h4>Apa saja yang perlu dipersiapkan sebelum OSPEK?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
-                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
-                                                repudiandae quia earum quos fugiat voluptas.</p>
+                                            <p>Sebelum Ospek para peserta Harus menyiapkan beberapa berkas-berkas serta
+                                                peralatan yang harus di bawa ketika ospek nanti yang telah di tentukan oleh
+                                                panitia</p>
                                         </div>
                                     </div>
                                 </label>
@@ -105,9 +105,9 @@
                                             <h4>Apakah kehadiran dalam OSPEK wajib?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
-                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
-                                                repudiandae quia earum quos fugiat voluptas.</p>
+                                            <p>Ya, kehadiran dalam OSPEK wajib karena merupakan bagian penting dalam
+                                                mengenal lingkungan kampus, sistem perkuliahan, serta membangun relasi
+                                                dengan dosen dan sesama mahasiswa.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -122,9 +122,9 @@
                                             <h4>Apa konsekuensi jika tidak mengikuti OSPEK?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
-                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
-                                                repudiandae quia earum quos fugiat voluptas.</p>
+                                            <p>Konsekuensi dalam kehadiran Ospek,berpengaruh pada kelulusan ospek,jika
+                                                peserta belum dinyatakan lulus,maka peserta harus mengulang Ospek di Tahun
+                                                Depan</p>
                                         </div>
                                     </div>
                                 </label>
@@ -138,9 +138,9 @@
                                             <h4>Apakah ada dispensasi bagi yang tidak bisa hadir?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
-                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
-                                                repudiandae quia earum quos fugiat voluptas.</p>
+                                            <p>Ya, dispensasi diberikan bagi yang berhalangan hadir, seperti karena sakit
+                                                atau keperluan syar'i yang tidak dapat diwakilkan, dengan syarat melapor dan
+                                                memberikan bukti yang valid.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -154,9 +154,9 @@
                                             <h4>Bagaimana jika ada jadwal bentrok dengan kegiatan lain?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
-                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
-                                                repudiandae quia earum quos fugiat voluptas.</p>
+                                            <p>Jika ada jadwal yang bentrok, peserta dapat segera mengonfirmasi kepada
+                                                panitia OSPEK agar mendapatkan arahan lebih lanjut mengenai solusi atau
+                                                penyesuaian yang memungkinkan.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -170,9 +170,9 @@
                                             <h4>Apakah OSPEK memiliki dress code tertentu?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
-                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
-                                                repudiandae quia earum quos fugiat voluptas.</p>
+                                            <p>Ya, OSPEK memiliki dress code tertentu yang telah ditetapkan oleh panitia.
+                                                Ketentuan ini biasanya diumumkan melalui brosur serta disampaikan langsung
+                                                oleh panitia untuk memastikan semua peserta mematuhinya.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -186,9 +186,10 @@
                                             <h4>Apa saja kegiatan yang akan dilakukan selama OSPEK?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
-                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
-                                                repudiandae quia earum quos fugiat voluptas.</p>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas perferendis
+                                                quo maxime recusandae. Perferendis quo neque voluptatum, dolores magni
+                                                eaque, minima molestias animi odio laudantium aut vel quaerat, fuga cumque.
+                                            </p>
                                         </div>
                                     </div>
                                 </label>
@@ -202,9 +203,10 @@
                                             <h4>Apakah panitia menyediakan konsumsi selama OSPEK?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
-                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
-                                                repudiandae quia earum quos fugiat voluptas.</p>
+                                            <p>Ya, panitia menyediakan konsumsi selama OSPEK, termasuk bazaar OSPEK yang
+                                                tersedia bagi peserta. Selain itu, untuk makan utama, peserta diarahkan
+                                                untuk menggunakan fasilitas dapur masing-masing sesuai dengan ketentuan yang
+                                                telah ditetapkan.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -234,9 +236,9 @@
                                             <h4>Apakah ada media sosial resmi OSPEK yang bisa diikuti?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
-                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
-                                                repudiandae quia earum quos fugiat voluptas.</p>
+                                            <p>Ya, untuk mendapatkan informasi terbaru seputar OSPEK, panitia telah
+                                                menyediakan media sosial resmi, seperti akun Instagram @ospek.2025 dan kanal
+                                                YouTube OspekSyaheen2025. </p>
                                         </div>
                                     </div>
                                 </label>
@@ -250,9 +252,10 @@
                                             <h4>Bagaimana cara menghubungi panitia ?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
-                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
-                                                repudiandae quia earum quos fugiat voluptas.</p>
+                                            <p>Peserta dapat menghubungi panitia OSPEK melalui beberapa cara, seperti
+                                                menghubungi langsung ketua panitia, mengontak panitia yang bertugas, atau
+                                                mengirim pesan ke akun Instagram resmi @ospek.2025. Panitia siap membantu
+                                                menjawab pertanyaan dan memberikan informasi yang dibutuhkan.</p>
                                         </div>
                                     </div>
                                 </label>

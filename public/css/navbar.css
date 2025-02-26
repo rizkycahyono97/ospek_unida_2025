@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   /* height: 8000px; */
   /* overscroll-behavior: none; Mencegah efek overscroll di mobile */
   /* -webkit-font-smoothing: antialiased;
@@ -42,4 +43,146 @@ html, body {
 .navbar-transparent .navbar-brand img {
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
   /* Bayangan untuk logo */
+}
+
+footer {
+  background-color: #1E453E;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  border-top: 4px solid rgb(218, 162, 79);
+}
+
+.footer-section {
+  display: flex;
+  position: relative;
+  color: #fff;
+  margin: 0 2rem;
+}
+
+.footer-logo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: clamp(60px, 150px, 165px);
+  aspect-ratio: 11/15;
+  margin: 1.3rem 1rem 1rem 0;
+  border-radius: 10px;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  backdrop-filter: blur(17px);
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.75);
+}
+
+.footer-logo img {
+  height: clamp(45px, 135px, 150px);
+}
+
+.footer-index {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer-navbar {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  border-bottom: 2px solid rgb(218, 162, 79);
+  width: 100%;
+  margin-right: 2rem;
+}
+
+.footer-navbar a {
+  padding: 10px;
+  list-style: none;
+}
+
+.footer-path {
+  display: flex;
+  position: relative;
+}
+
+.footer-contact {
+  margin: 20px 10px;
+  width: 60%;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(40px, 1fr));
+}
+
+.footer-contact p a {
+  margin-right: 7px;
+  padding: 5px;
+  background-color: #317F80;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.footer-contact .email-pmb {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer-contact .number,
+.footer-contact .email-pmb {
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 5px;
+}
+
+.footer-social {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social a i {
+  margin-top: 2px;
+  color: #fdfdfd;
+  text-decoration: none;
+}
+
+.footer-social a:nth-child(1),
+.footer-social a:nth-child(3),
+.footer-social a:nth-child(4) {
+  font-size: 36px;
+}
+
+.footer-social a:nth-child(2) {
+  font-size: 31px;
+}
+
+
+.footer-social a img {
+  height: 30px;
+  aspect-ratio: 10/11;
+  color: #fdfdfd;
+  text-decoration: none;
+}
+
+.footer-social a i:hover {
+  color: #e7cf62;
+  /* Warna saat hover */
+}
+
+/* tablet */
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  .kontak-column {
+    display: contents;
+    gap: 0;
+  }
+
+  .kontak-form {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .kontak-info {
+    padding: 1.5rem;
+    width: 100%;
+    margin: 3rem 0;
+  }
 }
