@@ -133,7 +133,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Penasaran dengan kegiatan seputar kampus?</p>
-                                            <a href="#" class="link-entry">Cek Galeri</a>
+                                            <a href="{{ route('galeri') }}" class="link-entry">Cek Galeri</a>
                                         </div>
                                     </div>
                                 </label>

@@ -11,6 +11,7 @@
     background-position: center;
     font-family: "Spectral SC", serif;
     overflow-x: hidden;
+    padding-bottom: 2rem;
 }
 
 .info-section::before {
@@ -23,7 +24,7 @@
     background: linear-gradient(to top, rgba(231, 229, 229, 0), rgb(255, 253, 253));
 }
 
-.info-section::after {
+/* .info-section::after {
     content: "";
     display: block;
     position: absolute;
@@ -31,7 +32,7 @@
     height: 100px;
     bottom: 0;
     background: linear-gradient(to top, rgba(19, 29, 20, 1), rgba(21, 34, 22, 0));
-}
+} */
 
 .info-banner {
     height: 100vh;

@@ -1,0 +1,252 @@
+.galeri-section {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    z-index: 1;
+    min-height: 100vh;
+    background-color: #ffffff;
+    background-image: url(../assets/pusatinformasi/info-bg.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Spectral SC", serif;
+    overflow-x: hidden;
+}
+
+.galeri-section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    background: linear-gradient(to top, rgba(231, 229, 229, 0), rgb(255, 253, 253));
+}
+
+/* .galeri-section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(19, 29, 20, 1), rgba(21, 34, 22, 0));
+} */
+
+.galeri-banner {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.galeri-header {
+    margin-top: 7.5rem;
+    text-align: center;
+    border-bottom: 2px solid #e7c38d;
+}
+
+.galeri-header h5 {
+    margin-bottom: 1rem;
+}
+
+.galeri-cards {
+    margin-top: 3.5rem;
+    columns: 400px;
+
+    padding: 1em;
+}
+
+.galeri-cards img {
+    width: 100%;
+    margin-bottom: 1em;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.galeri-cards img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+
+}
+
+
+@media (max-width: 480px) {
+    .galeri-header {
+        margin-top: 3.5rem;
+    }
+
+    .galeri-header h5 {
+        font-size: 1rem;
+    }
+
+    .galeri-cards {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 0;
+        margin-top: 1rem;
+    }
+
+    .label {
+        max-width: 300px;
+        height: 65px;
+        border-radius: 1.35rem;
+    }
+
+    .label .row .icon {
+        display: none;
+    }
+
+    .label .row h4 {
+        padding-top: 15px;
+        font-size: 0.9rem;
+        padding-left: 8px;
+    }
+
+    .label .row .description {
+        width: 100%;
+        height: 75px;
+        font-size: 0.9rem;
+        line-height: 1;
+        margin: 0.5rem;
+    }
+
+    .label .row .description p {
+        font-size: 0.7rem;
+        max-width: 96%;
+    }
+}
+
+/* Large Phone (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .galeri-cards {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 0;
+        margin-top: 2rem;
+    }
+
+    .label {
+        width: 435px;
+        height: 70px;
+        border-radius: 1.3rem;
+    }
+
+    .label .row .icon {
+        display: none;
+    }
+
+    .label .row h4 {
+        padding-top: 13px;
+        font-size: 1.2rem;
+        padding-left: 8px;
+    }
+
+    .label .row .description {
+        width: 100%;
+        height: 75px;
+        line-height: 1;
+    }
+
+    .label .row .description p {
+        font-size: 0.7rem;
+        max-width: 96%;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 999px) {
+    .galeri-section {
+        min-height: 140vh;
+    }
+
+    .galeri-cards {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 0;
+        margin-top: 2rem;
+    }
+
+    .label {
+        width: 670px;
+        height: 65px;
+        border-radius: 1.9rem;
+    }
+
+    .label .row .icon {
+        border-radius: 50%;
+        font-family: sans-serif;
+        font-weight: 600;
+        color: rgb(206, 194, 180);
+        background-color: #497a6f;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 3px;
+    }
+
+    .label .row h4 {
+        padding-top: 22px;
+        font-size: 1.12rem;
+        padding-left: 8px;
+    }
+
+    .label .row .description {
+        width: 100%;
+        height: 75px;
+        font-size: 0.9rem;
+        line-height: 1;
+    }
+
+    .label .row .description p {
+        max-width: 96%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1220px) {
+
+    .galeri-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 0;
+        margin-top: 2.5rem;
+    }
+
+    .label {
+        width: 845px;
+        height: 65px;
+        border-radius: 1.9rem;
+    }
+
+    .label .row .icon {
+        border-radius: 50%;
+        font-family: sans-serif;
+        font-weight: 600;
+        color: rgb(206, 194, 180);
+        background-color: #497a6f;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 3px;
+    }
+
+    .label .row h4 {
+        padding-top: 22px;
+        font-size: 1.2rem;
+        padding-left: 8px;
+    }
+
+    .label .row .description {
+        width: 100%;
+        height: 75px;
+        font-size: 0.9rem;
+    }
+
+    .label .row .description p {
+        max-width: 96%;
+    }
+}
