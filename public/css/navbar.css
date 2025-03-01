@@ -43,6 +43,7 @@ html, body {
   /* background-color: rgba(0, 0, 0, 0.8); */
   transition: all 0.3s ease-in-out;
   margin-bottom: 0 !important;
+  /* background-color: #1E453E; */
 }
 
 .navbar-nav {
@@ -56,3 +57,34 @@ html, body {
   top: 0;
   z-index: 1000;
 }
+
+/* smartphone kecil */
+@media (max-width: 480px) {
+
+}
+
+/* smartphone besar */
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1025px) {
+  .nav-link {
+    font-size: 14px;
+    gap: 0;
+  }
+}
+
+/* desktop */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .nav-link {
+    font-size: 22px;
+  }
+}
+
+/* large monitor */
+@media (min-width: 1921px) {
+
+}
+

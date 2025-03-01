@@ -6,19 +6,10 @@ section {
 /* section 1 */
 /* ------------- */
 .home-section-1 {
-  width: 100%;
-  /* height: 91vh; */
-  position: relative;
-  display: flex;
-  overflow: hidden;
-  min-height: 100vh;
   z-index: 1;
-  /* overflow: hidden; */
-  background-color: #ffffff;
   background-image: url(../assets/home/BG.png);
   background-size: cover;
   background-position: center;
-  /* font-family: "Merriweather Sans", serif; */
 }
 
 .home-section-1 img {
@@ -27,29 +18,21 @@ section {
 }
 
 .home-section-1 h1 {
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-variation-settings:
+    "wdth" 100;
+    font-style: normal;
   position: absolute;
   font-size: 8.5rem;
-}
-
-.logo-ospek {
-  margin: 0;
-  padding: 0;
-}
-
-.wave-svg {
-  position: absolute;
-  width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Sayap Kiri */
 .sayap-kiri {
-  position: absolute;
   left: 0;
   top: 0;
   height: 100vh;
-  display: flex;
-  align-items: center;
 }
 
 .sayap-kiri img {
@@ -59,12 +42,9 @@ section {
 
 /* Sayap Kanan */
 .sayap-kanan {
-  position: absolute;
   right: 0;
   top: 0;
   height: 100vh;
-  display: flex;
-  align-items: center;
 }
 
 .sayap-kanan img {
@@ -79,16 +59,10 @@ section {
 /* section 2 */
 /* ------------- */
 .home-section-2 {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  display: flex;
-  z-index: 1;
   background-color: #ffffff;
   background-image: url(../assets/home/bg-22.png);
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
   background-position: center;
   font-family: "Spectral SC", serif;
 }
@@ -107,75 +81,21 @@ section {
 /* end section 2 */
 /* ------------- */
 
-/* -------------- */
+/* --------------- */
 /* section 3 */
-/* -------------- */
+/* --------------- */
 .home-section-3 {
-  background-color: #122b26;
-  /* background-image: url(../assets/home/bg-17.png); */
-  min-height: 100vh;
+  background-image: url(../assets/home/bg-11.png);
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
+  z-index: 8;
   position: relative;
-  min-height: 100vh;
-  width: 100%;
-  height: 100vh;
-  z-index: 4;
-  overflow: visible;
-  /* transition: transform 0.3s ease-out;
-  transform: translateY(100px); */
+  height: 100vh
 }
 
-.wave-svg-2 {
-  position: absolute !important ;
-  top: -370px;
-  left: 0;
-  /* height: auto; */
-  width: 100%;
-  /* z-index: -1; */
-  pointer-events: none;
-}
-
-.home-section-3 h2 {
-  font-family: "Yellowtail", serif;
-  font-weight: 700;
-  font-style: normal;
-  /* color: var(--tertiary); */
-  color: #ffee00;
-  font-size: 50px;
-}
-
-.home-section-3 h1 {
-  /* font-family: "Open Sans", serif; */
-  font-weight: 800;
-  font-variation-settings:
-    "wdth" 100;
-  font-size: 80px;
-  letter-spacing: 10px;
-  font-style: normal;
-  color: transparent;
-  -webkit-text-stroke: 2px #48CFCB;
-  position: relative;
-  top: 0;
-  transform: scaleY(1.5);
-}
-
-.home-section-3 p {
-  color: #FFFFFFFF;
-}
-
-.home-section-3 h1,
-.home-section-3 h2,
-.home-section-3 p {
-  position: relative; /* Pastikan elemen ini di atas */
-  z-index: 5; /* Lebih tinggi dari SVG */
-}
-/* --------------- */
-/* end section 3 */
-/* --------------- */
-
-/* batas */
+/* wave svg */
 .custom-shape-divider-top-1739805712 {
   position: absolute;
   top: 0;
@@ -197,20 +117,6 @@ section {
   fill: #122B26;
 }
 
-/* --------------- */
-/* section 4 */
-/* --------------- */
-.home-section-4 {
-  background-image: url(../assets/home/bg-11.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow-x: hidden;
-  z-index: 8;
-  position: relative;
-  height: 100vh
-}
-
 /* tidak tahu darimana */
 /* .pin-spacer {
   background-image: url(../assets/home/bg-11.png);
@@ -220,17 +126,12 @@ section {
 } */
 
 .logo-scroll-container {
-  display: flex;
   width: 550vw;
   height: 100vh;
 }
 
 .logo-section {
   width: 100vw;
-  /* height: 100vh; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .logo-section img {
@@ -274,6 +175,7 @@ section {
   font-weight: 700;
 }
 
+/* wave svg */
 .custom-shape-divider-bottom-1739863208 {
   position: absolute;
   bottom: 0;
@@ -295,47 +197,88 @@ section {
   fill: #FFFFFF;
 }
 /* --------------- */
-/* end section 4 */
+/* end section 3 */
 /* --------------- */
 
-
 /* ------------- */
-/* section 5 */
+/* section 4 */
 /* ----------- */
-.home-section-5 {
+.home-section-4 {
   background-color: #FFFFFF;
-  background-image: url(../assets/home/bg-20.png);
+  background-image: url(../assets/home/bg-25.png);
   position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* height: 100vh; */
+  backdrop-filter: blur(10px); 
   z-index: 9;
 }
 
-.home-section-5 h1 {
-  /* font-family: "Open Sans", serif; */
-  font-weight: 800;
-  /* font-variation-settings:    "wdth" 100; */
-  font-size: 70px;
-  font-style: normal;
-  color: transparent;
-  -webkit-text-stroke: 2px #11c7a6;
-  top: 0;
-  margin-top: 50px;
-  transform: scaleY(1.5);
-  transform-origin: top;
-  -webkit-transform: scaleY(1.5);
-  -moz-transform: scaleY(1.5);
-  -ms-transform: scaleY(1.5);
-  -o-transform: scaleY(1.5);
-  line-height: 0.8;
+.home-section-4 h1 {
+  font-weight: 600;
+  margin-top: 60px;
+  font-size: 3rem;
 }
 
-.text-container {
-  padding-top: 60px;
-  margin-bottom: 20px; /* Beri jarak antara teks dan gambar */
+/* tombol */
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+
 
 /* card */
 .wallet {
@@ -470,8 +413,12 @@ section {
     font-size: 30px;
   }
 
-  .home-section-2 h2 {
-    font-size: 25px;
+  .home-section-2-text {
+    padding: 1rem;
+  }
+  
+  .home-section-2-text p {
+    font-size: 16px !important;
   }
   /* ------------- */
   /* end of section 2 */
@@ -480,17 +427,6 @@ section {
   /* ------------- */
   /* section 3 */
   /* ------------ */
-  .home-section-3 h1 {
-    font-size: 60px;
-  }
-
-  .home-section-3 p {
-    font-size: 12px !important;
-  }
-  
-  /* ------------- */
-  /* section 4 */
-  /* ------------- */
   .logo-scroll-container {
     width: 600vw;
     height: 100vh;
@@ -505,14 +441,12 @@ section {
     text-align: center;
   }
 
-  /* Mengatur ukuran logo agar tidak terlalu besar */
   .logo-section img {
     width: 130px;
     height: auto;
     margin: 5px;
   }
 
-  /* Mengurangi ukuran teks agar tetap nyaman dibaca */
   .scroll-text h1 {
     font-size: 30px;
   }
@@ -522,7 +456,6 @@ section {
     font-weight: 600;
   }
 
-  /* Mengatur ulang posisi elemen agar tetap seimbang */
   .logo-container {
     flex-direction: column;
     align-items: center;
@@ -554,10 +487,6 @@ section {
   /* ------------- */
   /* section 2 */
   /* ------------- */  
-  .home-section-2 {
-    background-size: 150%;
-  }
-
   .home-section-2 h1 {
     font-size: 45px;
   }
@@ -572,13 +501,6 @@ section {
   /* ------------- */
   /* section 3 */
   /* ------------ */
-  .home-section-3 p {
-    font-size: 14px !important;
-  }
-
-  /* ------------- */
-  /* section 4 */
-  /* ------------- */
   .custom-shape-divider-top-1739805712 svg {
     width: calc(100% + 1.3px);
     height: 110px;
@@ -598,14 +520,12 @@ section {
     text-align: center;
   }
 
-  /* Mengatur ukuran logo agar tidak terlalu besar */
   .logo-section img {
     width: 150px;
     height: auto;
     margin: 5px;
   }
 
-  /* Mengurangi ukuran teks agar tetap nyaman dibaca */
   .scroll-text h1 {
     font-size: 40px;
   }
@@ -615,7 +535,6 @@ section {
     font-weight: 600;
   }
 
-  /* Mengatur ulang posisi elemen agar tetap seimbang */
   .logo-container {
     flex-direction: column;
     align-items: center;
@@ -657,13 +576,6 @@ section {
   /* ----------------- */
   /* section 3 */
   /* ----------------- */
-  .home-section-3 p {
-    font-size: 18px !important;
-  }
-
-  /* ------------- */
-  /* section 4 */
-  /* ------------- */
   .scroll-text h1 {
     font-size: 45px;
   }
@@ -684,7 +596,7 @@ section {
   /* section 1 */
   /* ------------- */
   .home-section-1 h1 {
-    font-size: 12.5rem;
+    font-size: 11.5rem;
   }
 
   /* -------------- */
@@ -695,7 +607,8 @@ section {
   }
 
   .home-section-2 h1 {
-  font-size: 110px;
+    font-size: 3rem;
+    margin-top: 10px;
   }
 
   .home-section-2 p {
@@ -705,13 +618,6 @@ section {
   /* ------------ */
   /* section 3 */
   /* ------------ */
-  .home-section-3 h1 {
-    font-size: 120px;
-  }
-
-  /* ------------- */
-  /* section 4 */
-  /* ------------- */
   .scroll-text h1 {
     font-size: 85px;
   }
@@ -730,6 +636,10 @@ section {
 
   .logo-text p {
     font-size: 20px !important;
+  }
+
+  .img-fluid-ospek {
+    width: 350px !important;
   }
 }
 

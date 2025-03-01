@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
     largeMonitor: "(min-width: 1921px)",       // Monitor besar
   };
 
+  // gsap scrolltrigger
+  gsap.registerPlugin(ScrollTrigger);
+
+
 
   // --------------
   // section 1
@@ -42,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   gsap.matchMedia().add(breakpoints.smallLaptop, () => {
-    gsap.fromTo(textKiri, {x: -900, y: -150}, {x: -350, y:0, duration: 2, delay: 2.3, ease: "power2.out"});
+    gsap.fromTo(textKiri, {x: -1000, y: -150}, {x: -350, y:0, duration: 2, delay: 2.3, ease: "power2.out"});
   });
     
   gsap.matchMedia().add(breakpoints.tablet, () => {
@@ -177,75 +181,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   
   // --------------
-  // section 2
-  // --------------
-  gsap.registerPlugin(ScrollTrigger);
-
-  // // Efek parallax untuk section 1 tenggelam saat section 2 muncul
-  // gsap.to(".home-section-1", {
-  //   yPercent: 100, 
-  //   ease: "none",
-  //   scrollTrigger: {
-  //     trigger: ".home-section-2", // Mulai saat section 2 muncul
-  //     start: "top bottom",        
-  //     end: "top top",             
-  //     scrub: true,
-  //   },
-  // });
-
-  // // animasi text h1
-  // gsap.to(".text-animation", {
-  //   y: -100, // Animasi naik ke atas
-  //   ease: "none",
-  //   scrollTrigger: {
-  //       trigger: ".home-section-2",
-  //       start: "top center", // Mulai animasi ketika bagian atas .home-section-2 masuk ke tengah layar
-  //       end: "bottom top", // Selesai animasi ketika bagian bawah .home-section-2 keluar dari layar atas
-  //       scrub: 1, // Animasi mengikuti scroll
-  //   }
-  // });
-  // --------------
-  // end section 2
-  // --------------
-
-  // ------------
-  // section 3
-  // ------------
-
-  // wave-svg-2
-  // gsap.matchMedia().add(breakpoints.desktop, () => {
-  //   gsap.to(waveSvgDua, {
-  //     yPercent: -4, // Efek parallax tetap
-  //     ease: "none",
-  //     scrollTrigger: {
-  //       trigger: ".home-section-2", // Menggunakan section 2 sebagai pemicu
-  //       start: "top bottom",
-  //       end: "bottom top",
-  //       scrub: true
-  //     }
-  //   });
-  // });
-
-  // // gsap.matchMedia().add(breakpoints.smallLaptop, () => {
-  // //   gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
-  // // });
-
-  // gsap.matchMedia().add(breakpoints.tablet, () => {
-  //   gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
-  // });
-  
-  // gsap.matchMedia().add(breakpoints.largePhone, () => {
-  //   gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
-  // });
-  
-  // gsap.matchMedia().add(breakpoints.smallPhone, () => {
-  //   gsap.to(waveSvgDua, {yPercent: -4, ease: "none", scrollTrigger: {trigger: ".home-section-2", start: "top bottom", end: "bottom top", scrub: true}})
-  // });
-  // --------------
-  // end section 3
-  // --------------
-  
-  // --------------
   // section 4
   // --------------
 
@@ -256,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
     xPercent: -100 * (sections.length - 1),
     ease: "none",
     scrollTrigger: {
-      trigger: ".home-section-4",
+      trigger: ".home-section-3",
       pin: true,
       scrub: 1,
       snap: 1 / (sections.length - 1),

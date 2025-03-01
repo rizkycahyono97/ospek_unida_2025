@@ -3,10 +3,10 @@
 @section('content')
 
   {{-- section 1 --}}
-  <section class="home-section-1 d-flex justify-content-center align-items-center vh-100 position-relative" id="home-section-1" data-scroll-container>
+  <section class="home-section-1 d-flex justify-content-center align-items-center vh-100 position-relative overflow-hidden w-100 min-vh-100" id="home-section-1" data-scroll-container>
     
     <!-- Sayap Kiri -->
-    <div class="sayap-kiri" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1500">
+    <div class="sayap-kiri position-absolute d-flex align-items-center" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1500">
         <img src="{{ asset('assets/home/sayap-kiri.png') }}" alt="sayap kiri">
     </div>
 
@@ -16,11 +16,11 @@
 
         <img id="logo-ospek" src="{{ asset('assets/home/logo_2.png') }}" alt="Logo OSPEK" class="img-fluid">
 
-        <h1 id="text-kanan" class="ms-4 text-uppercase fw-bold">2 0 2 5</h1>
+        <h1 id="text-kanan" class="text-tahun ms-4 text-uppercase fw-bold">2 0 2 5</h1>
     </div>
 
     <!-- Sayap Kanan -->
-    <div class="sayap-kanan" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1500">
+    <div class="sayap-kanan d-flex position-absolute align-items-center" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1500">
         <img src="{{ asset('assets/home/sayap-kanan.png') }}" alt="sayap kanan">
     </div>
 
@@ -28,7 +28,7 @@
   {{-- end section 1 --}}
 
   {{-- section 2 --}}
-  <section class="home-section-2 d-flex flex-column justify-content-center align-items-center text-center pb-5" id="home-section-2">
+  <section class="home-section-2 d-flex flex-column justify-content-center align-items-center text-center pb-5 position-relative w-100 min-vh-100 " id="home-section-2">
 
     {{-- pengenalan-ospek --}}
     <div class="pengenalan-ospek d-flex flex-column align-items-center text-center">
@@ -57,8 +57,8 @@
   </section>
   {{-- section 2 end --}}
 
-  {{-- section 4 --}}
-  <section class="home-section-4" id="home-section-4">
+  {{-- section 3 --}}
+  <section class="home-section-3" id="home-section-3">
 
     {{-- batas --}}
     <div class="custom-shape-divider-top-1739805712">
@@ -67,13 +67,13 @@
       </svg>
     </div>
 
-    <div class="logo-scroll-container">
-      <section class="logo-section d-flex align-items-center panel">
+    <div class="logo-scroll-container d-flex">
+      <section class="logo-section justify-content-center d-flex align-items-center panel">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Gambar di kiri -->
                 <div class="col-md-4 text-center scroll-img">
-                    <img src="{{ asset('assets/home/logo-ospek-2025.png') }}" alt="logo ospek" class="img-fluid">
+                    <img src="{{ asset('assets/home/logo-ospek-2025.png') }}" alt="logo ospek" class="img-fluid img-fluid-ospek">
                 </div>
                 <!-- Teks di kanan -->
                 <div class="col-md-8 scroll-text">
@@ -86,7 +86,7 @@
       </section>
     
 
-      <section class="logo-section text-dark d-flex align-items-center panel">
+      <section class="logo-section justify-content-center text-dark d-flex align-items-center panel">
         <div class="container">
           <div class="row align-items-center">
               <!-- Gambar di kiri -->
@@ -107,7 +107,7 @@
       </section>
     
 
-      <section class="logo-section text-dark d-flex align-items-center panel">
+      <section class="logo-section justify-content-center text-dark d-flex align-items-center panel">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Gambar di kiri -->
@@ -126,7 +126,7 @@
         </div>
       </section>
 
-      <section class="logo-section text-dark d-flex align-items-center panel">
+      <section class="logo-section justify-content-center text-dark d-flex align-items-center panel">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Gambar di kiri -->
@@ -148,7 +148,7 @@
         </div>
       </section>
 
-      <section class="logo-section text-dark d-flex align-items-center panel">
+      <section class="logo-section justify-content-center text-dark d-flex align-items-center panel">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Gambar di kiri -->
@@ -167,7 +167,7 @@
         </div>
       </section>
 
-      <section class="logo-section text-dark d-flex align-items-center panel">
+      <section class="logo-section justify-content-center text-dark d-flex align-items-center panel">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Gambar di kiri -->
@@ -194,48 +194,57 @@
       </svg>
     </div>
   </section>
-  {{-- end section 4 --}}
+  {{-- end section 3 --}}
 
-  {{-- section 5 --}}
-  <section class="home-section-5 justify-content-center align-items-center" id="home-section-5">
+  {{-- section 4 --}}
+  <section class="home-section-4 justify-content-center align-items-center" id="home-section-4">
 
     {{-- unida --}}
-    <div class="text-container text-center container">
-      <h1 class="mb-4">UNIVERSITAS <br> DARUSSALAM GONTOR</h1>
-      <div class="mt-5">
-        <img src="{{ asset('assets/home/unida-logo.png') }}" alt="Universitas Darussalam Gontor" class="img-fluid pt-5">
+    <div class="text-container text-center container" >
+      <h1 class="" data-aos="zoom-in">UNIVERSITAS <br> DARUSSALAM GONTOR</h1>
+      <div class="overflow-x-hidden">
+        <img src="{{ asset('assets/home/unida-logo.png') }}" alt="Universitas Darussalam Gontor" class="pt-2">
       </div>
       <p class="mt-4 fs-4">
         <span class="text-primary fw-bold">UNIDA GONTOR (Universitas Darussalam Gontor)</span> merupakan perguruan tinggi waqaf yang berada di bawah naungan Pondok Modern Darussalam Gontor. Oleh sebab itu, dalam melaksanakan Tri Dharmanya, UNIDA Gontor mempertahankan visi, misi, dan jiwa pesantren.
       </p>
-      <a href="https://unida.gontor.ac.id" class="btn btn-primary mt-3 d-inline-flex align-items-center">
-        Kunjungi Website UNIDA GONTOR
-        <span class="material-icons ms-2">open_in_new</span>
+      <a href="https://unida.gontor.ac.id">
+        <button class="cta">
+          <span>Kunjungi Website UNIDA GONTOR</span>
+          <svg width="15px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </button>        
       </a>
     </div>
 
     {{-- pmb --}}
-    <div class="text-container text-center container">
-      <h1 class="mb-4">PENERIMAAN <br> MAHASISWA BARU</h1>
-      <div class="mt-5">
-        <img src="{{ asset('assets/home/pmb-logo-2.png') }}" alt="pmb" class="img-fluid pt-5">
+    <div class="text-container text-center container mt-3 pt-3">
+      <h1 class=""  data-aos-once="false">PENERIMAAN <br> MAHASISWA BARU</h1>
+      <div class="mt-5"   data-aos-once="false">
+        <img src="{{ asset('assets/home/pmb-logo-2.png') }}" alt="pmb" class="img-fluid pt-1">
       </div>
       <p class="mt-4 fs-4">
         <span class="text-primary fw-bold">"Panitia Penerimaan Mahasiswa Baru" atau disingkat "PMB".</span>
         Mereka adalah tim di perguruan tinggi yang menangani proses penerimaan siswa baru. Mereka menilai aplikasi, mengatur ujian masuk (jika diperlukan), dan membuat keputusan tentang penerimaan siswa baru. Selain itu, PMB juga bertanggung jawab atas pendataan mahasiswa baru yang diterima untuk keperluan administratif dan akademis.
       </p>
-      <a href="https://unida.gontor.ac.id/admission/" class="btn btn-primary mt-3 d-inline-flex align-items-center">
-        Kunjungi Website PMB
-        <span class="material-icons ms-2">open_in_new</span>
+      <a href="https://unida.gontor.ac.id/admission/">
+        <button class="cta">
+          <span>Kunjungi Website pmb</span>
+          <svg width="15px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </button>        
       </a>
     </div>
 
     {{-- barang lain --}}
-    <div class="text-center container">
+    {{-- <div class="text-center container">
       <h3>Hal Lain <br> Yang Perlu Diketahui</h3>
       <div class="row">
 
-        {{-- card 1 --}}
         <div class="col-md-3 col-sm-6 mb-3">
           <div class="card">
             <a href="{{ route('barang') }}">
@@ -252,7 +261,6 @@
           </div>
         </div>
 
-        {{-- card 1 --}}
         <div class="col-md-3 col-sm-6 mb-3">
           <div class="card">
             <a href="{{ route('timeline') }}">
@@ -269,7 +277,6 @@
           </div>
         </div>
 
-        {{-- card 1 --}}
         <div class="col-md-3 col-sm-6 mb-3">
           <div class="card">
             <a href="{{ route('attribute') }}">
@@ -286,7 +293,6 @@
           </div>
         </div>
 
-        {{-- card 1 --}}
         <div class="col-md-3 col-sm-6 mb-3">
           <div class="card">
             <a href="{{ route('pusatinformasi') }}">
@@ -305,7 +311,7 @@
 
       </div>
 
-    </div>
+    </div> --}}
   </section>
 
 
