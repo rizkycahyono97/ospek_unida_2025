@@ -1053,7 +1053,7 @@
                             <th>Nama</th>
                         </tr>
                         <tr>
-                            <td rowspan="3">Pembimbing Umum</td>
+                            <td rowspan="3" class="sections">Pembimbing Umum</td>
                             <td>Assoc. Prof. Dr. Nur Hadi Ihsan, MIRKH</td>
                         </tr>
                         <tr>
@@ -1063,7 +1063,7 @@
                             <td>Cela Petty Susanti, M.Pd</td>
                         </tr>
                         <tr>
-                            <td rowspan="5">Ketua</td>
+                            <td rowspan="5" class="sections">Ketua</td>
                             <td>Dwi Purwati, S.Pd.</td>
                         </tr>
                         <tr>
@@ -1079,7 +1079,7 @@
                             <td>Ahsanu Nadiyya</td>
                         </tr>
                         <tr>
-                            <td rowspan="5">Sekretaris</td>
+                            <td rowspan="5" class="sections">Sekretaris</td>
                             <td>Alifah Yasmin, M.Ag.</td>
                         </tr>
                         <tr>
@@ -1095,7 +1095,7 @@
                             <td>Saskia Najma</td>
                         </tr>
                         <tr>
-                            <td rowspan="5">Bendahara</td>
+                            <td rowspan="5" class="sections">Bendahara</td>
                             <td>Mamluatus Sa’diyah, S.E.</td>
                         </tr>
                         <tr>
@@ -1111,7 +1111,7 @@
                             <td>Aini Istiqomah</td>
                         </tr>
                         <tr>
-                            <td rowspan="17">Sie Giat</td>
+                            <td rowspan="17" class="sections">Sie Giat</td>
                             <td>Dzatu Aliviatin Nuha, M.Ag.</td>
                         </tr>
                         <tr>
@@ -1161,6 +1161,817 @@
                         </tr>
                         <tr>
                             <td>Fatma Azilia</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="17" class="sections">Sie Materi</td>
+                            <td>Yulisa Raras Dewi, M.Farm.</td>
+                        </tr>
+                        <tr>
+                            <td>Febrian Nurul Khotimah, S.Gz.</td>
+                        </tr>
+                        <tr>
+                            <td>Desy Auliya Qudsi, S.Gz.</td>
+                        </tr>
+                        <tr>
+                            <td>Arifah Nursalsabila</td>
+                        </tr>
+                        <tr>
+                            <td>Alzena Mahesadewi</td>
+                        </tr>
+                        <tr>
+                            <td>Dalva Sania</td>
+                        </tr>
+                        <tr>
+                            <td>Dini Lu’lu</td>
+                        </tr>
+                        <tr>
+                            <td>Arsya Naya</td>
+                        </tr>
+                        <tr>
+                            <td>Siti Darojatun</td>
+                        </tr>
+                        <tr>
+                            <td>Meutia Anuisa</td>
+                        </tr>
+                        <tr>
+                            <td>Assyifatuzzahro</td>
+                        </tr>
+                        <tr>
+                            <td>Siti Rizki</td>
+                        </tr>
+                        <tr>
+                            <td>Nayla Silfa</td>
+                        </tr>
+                        <tr>
+                            <td>Athifah Awwalisa</td>
+                        </tr>
+                        <tr>
+                            <td>Choirunnisa Ramadhani</td>
+                        </tr>
+                        <tr>
+                            <td>Kayla Nuria</td>
+                        </tr>
+                        <tr>
+                            <td>Sara Syalwa</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="25" class="sections">Perlengkapan</td>
+                            <td>Ayu Era Wardhani, M.Pd.</td>
+                        </tr>
+                        <tr>
+                            <td>Hajjar Darisaalamah Firdaus, S.Ag.</td>
+                        </tr>
+                        <tr>
+                            <td>Anuida Antor</td>
+                        </tr>
+                        <tr>
+                            <td>Afzal Nabila</td>
+                        </tr>
+                        <tr>
+                            <td>Ade Alifya</td>
+                        </tr>
+                        <tr>
+                            <td>Fatimah Ilma</td>
+                        </tr>
+                        <tr>
+                            <td>Yasra Oca</td>
+                        </tr>
+                        <tr>
+                            <td>Fatimah Nur Azahro</td>
+                        </tr>
+                        <tr>
+                            <td>Wahidatus Syifa</td>
+                        </tr>
+                        <tr>
+                            <td>Shofiyatun Jannah</td>
+                        </tr>
+                        <tr>
+                            <td>Nafiza Salwa</td>
+                        </tr>
+                        <tr>
+                            <td>Nursitihaya Kaning</td>
+                        </tr>
+                        <tr>
+                            <td>Nadin Dikania</td>
+                        </tr>
+                        <tr>
+                            <td>Nopi Tri Ramadhani</td>
+                        </tr>
+                        <tr>
+                            <td>Siti Nur Hafizatul</td>
+                        </tr>
+                        <tr>
+                            <td>Nisa Aulia</td>
+                        </tr>
+                        <tr>
+                            <td>Syifa Nazwa</td>
+                        </tr>
+                        <tr>
+                            <td>Putri Ainur</td>
+                        </tr>
+                        <tr>
+                            <td>Indah Sefiah</td>
+                        </tr>
+                        <tr>
+                            <td>Widia Tsani</td>
+                        </tr>
+                        <tr>
+                            <td>Intan Junice</td>
+                        </tr>
+                        <tr>
+                            <td>Khoirun Nisa Nurul Hidayah</td>
+                        </tr>
+                        <tr>
+                            <td>Siti Mutia Najwa</td>
+                        </tr>
+                        <tr>
+                            <td>Aura Afifah</td>
+                        </tr>
+                        <tr>
+                            <td>Alya Fazila</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="14" class="sections">Spiritual</td>
+                            <td>Haninah Az-Zahra, Lc. M.Pd</td>
+                        </tr>
+                        <tr>
+                            <td>Amelia Ayuningtyas</td>
+                        </tr>
+                        <tr>
+                            <td>Della Natasya</td>
+                        </tr>
+                        <tr>
+                            <td>Lanjar Budiarti</td>
+                        </tr>
+                        <tr>
+                            <td>Isti Komah</td>
+                        </tr>
+                        <tr>
+                            <td>Rizma Salsabila</td>
+                        </tr>
+                        <tr>
+                            <td>Nurul Khoiriyah</td>
+                        </tr>
+                        <tr>
+                            <td>Viona Nur</td>
+                        </tr>
+                        <tr>
+                            <td>Hilwa Syahida</td>
+                        </tr>
+                        <tr>
+                            <td>Erizka Arrofi</td>
+                        </tr>
+                        <tr>
+                            <td>Aisyah Nur Zahra</td>
+                        </tr>
+                        <tr>
+                            <td>Najwa Syifa</td>
+                        </tr>
+                        <tr>
+                            <td>Zaimah Khurriyyah</td>
+                        </tr>
+                        <tr>
+                            <td>Afifah Sholeha</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="13" class="sections">Konsumsi Mahasiswi</td>
+                            <td>Dini Rofiatul Khoiriyah, M.Pd.</td>
+                        </tr>
+                        <tr>
+                            <td>Basmah Mujahidah</td>
+                        </tr>
+                        <tr>
+                            <td>Fella Elya</td>
+                        </tr>
+                        <tr>
+                            <td>Nida Kamila</td>
+                        </tr>
+                        <tr>
+                            <td>Qurrota A’yun</td>
+                        </tr>
+                        <tr>
+                            <td>Wetri Pratama</td>
+                        </tr>
+                        <tr>
+                            <td>Aisyah Siti Munawaroh</td>
+                        </tr>
+                        <tr>
+                            <td>Zainab Ahmad</td>
+                        </tr>
+                        <tr>
+                            <td>Suci Ramadhani</td>
+                        </tr>
+                        <tr>
+                            <td>Nasywa Dias Syauqi</td>
+                        </tr>
+                        <tr>
+                            <td>Mega Putri</td>
+                        </tr>
+                        <tr>
+                            <td>Aisyah Dzakirah</td>
+                        </tr>
+                        <tr>
+                            <td>Karina Khoirunisa</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="15" class="sections">Konsumsi Tutor dan Dosen</td>
+                            <td>Annisa Silviana Yuniar, S.E., M.H.</td>
+                        </tr>
+                        <tr>
+                            <td>Fauziyah Zahro, S.Pd.</td>
+                        </tr>
+                        <tr>
+                            <td>Siti Salma Zaina Azzahra</td>
+                        </tr>
+                        <tr>
+                            <td>Auliya Fauziyatul</td>
+                        </tr>
+                        <tr>
+                            <td>Avita Yuni</td>
+                        </tr>
+                        <tr>
+                            <td>Reni Andriyana</td>
+                        </tr>
+                        <tr>
+                            <td>Mutiara Nabila</td>
+                        </tr>
+                        <tr>
+                            <td>Nichi Aulia</td>
+                        </tr>
+                        <tr>
+                            <td>Zahwa Zahrotul</td>
+                        </tr>
+                        <tr>
+                            <td>Dewi Ratih</td>
+                        </tr>
+                        <tr>
+                            <td>Shafiyyah Al Khansa</td>
+                        </tr>
+                        <tr>
+                            <td>Nabila</td>
+                        </tr>
+                        <tr>
+                            <td>Najma Maghfira Indringityas</td>
+                        </tr>
+                        <tr>
+                            <td>Iffatussajida</td>
+                        </tr>
+                        <tr>
+                            <td>Desyifa Almahira Herlis</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="19" class="sections">LO Tutor</td>
+                            <td>Haila Fardyatullail, M.Ag.</td>
+                        </tr>
+                        <tr>
+                            <td>Warosuatun Khadijah, S.Sos.</td>
+                        </tr>
+                        <tr>
+                            <td>Calya Maharani</td>
+                        </tr>
+                        <tr>
+                            <td>Putri Fadilah</td>
+                        </tr>
+                        <tr>
+                            <td>Fathina Nurul</td>
+                        </tr>
+                        <tr>
+                            <td>Ana Dwi Marlia</td>
+                        </tr>
+                        <tr>
+                            <td>Allifa Khoirol Wafa’</td>
+                        </tr>
+                        <tr>
+                            <td>Miftah Eka</td>
+                        </tr>
+                        <tr>
+                            <td>Silfa Istiqomah</td>
+                        </tr>
+                        <tr>
+                            <td>Putri Pratiwi</td>
+                        </tr>
+                        <tr>
+                            <td>Devina Raihanisa</td>
+                        </tr>
+                        <tr>
+                            <td>Jenny Rismala Putri</td>
+                        </tr>
+                        <tr>
+                            <td>Arina Fatya Manasikana</td>
+                        </tr>
+                        <tr>
+                            <td>Safira Salsabila</td>
+                        </tr>
+                        <tr>
+                            <td>Sultistia Fitri</td>
+                        </tr>
+                        <tr>
+                            <td>Gevira Lia</td>
+                        </tr>
+                        <tr>
+                            <td>Nayla Latifa</td>
+                        </tr>
+                        <tr>
+                            <td>Retno Setyaningsih</td>
+                        </tr>
+                        <tr>
+                            <td>Adinda Kyan</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="10" class="sections">Dekorasi</td>
+                            <td>Khoiriyah Kamilatul Huda</td>
+                        </tr>
+                        <tr>
+                            <td>Putri Maghfiroh</td>
+                        </tr>
+                        <tr>
+                            <td>Annisa Rahma Nur F</td>
+                        </tr>
+                        <tr>
+                            <td>Zahra Musthofafi</td>
+                        </tr>
+                        <tr>
+                            <td>Khoirina Ummu</td>
+                        </tr>
+                        <tr>
+                            <td>Azzahra Britania</td>
+                        </tr>
+                        <tr>
+                            <td>Afifah Nur Rahmah</td>
+                        </tr>
+                        <tr>
+                            <td>Khansa Amatullah</td>
+                        </tr>
+                        <tr>
+                            <td>Adillah Ning Restu</td>
+                        </tr>
+                        <tr>
+                            <td>Ashley Larasati</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="20" class="sections">Kesenian</td>
+                            <td>Ayu Fitria Fandini</td>
+                        </tr>
+                        <tr>
+                            <td>Celika Idna</td>
+                        </tr>
+                        <tr>
+                            <td>Nabila Nur Mahmudah</td>
+                        </tr>
+                        <tr>
+                            <td>Dhini Rheynata</td>
+                        </tr>
+                        <tr>
+                            <td>Mulia Handayani Indrawati</td>
+                        </tr>
+                        <tr>
+                            <td>Larissa Rahima</td>
+                        </tr>
+                        <tr>
+                            <td>Adelia Putri</td>
+                        </tr>
+                        <tr>
+                            <td>Qorima Aurora</td>
+                        </tr>
+                        <tr>
+                            <td>Zahwa Putri</td>
+                        </tr>
+                        <tr>
+                            <td>Zhafira Inas</td>
+                        </tr>
+                        <tr>
+                            <td>Siti Nabila</td>
+                        </tr>
+                        <tr>
+                            <td>Nahda Arina</td>
+                        </tr>
+                        <tr>
+                            <td>Nida Fatimatuzzahra</td>
+                        </tr>
+                        <tr>
+                            <td>Natasha Ishma</td>
+                        </tr>
+                        <tr>
+                            <td>Devi Aghita</td>
+                        </tr>
+                        <tr>
+                            <td>Fiona Anggilia</td>
+                        </tr>
+                        <tr>
+                            <td>Najwah Safana</td>
+                        </tr>
+                        <tr>
+                            <td>Annisa Selviata</td>
+                        </tr>
+                        <tr>
+                            <td>Amaranta Atulia</td>
+                        </tr>
+                        <tr>
+                            <td>Aulia Azzahra</td>
+                        </tr>
+
+
+                        <tr>
+                            <td rowspan="10" class="sections">Penerangan</td>
+                            <td>Nada Ayu Septiani</td>
+                        </tr>
+                        <tr>
+                            <td>Nuraeni Rahmawati</td>
+                        </tr>
+                        <tr>
+                            <td>Raissa Hasna</td>
+                        </tr>
+                        <tr>
+                            <td>Ibnaty Nabila</td>
+                        </tr>
+                        <tr>
+                            <td>Laila Puspita</td>
+                        </tr>
+                        <tr>
+                            <td>Nikmatur Rohmah</td>
+                        </tr>
+                        <tr>
+                            <td>Septika Wahyu Nur Aini</td>
+                        </tr>
+                        <tr>
+                            <td>Ardhya Ayu Amalia</td>
+                        </tr>
+                        <tr>
+                            <td>Keyla Fitran</td>
+                        </tr>
+                        <tr>
+                            <td>Alysha Amanda</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="9" class="sections">Publikasi & Dokumentasi</td>
+                            <td>Arraminta Al-Hadi</td>
+                        </tr>
+                        <tr>
+                            <td>Gadys Putria</td>
+                        </tr>
+                        <tr>
+                            <td>Luthfiana Nuur</td>
+                        </tr>
+                        <tr>
+                            <td>Aulia Carolina</td>
+                        </tr>
+                        <tr>
+                            <td>Rizka Khaetunisa</td>
+                        </tr>
+                        <tr>
+                            <td>Sri Hany Kusuma</td>
+                        </tr>
+                        <tr>
+                            <td>Hasya Seprti</td>
+                        </tr>
+                        <tr>
+                            <td>Syaina Rahma</td>
+                        </tr>
+                        <tr>
+                            <td>Fadhillah Ramadhani</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="12" class="sections">Desain Grafis</td>
+                            <td>Nindhya Ayomi Delahara, S.Ag., M.Pd</td>
+                        </tr>
+                        <tr>
+                            <td>Naily Hayatun Nufus</td>
+                        </tr>
+                        <tr>
+                            <td>Nurul Izzati</td>
+                        </tr>
+                        <tr>
+                            <td>Marwah</td>
+                        </tr>
+                        <tr>
+                            <td>Nur Vadilah</td>
+                        </tr>
+                        <tr>
+                            <td>Hurul Aini</td>
+                        </tr>
+                        <tr>
+                            <td>Kirani Cintya</td>
+                        </tr>
+                        <tr>
+                            <td>Diva Azarine</td>
+                        </tr>
+                        <tr>
+                            <td>Lutlu Indana</td>
+                        </tr>
+                        <tr>
+                            <td>Amira Fathina</td>
+                        </tr>
+                        <tr>
+                            <td>Pynkan Kartika Putri</td>
+                        </tr>
+                        <tr>
+                            <td>Fariha Raihatunnisa</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="14" class="sections">Food Court</td>
+                            <td>Annisa Silvi Kusumastuti, M.H.</td>
+                        </tr>
+                        <tr>
+                            <td>Hutlul Azalia Zaen</td>
+                        </tr>
+                        <tr>
+                            <td>Ayskha Dwi Kustantini</td>
+                        </tr>
+                        <tr>
+                            <td>Nurul A’la</td>
+                        </tr>
+                        <tr>
+                            <td>Zahwa Annisa</td>
+                        </tr>
+                        <tr>
+                            <td>Septiani Angelina</td>
+                        </tr>
+                        <tr>
+                            <td>Zalfarani Abdillah</td>
+                        </tr>
+                        <tr>
+                            <td>Calisa Dhea</td>
+                        </tr>
+                        <tr>
+                            <td>Zakiyah Nur Darojah</td>
+                        </tr>
+                        <tr>
+                            <td>Nashwa Aliya</td>
+                        </tr>
+                        <tr>
+                            <td>Fatihariza Atulina Putri Ihsana Azzahra</td>
+                        </tr>
+                        <tr>
+                            <td>Aprillia Putri Rohmadiana</td>
+                        </tr>
+                        <tr>
+                            <td>Tarishah Oktavia</td>
+                        </tr>
+                        <tr>
+                            <td>Arifah Ulya</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="13" class="sections">Kebersihan</td>
+                            <td>Zakila Rahmadini Putri</td>
+                        </tr>
+                        <tr>
+                            <td>Kamila Sutanti</td>
+                        </tr>
+                        <tr>
+                            <td>Arum Sari</td>
+                        </tr>
+                        <tr>
+                            <td>Fuji Afriyuni</td>
+                        </tr>
+                        <tr>
+                            <td>Fatan Dhikara</td>
+                        </tr>
+                        <tr>
+                            <td>Azzahra Muharrani</td>
+                        </tr>
+                        <tr>
+                            <td>Salsabila Shofiya</td>
+                        </tr>
+                        <tr>
+                            <td>Annistuzzahro Toha</td>
+                        </tr>
+                        <tr>
+                            <td>Ina Wafa Luthfiana</td>
+                        </tr>
+                        <tr>
+                            <td>Saniyyah Sholeh</td>
+                        </tr>
+                        <tr>
+                            <td>Mutianinsa Puastono</td>
+                        </tr>
+                        <tr>
+                            <td>Hawa Wahyu</td>
+                        </tr>
+                        <tr>
+                            <td>Azlin Muthia</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="12" class="sections">Kesehatan</td>
+                            <td>Siti Nur Adila Yuli Saputri</td>
+                        </tr>
+                        <tr>
+                            <td>Ayu Azmi</td>
+                        </tr>
+                        <tr>
+                            <td>Nabihah Anadwi</td>
+                        </tr>
+                        <tr>
+                            <td>Putri Sabrina</td>
+                        </tr>
+                        <tr>
+                            <td>Nur Fadilah S</td>
+                        </tr>
+                        <tr>
+                            <td>Uswatun Hasanah</td>
+                        </tr>
+                        <tr>
+                            <td>Rana Rohadatul</td>
+                        </tr>
+                        <tr>
+                            <td>Hikmah Nurjannah Warsyuwijono</td>
+                        </tr>
+                        <tr>
+                            <td>Nurfitriah</td>
+                        </tr>
+                        <tr>
+                            <td>Taskia Ruzainah Hamidah</td>
+                        </tr>
+                        <tr>
+                            <td>Nadzira Eka</td>
+                        </tr>
+                        <tr>
+                            <td>Siti Aminah</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="25" class="sections">Ummul Maktab</td>
+                            <td>Zalfaa' Afaaf Zhoofiroh, M.Ag.</td>
+                        </tr>
+                        <tr>
+                            <td>Nur Aulia Desuito Elok Mumpuni, S.Gz.</td>
+                        </tr>
+                        <tr>
+                            <td>Zemzemiyeh</td>
+                        </tr>
+                        <tr>
+                            <td>Melia Astinasyahfitri</td>
+                        </tr>
+                        <tr>
+                            <td>Raudatul Rahmi</td>
+                        </tr>
+                        <tr>
+                            <td>Ummi Aisyah</td>
+                        </tr>
+                        <tr>
+                            <td>Atira Firdausi</td>
+                        </tr>
+                        <tr>
+                            <td>Novi Fitriyana</td>
+                        </tr>
+                        <tr>
+                            <td>Dini Satu Hari</td>
+                        </tr>
+                        <tr>
+                            <td>Della Ramadhani</td>
+                        </tr>
+                        <tr>
+                            <td>Iva Nurfatimah</td>
+                        </tr>
+                        <tr>
+                            <td>Dwi Isma Inayah</td>
+                        </tr>
+                        <tr>
+                            <td>Echa Berliana</td>
+                        </tr>
+                        <tr>
+                            <td>Nafidzah Ilma</td>
+                        </tr>
+                        <tr>
+                            <td>Hidayhatun Najah</td>
+                        </tr>
+                        <tr>
+                            <td>Luthfi Aliyya</td>
+                        </tr>
+                        <tr>
+                            <td>Jihan Nabilah</td>
+                        </tr>
+                        <tr>
+                            <td>Nida Fauziyyah</td>
+                        </tr>
+                        <tr>
+                            <td>Latifah Dhiahana</td>
+                        </tr>
+                        <tr>
+                            <td>Adya Rusmallilah</td>
+                        </tr>
+                        <tr>
+                            <td>Khairunnisa</td>
+                        </tr>
+                        <tr>
+                            <td>Ummi Salmah</td>
+                        </tr>
+                        <tr>
+                            <td>Nur Rahma Hudaya</td>
+                        </tr>
+                        <tr>
+                            <td>Anisa Siti Aminah</td>
+                        </tr>
+                        <tr>
+                            <td>Violin Ladies</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5" class="sections">Penanggung Jawab Fakultas Tarbiyah</td>
+                            <td>Mutiara Dewi, M.Pd.</td>
+                        </tr>
+                        <tr>
+                            <td>Revi Dwi Anastasia</td>
+                        </tr>
+                        <tr>
+                            <td>Siti Jami’atur</td>
+                        </tr>
+                        <tr>
+                            <td>Fadhillah Ramadhani</td>
+                        </tr>
+                        <tr>
+                            <td>Winda Roini, M.Ag.</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="3" class="sections">Penanggung Jawab Fakultas Ushuluddin</td>
+                            <td>Arina Latifatu</td>
+                        </tr>
+                        <tr>
+                            <td>Hanifah Az-zahra</td>
+                        </tr>
+                        <tr>
+                            <td>Nandika Naswya</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="5" class="sections">Penanggung Jawab Fakultas Humaniora</td>
+                            <td>Afni Regita Cahyani Muis, S.IP., M.A.</td>
+                        </tr>
+                        <tr>
+                            <td>Kharisma Dira</td>
+                        </tr>
+                        <tr>
+                            <td>Fatma Diyah</td>
+                        </tr>
+                        <tr>
+                            <td>Halimatussa’diyah Salamah</td>
+                        </tr>
+                        <tr>
+                            <td>Galih Asia, M.E.</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="3" class="sections">Penanggung Jawab Fakultas Ekonomi Manajemen</td>
+                            <td>Nopi Damayanti</td>
+                        </tr>
+                        <tr>
+                            <td>Mayla Sarah</td>
+                        </tr>
+                        <tr>
+                            <td>Pingky Awalya</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="4" class="sections">Penanggung Jawab Fakultas Syariah</td>
+                            <td>Aulia Maulida Musthofah, B.A., M.H.</td>
+                        </tr>
+                        <tr>
+                            <td>Kayla Aulia Mursyid</td>
+                        </tr>
+                        <tr>
+                            <td>Imelia Larasati</td>
+                        </tr>
+                        <tr>
+                            <td>Asyiyoh Azkya</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="4" class="sections">Penanggung Jawab Fakultas Sains & Teknologi</td>
+                            <td>Siti Azizah Ardiningtyas, S.P., M.Si.</td>
+                        </tr>
+                        <tr>
+                            <td>Amisha Hersavina</td>
+                        </tr>
+                        <tr>
+                            <td>Mar’ah Rofidah</td>
+                        </tr>
+                        <tr>
+                            <td>Nada Lahfah</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="4" class="sections">Penanggung Jawab Fakultas Ilmu Kesehatan</td>
+                            <td>Mahmud Carica Dewi, S.Farm., M.Pharm</td>
+                        </tr>
+                        <tr>
+                            <td>Zakhaffira Mujahidah</td>
+                        </tr>
+                        <tr>
+                            <td>Lintang Auni</td>
+                        </tr>
+                        <tr>
+                            <td>Attala Raniya</td>
                         </tr>
                     </table>
                 </div>

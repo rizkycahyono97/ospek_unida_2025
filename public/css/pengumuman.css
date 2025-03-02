@@ -1,9 +1,9 @@
 .info-section {
-    max-width: 100vw;
+    max-width: 100%;
     position: relative;
     display: flex;
     z-index: 1;
-    height: auto;
+    min-height: 100vh;
     background-color: #ffffff;
     background-image: url(../assets/pusatinformasi/info-bg.jpeg);
     background-size: cover;
@@ -18,17 +18,24 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 13%;
+    height: 100px;
     top: 0;
     background: linear-gradient(to top, rgba(231, 229, 229, 0), rgb(255, 253, 253));
 }
 
-p {
-    margin-bottom: 1rem;
-}
+/* .info-section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(19, 29, 20, 1), rgba(21, 34, 22, 0));
+} */
 
 .info-banner {
-    height: 100vh;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .info-header {
@@ -43,8 +50,7 @@ p {
 
 .info-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     margin-top: 3rem;
     padding: 0;
     z-index: 1;
@@ -55,20 +61,17 @@ p {
     /* Efek 3D */
 }
 
-.menu-cards-1,
-.menu-cards-2 {
+.menu-cards-1 {
     justify-items: center;
     align-items: center;
     margin: auto;
     margin-top: 0;
-}
-
-.menu-cards-2 {
     margin-bottom: 10rem;
 }
 
 .info-card {
     margin-top: 1rem;
+    padding: 0;
 }
 
 input {
@@ -76,7 +79,7 @@ input {
 }
 
 .label {
-    width: 525px;
+    width: 1025px;
     height: 75px;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
@@ -109,12 +112,10 @@ input {
 
 .label .row .icon {
     border-radius: 50%;
-    font-family: "Kanit", serif;
-    font-weight: 800;
+    font-family: sans-serif;
+    font-weight: 600;
     color: rgb(206, 194, 180);
     background-color: #497a6f;
-    color: #497a6f;
-    font-size: 1.4rem;
     width: 50px;
     height: 50px;
     display: flex;
@@ -124,15 +125,7 @@ input {
     box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
-    text-shadow:
-        -1px -1px 0px #f3eae3,
-        /* Bayangan ke kiri atas */
-        1px -1px 0px #e9e1db,
-        /* Bayangan ke kanan atas */
-        -1px 1px 0px #dacdc2,
-        /* Bayangan ke kiri bawah */
-        1px 1px 0px #dba67a;
-    /* Bayangan ke kanan bawah */
+    text-shadow: 0.5px 0.5px 1px rgb(19, 29, 20);
 }
 
 .label .row h4 {
@@ -140,22 +133,27 @@ input {
 }
 
 .label .row .description {
-    display: flex;
+    width: 1000px;
+
     justify-content: center;
-    flex-direction: column;
+    text-align: justify;
     font-size: 1.1rem;
     overflow: hidden;
-    height: 50px;
     opacity: 0;
-    margin: 0 10px;
+    margin: 0 1rem;
     transform: translateY(30px);
-    line-height: 0.5;
+    padding-right: 15px;
     transition-delay: 0.3s;
     transition: all 0.3s ease;
+    line-height: 1.2;
+}
+
+.label .row .description p {
+    min-width: 95%;
 }
 
 input:checked+label {
-    height: 150px;
+    height: 180px;
 }
 
 input:has(:not(:checked))+label {
@@ -174,6 +172,10 @@ input:checked+label .description {
         margin-top: 3.5rem;
     }
 
+    .info-header h5 {
+        font-size: 1rem;
+    }
+
     .info-cards {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 0;
@@ -181,30 +183,13 @@ input:checked+label .description {
     }
 
     .label {
-        width: 325px;
-        height: 45px;
+        max-width: 300px;
+        height: 65px;
         border-radius: 1.35rem;
     }
 
     .label .row .icon {
-        border-radius: 50%;
-        font-weight: 600;
-        font-size: 1rem;
-        width: 35px;
-        height: 35px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 5px 0px;
-        text-shadow:
-            -0.7px -0.7px 0px #f3eae3,
-            /* Bayangan ke kiri atas */
-            0.7px -0.7px 0px #e9e1db,
-            /* Bayangan ke kanan atas */
-            -0.7px 0.7px 0px #dacdc2,
-            /* Bayangan ke kiri bawah */
-            0.7px 0.7px 0px #dba67a;
-        /* Bayangan ke kanan bawah */
+        display: none;
     }
 
     .label .row h4 {
@@ -214,11 +199,16 @@ input:checked+label .description {
     }
 
     .label .row .description {
-        max-width: 400px;
+        width: 100%;
         height: 75px;
         font-size: 0.9rem;
         line-height: 1;
         margin: 0.5rem;
+    }
+
+    .label .row .description p {
+        font-size: 0.7rem;
+        max-width: 96%;
     }
 }
 
@@ -232,46 +222,38 @@ input:checked+label .description {
 
     .label {
         width: 435px;
-        height: 60px;
-        border-radius: 1.8rem;
+        height: 70px;
+        border-radius: 1.3rem;
     }
 
     .label .row .icon {
-        border-radius: 50%;
-        font-weight: 600;
-        width: 45px;
-        height: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 8px 0px;
-        text-shadow:
-            -0.7px -0.7px 0px #f3eae3,
-            /* Bayangan ke kiri atas */
-            0.7px -0.7px 0px #e9e1db,
-            /* Bayangan ke kanan atas */
-            -0.7px 0.7px 0px #dacdc2,
-            /* Bayangan ke kiri bawah */
-            0.7px 0.7px 0px #dba67a;
-        /* Bayangan ke kanan bawah */
+        display: none;
     }
 
     .label .row h4 {
-        padding-top: 18px;
+        padding-top: 13px;
         font-size: 1.2rem;
         padding-left: 8px;
     }
 
     .label .row .description {
-        max-width: 400px;
+        width: 100%;
         height: 75px;
-        font-size: 0.9rem;
         line-height: 1;
+    }
+
+    .label .row .description p {
+        font-size: 0.7rem;
+        max-width: 96%;
     }
 }
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 999px) {
+    .info-section {
+        min-height: 140vh;
+    }
+
     .info-cards {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 0;
@@ -279,46 +261,45 @@ input:checked+label .description {
     }
 
     .label {
-        width: 435px;
+        width: 670px;
         height: 65px;
         border-radius: 1.9rem;
     }
 
     .label .row .icon {
         border-radius: 50%;
+        font-family: sans-serif;
         font-weight: 600;
+        color: rgb(206, 194, 180);
+        background-color: #497a6f;
         width: 45px;
         height: 45px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 10px 3px;
-        text-shadow:
-            -0.7px -0.7px 0px #f3eae3,
-            /* Bayangan ke kiri atas */
-            0.7px -0.7px 0px #e9e1db,
-            /* Bayangan ke kanan atas */
-            -0.7px 0.7px 0px #dacdc2,
-            /* Bayangan ke kiri bawah */
-            0.7px 0.7px 0px #dba67a;
-        /* Bayangan ke kanan bawah */
     }
 
     .label .row h4 {
         padding-top: 22px;
-        font-size: 1.2rem;
+        font-size: 1.12rem;
         padding-left: 8px;
     }
 
     .label .row .description {
-        max-width: 400px;
+        width: 100%;
         height: 75px;
         font-size: 0.9rem;
         line-height: 1;
     }
+
+    .label .row .description p {
+        max-width: 96%;
+    }
 }
 
 @media (min-width: 1000px) and (max-width: 1220px) {
+
     .info-cards {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 0;
@@ -326,14 +307,17 @@ input:checked+label .description {
     }
 
     .label {
-        width: 435px;
+        width: 845px;
         height: 65px;
         border-radius: 1.9rem;
     }
 
     .label .row .icon {
         border-radius: 50%;
+        font-family: sans-serif;
         font-weight: 600;
+        color: rgb(206, 194, 180);
+        background-color: #497a6f;
         width: 45px;
         height: 45px;
         display: flex;
@@ -349,9 +333,12 @@ input:checked+label .description {
     }
 
     .label .row .description {
-        max-width: 400px;
+        width: 100%;
         height: 75px;
         font-size: 0.9rem;
-        line-height: 1;
+    }
+
+    .label .row .description p {
+        max-width: 96%;
     }
 }

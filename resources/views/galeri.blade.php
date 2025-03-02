@@ -54,6 +54,11 @@
                     <img src="{{ asset('assets/galeri/39.JPG') }}" loading="lazy" alt="">
                     <img src="{{ asset('assets/galeri/40.JPG') }}" loading="lazy" alt="">
                     <img src="{{ asset('assets/galeri/41.JPG') }}" loading="lazy" alt="">
+                    <img src="{{ asset('assets/galeri/42.jpg') }}" loading="lazy" alt="">
+                    <img src="{{ asset('assets/galeri/43.jpg') }}" loading="lazy" alt="">
+                    <img src="{{ asset('assets/galeri/44.jpg') }}" loading="lazy" alt="">
+                    <img src="{{ asset('assets/galeri/45.JPG') }}" loading="lazy" alt="">
+                    <img src="{{ asset('assets/galeri/46.JPG') }}" loading="lazy" alt="">
                 </div>
             </div>
             {{-- </div> --}}

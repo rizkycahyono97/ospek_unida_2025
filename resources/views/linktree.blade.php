@@ -10,7 +10,7 @@
                 <!-- Content here -->
                 <div class="info-banner">
                     <div class="info-header">
-                        <h1>Pusat Informasi </h1>
+                        <h1>Pusat Link & Akses Cepat</h1>
                         <h5>NB : Klik link pada menu untuk mengunjungi halaman</h5>
                     </div>
                     <div class="info-cards">
@@ -41,7 +41,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Mau masuk UNIDA tapi bingung harus bawa apa?</p>
-                                            <a href="{{ route('barang') }}" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
                                         </div>
                                     </div>
                                 </label>
@@ -56,7 +56,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Bingung baju kesehariannya gimana?</p>
-                                            <a href="" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
                                         </div>
                                     </div>
                                 </label>
@@ -71,8 +71,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Mencari informasi lengkap terkait Pembayaran?</p>
-                                            <a href="{{ route('pembayaran') }}" class="link-entry">Cari tahu lebih
-                                                lanjut</a>
+                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
                                         </div>
                                     </div>
                                 </label>
@@ -87,7 +86,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Mau aktif tapi bingung ikut apa pas di kampus?</p>
-                                            <a href="{{ route('timeline') }}" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
                                         </div>
                                     </div>
                                 </label>
@@ -102,7 +101,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Mau aktif tapi bingung ikut apa pas di kampus?</p>
-                                            <a href="{{ route('timeline') }}" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
                                         </div>
                                     </div>
                                 </label>

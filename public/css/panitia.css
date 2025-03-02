@@ -88,11 +88,10 @@
     margin-bottom: 7rem;
 }
 
-#tabel-mahasiswa tr:nth-child(1) {
-    text-align: center;
-}
-
-#tabel-mahasiswa tr .sections {
+#tabel-mahasiswa tr:nth-child(1),
+#tabel-mahasiswa tr .sections,
+#tabel-mahasiswi tr .sections,
+#tabel-mahasiswi tr th {
     text-align: center;
 }
 
@@ -100,7 +99,6 @@
 #tabel-mahasiswa tr td:nth-last-child(1) {
     display: none;
 }
-
 
 #tabel-mahasiswa tr td,
 #tabel-mahasiswa tr th,
@@ -121,7 +119,9 @@
     }
 
     #tabel-mahasiswa tr td,
-    #tabel-mahasiswa tr th {
+    #tabel-mahasiswa tr th,
+    #tabel-mahasiswi tr td,
+    #tabel-mahasiswi tr th {
         font-size: 0.7rem;
     }
 
@@ -137,6 +137,13 @@
 @media (min-width: 481px) and (max-width: 767px) {
     .panitia-section::before {
         height: 70px;
+    }
+
+    #tabel-mahasiswa tr td,
+    #tabel-mahasiswa tr th,
+    #tabel-mahasiswi tr td,
+    #tabel-mahasiswi tr th {
+        font-size: 0.9rem;
     }
 
     .panitia-section::after {

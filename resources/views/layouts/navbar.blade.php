@@ -43,6 +43,10 @@
         <link rel="stylesheet" href="{{ asset('css/galeri.css') }}?v={{ time() }}">
     @elseif (Request::is('panitia'))
         <link rel="stylesheet" href="{{ asset('css/panitia.css') }}?v={{ time() }}">
+    @elseif (Request::is('pengumuman'))
+        <link rel="stylesheet" href="{{ asset('css/pengumuman.css') }}?v={{ time() }}">
+    @elseif (Request::is('linktree'))
+        <link rel="stylesheet" href="{{ asset('css/linktree.css') }}?v={{ time() }}">
     @endif
 
     {{-- Google Fonts --}}

@@ -112,12 +112,13 @@ input {
 
 .label .row .icon {
     border-radius: 50%;
-    font-family: sans-serif;
-    font-weight: 600;
-    color: rgb(206, 194, 180);
+    font-family: "Kanit", serif;
+    font-weight: 800;
+    color: #497a6f;
     background-color: #497a6f;
     width: 50px;
     height: 50px;
+    font-size: 1.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,6 +127,15 @@ input {
     -webkit-box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
     text-shadow: 0.5px 0.5px 1px rgb(19, 29, 20);
+    text-shadow:
+        -1px -1px 0px #f3eae3,
+        /* Bayangan ke kiri atas */
+        1px -1px 0px #e9e1db,
+        /* Bayangan ke kanan atas */
+        -1px 1px 0px #dacdc2,
+        /* Bayangan ke kiri bawah */
+        1px 1px 0px #dba67a;
+    /* Bayangan ke kanan bawah */
 }
 
 .label .row h4 {
@@ -267,17 +277,24 @@ input:checked+label .description {
     }
 
     .label .row .icon {
-        border-radius: 50%;
-        font-family: sans-serif;
+        font-family: "Kanit", serif;
         font-weight: 600;
-        color: rgb(206, 194, 180);
-        background-color: #497a6f;
         width: 45px;
         height: 45px;
         display: flex;
+        font-size: 1rem;
         justify-content: center;
         align-items: center;
         margin: 10px 3px;
+        text-shadow:
+            -0.7px -0.7px 0px #f3eae3,
+            /* Bayangan ke kiri atas */
+            0.7px -0.7px 0px #e9e1db,
+            /* Bayangan ke kanan atas */
+            -0.7px 0.7px 0px #dacdc2,
+            /* Bayangan ke kiri bawah */
+            0.7px 0.7px 0px #dba67a;
+        /* Bayangan ke kanan bawah */
     }
 
     .label .row h4 {
@@ -313,11 +330,7 @@ input:checked+label .description {
     }
 
     .label .row .icon {
-        border-radius: 50%;
-        font-family: sans-serif;
         font-weight: 600;
-        color: rgb(206, 194, 180);
-        background-color: #497a6f;
         width: 45px;
         height: 45px;
         display: flex;
