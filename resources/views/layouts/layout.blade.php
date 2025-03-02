@@ -58,9 +58,10 @@
     {{-- navbar --}}
     @include('layouts.navbar')
 
-
     <!-- Tempat untuk Konten -->
     @yield('content')
+
+    @include('layouts.footer')
 
     {{-- script --}}
     <!-- GSAP Script -->

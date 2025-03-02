@@ -1,4 +1,4 @@
-@extends('layouts.navbar')
+@extends('layouts.layout')
 
 @section('content')
     {{-- locomotive scroll --}}
@@ -41,7 +41,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Mau masuk UNIDA tapi bingung harus bawa apa?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <a href="{{ route('barang') }}" class="link-entry">Cari tahu lebih lanjut</a>
                                         </div>
                                     </div>
                                 </label>
@@ -56,7 +56,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Bingung baju kesehariannya gimana?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <a href="" class="link-entry">Cari tahu lebih lanjut</a>
                                         </div>
                                     </div>
                                 </label>
@@ -71,7 +71,8 @@
                                         </div>
                                         <div class="description">
                                             <p>Mencari informasi lengkap terkait Pembayaran?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <a href="{{ route('pembayaran') }}" class="link-entry">Cari tahu lebih
+                                                lanjut</a>
                                         </div>
                                     </div>
                                 </label>
@@ -86,7 +87,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Mau aktif tapi bingung ikut apa pas di kampus?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <a href="{{ route('timeline') }}" class="link-entry">Cari tahu lebih lanjut</a>
                                         </div>
                                     </div>
                                 </label>
@@ -101,7 +102,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Mau aktif tapi bingung ikut apa pas di kampus?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <a href="{{ route('timeline') }}" class="link-entry">Cari tahu lebih lanjut</a>
                                         </div>
                                     </div>
                                 </label>
@@ -133,7 +134,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Penasaran dengan kegiatan seputar kampus?</p>
-                                            <a href="#" class="link-entry">Cek Galeri</a>
+                                            <a href="{{ route('galeri') }}" class="link-entry">Cek Galeri</a>
                                         </div>
                                     </div>
                                 </label>
@@ -163,8 +164,8 @@
                                             <h4>Pusat Link & Akses Cepat</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Cari tautan-tautan penting terkait ospek tahun ini?</p>
-                                            <a href="#" class="link-entry">Cek Link Tree</a>
+                                            <p>Mencari link penting terkait ospek tahun ini?</p>
+                                            <a href="{{ route('linktree') }}" class="link-entry">Cek Link Tree</a>
                                         </div>
                                     </div>
                                 </label>
@@ -194,7 +195,8 @@
                                         </div>
                                         <div class="description">
                                             <p>Mencari Informasi lain terkait kegiatan ospek?</p>
-                                            <a href="#" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <a href="{{ route('pengumuman') }}" class="link-entry">Cari tahu lebih
+                                                lanjut</a>
                                         </div>
                                     </div>
                                 </label>

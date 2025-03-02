@@ -3,7 +3,7 @@
 @section('content')
 
   {{-- section 1 --}}
-  <section class="home-section-1 d-flex justify-content-center align-items-center vh-100 position-relative overflow-hidden w-100 min-vh-100" id="home-section-1" data-scroll-container>
+  <section class="home-section-1 d-flex justify-content-center align-items-center vh-100 position-relative overflow-hidden w-100 min-vh-100" id="home-section-1">
     
     <!-- Sayap Kiri -->
     <div class="sayap-kiri position-absolute d-flex align-items-center" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1500">
@@ -12,11 +12,11 @@
 
     <!-- Bagian Tengah (Tulisan + Logo) -->
     <div class="tulisan d-flex align-items-center justify-content-center text-center">
-        <h1 id="text-kiri" class="me-4 text-uppercase fw-bold">OSPEK</h1>
+      <h1 id="text-kiri" class="me-4 text-uppercase fw-bold">OSPEK</h1>
 
-        <img id="logo-ospek" src="{{ asset('assets/home/logo_2.png') }}" alt="Logo OSPEK" class="img-fluid">
+      <img id="logo-ospek" src="{{ asset('assets/home/logo_2.png') }}" alt="Logo OSPEK" class="img-fluid">
 
-        <h1 id="text-kanan" class="text-tahun ms-4 text-uppercase fw-bold">2 0 2 5</h1>
+      <h1 id="text-kanan" class="text-tahun ms-4 text-uppercase fw-bold">2 0 2 5</h1>
     </div>
 
     <!-- Sayap Kanan -->
@@ -258,7 +258,6 @@
                 <p>Barang</p>
               </div>          
             </a>
-          </div>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-3">
@@ -273,10 +272,9 @@
                   </div>
                 <p>Timeline</p>
               </div>          
-            </a>
-          </div>
-        </div>
 
+            </a>
+        </div>
         <div class="col-md-3 col-sm-6 mb-3">
           <div class="card">
             <a href="{{ route('attribute') }}">
@@ -285,13 +283,9 @@
                   <div class="circle">
                     <div class="card-content">
                       <img src="{{ asset('assets/home/baju.png') }}" alt="baju">
+
                     </div>
-                  </div>
-                <p>Attribute</p>
-              </div>          
-            </a>
-          </div>
-        </div>
+                </div>
 
         <div class="col-md-3 col-sm-6 mb-3">
           <div class="card">
@@ -302,17 +296,47 @@
                     <div class="card-content">
                       <img src="{{ asset('assets/home/lainya.png') }}" alt="lainya">
                     </div>
-                  </div>
-                <p>Lainya</p>
-              </div>          
-            </a>
-          </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card">
+                        <a href="{{ route('attribute') }}">
+                            <div class="card wallet">
+                                <div class="overlay"></div>
+                                <div class="circle">
+                                    <div class="card-content">
+                                        <img src="{{ asset('assets/home/baju.png') }}" alt="baju">
+                                    </div>
+                                </div>
+                                <p>Attribute</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card">
+                        <a href="{{ route('pusatinformasi') }}">
+                            <div class="card wallet">
+                                <div class="overlay"></div>
+                                <div class="circle">
+                                    <div class="card-content">
+                                        <img src="{{ asset('assets/home/lainya.png') }}" alt="lainya">
+                                    </div>
+                                </div>
+                                <p>Lainya</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
       </div>
 
     </div> --}}
   </section>
-
 
 @endsection

@@ -3,7 +3,7 @@
     position: relative;
     display: flex;
     z-index: 1;
-    min-height: 180vh;
+    min-height: 100vh;
     background-color: #ffffff;
     background-image: url(../assets/pusatinformasi/info-bg.jpeg);
     background-size: cover;
@@ -18,7 +18,7 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 7%;
+    height: 100px;
     top: 0;
     background: linear-gradient(to top, rgba(231, 229, 229, 0), rgb(255, 253, 253));
 }
@@ -34,7 +34,8 @@
 } */
 
 .info-banner {
-    height: 100vh;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .info-header {
@@ -111,12 +112,13 @@ input {
 
 .label .row .icon {
     border-radius: 50%;
-    font-family: sans-serif;
-    font-weight: 600;
-    color: rgb(206, 194, 180);
+    font-family: "Kanit", serif;
+    font-weight: 800;
+    color: #497a6f;
     background-color: #497a6f;
     width: 50px;
     height: 50px;
+    font-size: 1.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,6 +127,15 @@ input {
     -webkit-box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
     text-shadow: 0.5px 0.5px 1px rgb(19, 29, 20);
+    text-shadow:
+        -1px -1px 0px #f3eae3,
+        /* Bayangan ke kiri atas */
+        1px -1px 0px #e9e1db,
+        /* Bayangan ke kanan atas */
+        -1px 1px 0px #dacdc2,
+        /* Bayangan ke kiri bawah */
+        1px 1px 0px #dba67a;
+    /* Bayangan ke kanan bawah */
 }
 
 .label .row h4 {
@@ -133,7 +144,7 @@ input {
 
 .label .row .description {
     width: 1000px;
-    display: flex;
+
     justify-content: center;
     text-align: justify;
     font-size: 1.1rem;
@@ -145,6 +156,10 @@ input {
     transition-delay: 0.3s;
     transition: all 0.3s ease;
     line-height: 1.2;
+}
+
+.label .row .description p {
+    min-width: 95%;
 }
 
 input:checked+label {
@@ -200,6 +215,11 @@ input:checked+label .description {
         line-height: 1;
         margin: 0.5rem;
     }
+
+    .label .row .description p {
+        font-size: 0.7rem;
+        max-width: 96%;
+    }
 }
 
 /* Large Phone (481px - 767px) */
@@ -227,10 +247,14 @@ input:checked+label .description {
     }
 
     .label .row .description {
-        max-width: 400px;
+        width: 100%;
         height: 75px;
-        font-size: 0.9rem;
         line-height: 1;
+    }
+
+    .label .row .description p {
+        font-size: 0.7rem;
+        max-width: 96%;
     }
 }
 
@@ -253,17 +277,24 @@ input:checked+label .description {
     }
 
     .label .row .icon {
-        border-radius: 50%;
-        font-family: sans-serif;
+        font-family: "Kanit", serif;
         font-weight: 600;
-        color: rgb(206, 194, 180);
-        background-color: #497a6f;
         width: 45px;
         height: 45px;
         display: flex;
+        font-size: 1rem;
         justify-content: center;
         align-items: center;
         margin: 10px 3px;
+        text-shadow:
+            -0.7px -0.7px 0px #f3eae3,
+            /* Bayangan ke kiri atas */
+            0.7px -0.7px 0px #e9e1db,
+            /* Bayangan ke kanan atas */
+            -0.7px 0.7px 0px #dacdc2,
+            /* Bayangan ke kiri bawah */
+            0.7px 0.7px 0px #dba67a;
+        /* Bayangan ke kanan bawah */
     }
 
     .label .row h4 {
@@ -273,14 +304,19 @@ input:checked+label .description {
     }
 
     .label .row .description {
-        max-width: 400px;
+        width: 100%;
         height: 75px;
         font-size: 0.9rem;
         line-height: 1;
     }
+
+    .label .row .description p {
+        max-width: 96%;
+    }
 }
 
 @media (min-width: 1000px) and (max-width: 1220px) {
+
     .info-cards {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 0;
@@ -294,11 +330,7 @@ input:checked+label .description {
     }
 
     .label .row .icon {
-        border-radius: 50%;
-        font-family: sans-serif;
         font-weight: 600;
-        color: rgb(206, 194, 180);
-        background-color: #497a6f;
         width: 45px;
         height: 45px;
         display: flex;
@@ -314,8 +346,12 @@ input:checked+label .description {
     }
 
     .label .row .description {
-        max-width: 825px;
+        width: 100%;
         height: 75px;
         font-size: 0.9rem;
+    }
+
+    .label .row .description p {
+        max-width: 96%;
     }
 }

@@ -98,8 +98,12 @@
     margin-left: 5px;
 }
 
+.kontak-info p {
+    margin-bottom: 10px;
+}
+
 .kontak-info p a {
-    padding: 5px;
+    padding: 2px 5px;
     background-color: #317F80;
     color: white;
     text-decoration: none;

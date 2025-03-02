@@ -5,29 +5,25 @@
     font-family: "Merriweather Sans", serif;
 } */
 
-body {
-    overflow-x: hidden;
-}
 
 /* --------- */
 /* Section 1 */
 /* --------- */
 .fakultas-section {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
-    display: flex;
     z-index: 1;
     background-color: #ffffff;
     background-image: url(../assets/jurusan/jurusan-bg.png);
     background-size: cover;
     background-position: center;
     font-family: "Spectral SC", serif;
+    overflow-x: hidden;
 }
 
 .fakultas-banner {
     width: 100%;
-    height: 60rem;
     text-align: center;
     overflow: hidden;
 }
@@ -37,7 +33,7 @@ body {
     display: block;
     position: absolute;
     width: 100%;
-    height: 13%;
+    height: 100px;
     top: 0;
     background: linear-gradient(to top, rgba(231, 229, 229, 0), rgb(255, 253, 253));
 }
@@ -47,7 +43,7 @@ body {
     display: block;
     position: absolute;
     width: 100%;
-    height: 20%;
+    height: 100px;
     bottom: 0;
     background: linear-gradient(to top, rgb(19, 29, 20), rgba(21, 34, 22, 0));
 }
@@ -107,7 +103,7 @@ body {
     height: 18rem;
     font-family: "Spectral SC", serif;
     text-align: center;
-    background-color: rgba(189, 207, 196, 0.7);
+    background-color: rgba(189, 207, 196, 0.85);
 }
 
 
@@ -124,16 +120,27 @@ body {
     background-image: url(../assets/jurusan/jurusan-bg2.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .prodi-section::before {
     content: "";
     display: block;
     position: absolute;
-    width: 150%;
-    height: 10%;
+    width: 100%;
+    height: 100px;
     top: 0;
     background: linear-gradient(to top, rgba(231, 229, 229, 0), rgb(19, 29, 20));
+}
+
+.prodi-section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background: linear-gradient(to top, rgb(19, 29, 20), rgba(21, 34, 22, 0));
 }
 
 .prodi-header {
@@ -194,9 +201,17 @@ body {
     text-shadow: 1px 1px 2px rgb(19, 29, 20);
 }
 
+.table-prodi tr td {
+    padding: 3px 5px;
+    font-size: 1.3rem;
+}
+
+.table-prodi tr td:first-child {
+    vertical-align: top;
+}
+
 .prodi-card p {
     padding: 0;
-    font-size: 1.3rem;
 }
 
 /* regular smartphone */
@@ -273,7 +288,7 @@ body {
     }
 
     .prodi-cards {
-        grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
         gap: 1rem;
     }
 
@@ -282,20 +297,21 @@ body {
         width: 9.7rem;
         height: 10rem;
         margin: auto;
-        line-height: 0.5;
+        line-height: 1;
         border-radius: 10px;
+    }
+
+    .prodi-card br {
+        display: none;
     }
 
     .prodi-card h3 {
         font-size: 1rem;
     }
 
-
-    .prodi-card p {
-        padding: 0;
+    .table-prodi tr td {
+        padding: 1px 3px;
         font-size: 0.6rem;
-        line-height: 1.3;
-        margin-top: -10px;
     }
 
     .prodi-card:nth-last-child(1) {
@@ -321,6 +337,27 @@ body {
         }
     }
 
+    .fakultas-banner .slider .item {
+        position: absolute;
+        inset: 0 0 0 0;
+        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
+    }
+
+    .fakultas-banner .slider .item h4 {
+        border-radius: 7px 7px 20px 20px;
+        padding: 0.5rem;
+        padding-top: 0.6rem;
+        font-size: 1rem;
+        width: 10rem;
+        height: 15rem;
+    }
+
+    .fakultas-banner .slider .item p {
+        padding-top: 0.8rem;
+        margin: auto;
+        font-size: 0.77rem;
+    }
+
     .prodi-section::before {
         height: 3%;
     }
@@ -344,7 +381,8 @@ body {
         font-size: 1rem;
     }
 
-    .prodi-card p {
+    .table-prodi tr td {
+        padding: 2px 4px;
         font-size: 0.8rem;
     }
 }
@@ -393,15 +431,9 @@ body {
         font-size: 1.3rem;
     }
 
-    .prodi-card p {
+    .table-prodi tr td {
+        padding: 2px 5px;
         font-size: 1rem;
     }
 
 }
-
-
-/* Desktop (1441px - 1920px) */
-@media (min-width: 1441px) and (max-width: 1920px) {}
-
-/* Large Monitor +1921px */
-@media (min-width: 1921px) {}
