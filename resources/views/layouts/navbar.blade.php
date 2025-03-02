@@ -21,7 +21,7 @@
                 </li>
                 <!-- Logo -->
                 <a class="navbar-brand mx-3" href="{{ route('index') }}">
-                    <img src="{{ asset('assets/navbar/icon-logo.png') }}" alt="Logo" style="width: 24px; height: auto;">
+                    <img src="{{ asset('assets/navbar/white-logo.png') }}" alt="Logo" style="width: 24px; height: auto;">
                 </a>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="{{ route('faq') }}">FAQ</a>

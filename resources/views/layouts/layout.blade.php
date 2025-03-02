@@ -19,6 +19,7 @@
     @endif
     {{-- Custom Css --}}
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}?v={{ time() }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}?v={{ time() }}">
     {{-- CSS for each page --}}
     @if (Request::is('/'))
         <link rel="stylesheet" href="{{ asset('css/home.css') }}?v={{ time() }}">
