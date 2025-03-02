@@ -61,6 +61,7 @@
     <!-- Tempat untuk Konten -->
     @yield('content')
 
+    {{-- footer --}}
     @include('layouts.footer')
 
     {{-- script --}}

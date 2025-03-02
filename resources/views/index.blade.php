@@ -197,7 +197,7 @@
   {{-- end section 3 --}}
 
   {{-- section 4 --}}
-  <section class="home-section-4 justify-content-center align-items-center" id="home-section-4">
+  <section class="home-section-4 justify-content-center align-items-center pb-5" id="home-section-4">
 
     {{-- unida --}}
     <div class="text-container text-center container" >
@@ -208,8 +208,8 @@
       <p class="mt-4 fs-4">
         <span class="text-primary fw-bold">UNIDA GONTOR (Universitas Darussalam Gontor)</span> merupakan perguruan tinggi waqaf yang berada di bawah naungan Pondok Modern Darussalam Gontor. Oleh sebab itu, dalam melaksanakan Tri Dharmanya, UNIDA Gontor mempertahankan visi, misi, dan jiwa pesantren.
       </p>
-      <a href="https://unida.gontor.ac.id">
-        <button class="cta">
+      <a href="https://unida.gontor.ac.id" class="mt-3">
+        <button class="cta mt-3">
           <span>Kunjungi Website UNIDA GONTOR</span>
           <svg width="15px" height="10px" viewBox="0 0 13 10">
             <path d="M1,5 L11,5"></path>
@@ -230,7 +230,7 @@
         Mereka adalah tim di perguruan tinggi yang menangani proses penerimaan siswa baru. Mereka menilai aplikasi, mengatur ujian masuk (jika diperlukan), dan membuat keputusan tentang penerimaan siswa baru. Selain itu, PMB juga bertanggung jawab atas pendataan mahasiswa baru yang diterima untuk keperluan administratif dan akademis.
       </p>
       <a href="https://unida.gontor.ac.id/admission/">
-        <button class="cta">
+        <button class="cta mt-3">
           <span>Kunjungi Website pmb</span>
           <svg width="15px" height="10px" viewBox="0 0 13 10">
             <path d="M1,5 L11,5"></path>
