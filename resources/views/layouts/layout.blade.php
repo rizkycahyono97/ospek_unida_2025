@@ -8,6 +8,8 @@
     <title>OSPEK SYAAHEEN 2025</title>
     {{-- icon --}}
     <link rel="icon" href="{{ asset('assets/navbar/icon-logo.png') }}">
+    {{-- font awasome --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     {{-- bootstrap --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     {{-- aos --}}
@@ -20,6 +22,7 @@
     {{-- Custom Css --}}
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}?v={{ time() }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}?v={{ time() }}">
+    <link rel="stylesheet" href="{{ asset('css/layout.css') }}?v={{ time() }}">
     {{-- CSS for each page --}}
     @if (Request::is('/'))
         <link rel="stylesheet" href="{{ asset('css/home.css') }}?v={{ time() }}">

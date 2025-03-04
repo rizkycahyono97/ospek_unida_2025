@@ -391,8 +391,8 @@ section {
   /* section 1 */
   /* ------------- */
   .home-section-1 {
-    flex-direction: column; /* Tata letak vertikal */
-    gap: 8px; /* Jarak antar elemen diperkecil */
+    flex-direction: column;
+    gap: 8px; 
   }
 
   .home-section-1 h1 {
@@ -400,7 +400,7 @@ section {
   }
 
   .logo-ospek img {
-    width: 150px; /* Perkecil logo */
+    width: 150px; 
   }
    /* ------------- */
   /* end section 1 */
@@ -418,7 +418,7 @@ section {
   }
   
   .home-section-2-text p {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
   /* ------------- */
   /* end of section 2 */
