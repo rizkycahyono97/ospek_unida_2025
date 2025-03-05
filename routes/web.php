@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 // default
@@ -49,7 +50,8 @@ Route::get('/faq', function () {
 // contact
 Route::get('/contact', function () {
     return view('contact');
-})->name('contact');
+})->name('contact.form');
+Route::post('/contact', [ContactController::class, 'sendMessage'])->name('contact.send');
 
 // pusat informasi
 Route::get('/pusatinformasi', function () {

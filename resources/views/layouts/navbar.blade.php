@@ -18,7 +18,7 @@
                     <img src="{{ asset('assets/navbar/white-logo.png') }}" alt="Logo" style="width: 24px; height: auto;">
                 </a>
                 <li class="nav-item"><a class="nav-link text-light" href="{{ route('faq') }}">FAQ</a></li>
-                <li class="nav-item"><a class="nav-link text-light" href="{{ route('contact') }}">Kontak Kami</a></li>
+                {{-- <li class="nav-item"><a class="nav-link text-light" href="{{ route('contact') }}">Kontak Kami</a></li> --}}
                 <li class="nav-item"><a class="nav-link text-light" href="{{ route('pusatinformasi') }}">Pusat Informasi</a></li>
             </ul>
         </div>
@@ -47,7 +47,7 @@
             <li><a href="{{ route('timeline') }}">Timeline</a></li>
             <li><a href="{{ route('pembayaran') }}">Pembayaran DU</a></li>
             <li><a href="{{ route('faq') }}">FAQ</a></li>
-            <li><a href="{{ route('contact') }}">Kontak Kami</a></li>
+            {{-- <li><a href="{{ route('contact') }}">Kontak Kami</a></li> --}}
             <li><a href="{{ route('pusatinformasi') }}">Pusat Informasi</a></li>
         </ul>
     </div>
