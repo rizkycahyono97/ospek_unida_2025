@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
     largePhone: "(min-width: 481px) and (max-width: 767px)", // Smartphone besar
     tablet: "(min-width: 768px) and (max-width: 1024px)",    // Tablet
     smallLaptop: "(min-width: 1025px) and (max-width: 1440px)", // Laptop sedang
-    desktop: "(min-width: 1441px) and (max-width: 1920px)",     // Desktop
-    largeMonitor: "(min-width: 1921px)",       // Monitor besar
+    desktop: "(min-width: 1441px)",     // Desktop
+    // largeMonitor: "(min-width: 1921px)",       // Monitor besar
   };
 
   // gsap scrolltrigger
