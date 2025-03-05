@@ -11,7 +11,7 @@
                 <a class="nav-link" href="{{ route('timeline') }}">Timeline</a>
                 <a class="nav-link" href="{{ route('pembayaran') }}">Pembayaran DU</a>
                 <a class="nav-link" href="{{ route('faq') }}">FAQ</a>
-                {{-- <a class="nav-link" href="{{ route('contact') }}">Kontak Kami</a> --}}
+                <a class="nav-link" href="{{ route('contact.form') }}">Kontak Kami</a>
                 <a class="nav-link" href="{{ route('pusatinformasi') }}">Pusat Informasi</a>
             </div>
             <div class="footer-path">
