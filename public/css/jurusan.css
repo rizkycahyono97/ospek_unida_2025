@@ -18,6 +18,7 @@
     background-image: url(../assets/jurusan/jurusan-bg.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     font-family: "Spectral SC", serif;
     overflow-x: hidden;
 }
@@ -171,7 +172,6 @@
     position: relative;
     justify-items: center;
     perspective: 800px;
-    /* Efek 3D */
 }
 
 .prodi-card {
@@ -324,7 +324,7 @@
 @media (min-width: 481px) and (max-width: 767px) {
 
     .fakultas-section::before {
-        height: 10%;
+        height: 100px;
     }
 
     @keyframes autoRun {
@@ -359,7 +359,7 @@
     }
 
     .prodi-section::before {
-        height: 3%;
+        height: 100px;
     }
 
     .prodi-cards {
@@ -392,11 +392,11 @@
 
 
     .fakultas-section::before {
-        height: 12%;
+        height: 100px;
     }
 
     .prodi-section::before {
-        height: 5%;
+        height: 100px;
     }
 
     @keyframes autoRun {
@@ -426,6 +426,111 @@
     .prodi-card:nth-last-child(1) {
         display: none;
     }
+
+    .prodi-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .table-prodi tr td {
+        padding: 2px 5px;
+        font-size: 1rem;
+    }
+
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1025px) {
+
+    .fakultas-section::before {
+        height: 100px;
+    }
+
+    .prodi-section::before {
+        height: 100px;
+    }
+
+    .fakultas-header {
+        margin-top: 4.5rem;
+    }
+
+    @keyframes autoRun {
+        from {
+            transform: perspective(2000px) rotateX(-2deg) rotateY(0deg);
+        }
+
+        to {
+            transform: perspective(2000px) rotateX(-2deg) rotateY(360deg);
+        }
+    }
+
+    .fakultas-banner .silder .item p {
+        font-size: 0.7rem;
+    }
+
+    .prodi-cards {
+        grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    }
+
+    .prodi-card {
+        padding: 1rem;
+        width: 20rem;
+        height: 18rem;
+    }
+
+    .prodi-card:nth-last-child(1) {
+        display: none;
+    }
+
+    .prodi-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .table-prodi tr td {
+        padding: 2px 5px;
+        font-size: 1rem;
+    }
+
+}
+
+/* tablet */
+@media (min-width: 1026px) and (max-width: 1400px) {
+
+    .fakultas-section::before {
+        height: 100px;
+    }
+
+    .prodi-section::before {
+        height: 100px;
+    }
+
+    .fakultas-header {
+        margin-top: 4rem;
+    }
+
+    @keyframes autoRun {
+        from {
+            transform: perspective(2000px) rotateX(-2deg) rotateY(0deg);
+        }
+
+        to {
+            transform: perspective(2000px) rotateX(-2deg) rotateY(360deg);
+        }
+    }
+
+    .fakultas-banner .silder .item p {
+        font-size: 0.7rem;
+    }
+
+    .prodi-cards {
+        grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    }
+
+    .prodi-card {
+        padding: 1rem;
+        width: 20rem;
+        height: 18rem;
+    }
+
 
     .prodi-card h3 {
         font-size: 1.3rem;

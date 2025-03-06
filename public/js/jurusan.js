@@ -30,7 +30,7 @@ $(document).ready(function() {
 			currentRotation += moveX * 0.2; // Sensitivitas rotasi
 			$('.slider').css(
 				'transform',
-				`perspective(1200px) rotateX(-2deg) rotateY(${currentRotation}deg)`
+				`perspective(2000px) rotateX(-2deg) rotateY(${currentRotation}deg)`
 			);
 			startX = e.pageX || e.originalEvent.touches[0].pageX;
 		}
