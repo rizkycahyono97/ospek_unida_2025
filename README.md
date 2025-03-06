@@ -40,8 +40,9 @@ Copy the `.env.example` file to `.env`:
 cp .env.example .env
 ```
 
-Open the `.env` file and configure your database and other environment settings:
+Open the `.env` file and configure your *database*, *mail* and other environment settings:
 
+#### Database Configuration
 ```plaintext
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -49,6 +50,18 @@ DB_PORT=3306
 DB_DATABASE=ospek_2025
 DB_USERNAME=root
 DB_PASSWORD=yourpassword
+```
+
+#### Mail Configuration
+```plaintext
+MAIL_MAILER=smtp
+MAIL_SCHEME=null
+MAIL_HOST=sandbox.smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=yourmail@mail.com
+MAIL_PASSWORD=yourpassword
+MAIL_FROM_ADDRESS="no-reply@example.com"
+MAIL_FROM_NAME="Ospek Syaaheen"
 ```
 
 ### 4. Generate Application Key
