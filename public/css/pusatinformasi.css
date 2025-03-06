@@ -10,7 +10,7 @@
     background-attachment: fixed;
     background-position: center;
     font-family: "Spectral SC", serif;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .info-section::before {
@@ -29,6 +29,7 @@ p {
 
 .info-banner {
     height: 100vh;
+
 }
 
 .info-header {
@@ -44,7 +45,6 @@ p {
 .info-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
     margin-top: 3rem;
     padding: 0;
     z-index: 1;
@@ -52,7 +52,6 @@ p {
     justify-items: center;
     align-items: start;
     perspective: 800px;
-    /* Efek 3D */
 }
 
 .menu-cards-1,

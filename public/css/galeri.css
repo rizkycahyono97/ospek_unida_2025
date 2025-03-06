@@ -4,7 +4,7 @@
     display: flex;
     z-index: 1;
     min-height: 100vh;
-    background-color: #ffffff;
+    background-color: #e2dbc2;
     background-image: url(../assets/pusatinformasi/info-bg.jpeg);
     background-size: cover;
     background-attachment: fixed;
@@ -51,19 +51,22 @@
 .galeri-cards {
     margin-top: 3.5rem;
     columns: 400px;
-
+    /* background-color: rgb(211, 211, 211); */
     padding: 1em;
 }
 
 .galeri-cards img {
     width: 100%;
     margin-bottom: 1em;
-    filter: grayscale(100%);
+    filter: grayscale(20%);
     transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.9;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    /* box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75); */
 }
 
 .galeri-cards img:hover {

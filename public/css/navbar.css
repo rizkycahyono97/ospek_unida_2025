@@ -48,16 +48,16 @@ p {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
+.nav-item {
+  display: flex;
+  align-items: center;
+}
 
 /* smartphone kecil */
-@media (max-width: 480px) {
-
-}
+@media (max-width: 480px) {}
 
 /* smartphone besar */
-@media (min-width: 481px) and (max-width: 767px) {
-
-}
+@media (min-width: 481px) and (max-width: 767px) {}
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 1025px) {
@@ -70,14 +70,12 @@ p {
 /* desktop */
 @media (min-width: 1441px) and (max-width: 1920px) {
   .nav-link {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
 /* large monitor */
-@media (min-width: 1921px) {
-
-}
+@media (min-width: 1921px) {}
 
 
 footer {
@@ -363,4 +361,3 @@ footer {
     margin: 0 1.5rem;
   }
 }
-

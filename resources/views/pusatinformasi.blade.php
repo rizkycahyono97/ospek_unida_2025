@@ -56,7 +56,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Bingung baju kesehariannya gimana?</p>
-                                            <a href="" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <a href="{{ route('attribute') }}" class="link-entry">Cari tahu lebih lanjut</a>
                                         </div>
                                     </div>
                                 </label>
@@ -87,7 +87,7 @@
                                         </div>
                                         <div class="description">
                                             <p>Mau aktif tapi bingung ikut apa pas di kampus?</p>
-                                            <a href="{{ route('timeline') }}" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <a href="{{ route('ukm') }}" class="link-entry">Cari tahu lebih lanjut</a>
                                         </div>
                                     </div>
                                 </label>
@@ -102,7 +102,8 @@
                                         </div>
                                         <div class="description">
                                             <p>Mau aktif tapi bingung ikut apa pas di kampus?</p>
-                                            <a href="{{ route('timeline') }}" class="link-entry">Cari tahu lebih lanjut</a>
+                                            <a href="{{ route('ukm') }}#mahasiswi" class="link-entry">Cari tahu lebih
+                                                lanjut</a>
                                         </div>
                                     </div>
                                 </label>

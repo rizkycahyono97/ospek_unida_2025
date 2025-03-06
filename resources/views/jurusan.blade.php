@@ -233,8 +233,6 @@
                                 <p>...</p>
                             </div>
                         </div>
-                        <div class="prodi-cards-2">
-                        </div>
                     </div>
                 </div>
             </div>

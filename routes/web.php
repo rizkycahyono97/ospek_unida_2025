@@ -25,7 +25,6 @@ Route::get('/others', function () {
     return view('others');
 })->name('others');
 
-
 // jurusan
 Route::get('/jurusan', function () {
     return view('jurusan');

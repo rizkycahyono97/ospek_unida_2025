@@ -4,7 +4,6 @@
     position: relative;
     display: flex;
     z-index: 1;
-    background-color: #ffffff;
     background-image: url(../assets/jurusan/jurusan-bg.png);
     background-size: cover;
     background-attachment: fixed;

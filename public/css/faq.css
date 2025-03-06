@@ -162,6 +162,10 @@ input {
     min-width: 95%;
 }
 
+.label .row .description span {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 input:checked+label {
     height: 180px;
 }
