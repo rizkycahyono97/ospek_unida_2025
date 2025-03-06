@@ -1,14 +1,19 @@
-// show barang
-function showBarang(type) {
-	// Sembunyikan semua kontainer
-	document.getElementById('barang-mahasiswa').classList.add('d-none');
-	document.getElementById('barang-mahasiswi').classList.add('d-none');
+$(document).ready(function() {
+	// Cek apakah ada hash di URL saat halaman dimuat
+	if (window.location.hash === '#mahasiswi') {
+		$('#mahasiswi').show(); // Menampilkan elemen
+	}
 
-	// Hapus underline dari kedua tombol
-	document.getElementById('btn-mahasiswa').classList.remove('active');
-	document.getElementById('btn-mahasiswi').classList.remove('active');
+	// Fungsi untuk menampilkan kontainer sesuai pilihan
+	window.showukm = function(type) {
+		// Sembunyikan semua kontainer
+		$('#ukm-mahasiswa, #ukm-mahasiswi').addClass('d-none');
 
-	// Tampilkan yang dipilih
-	document.getElementById('barang-' + type).classList.remove('d-none');
-	document.getElementById('btn-' + type).classList.add('active');
-}
+		// Hapus underline dari kedua tombol
+		$('#btn-mahasiswa, #btn-mahasiswi').removeClass('active');
+
+		// Tampilkan yang dipilih
+		$('#ukm-' + type).removeClass('d-none');
+		$('#btn-' + type).addClass('active');
+	};
+});

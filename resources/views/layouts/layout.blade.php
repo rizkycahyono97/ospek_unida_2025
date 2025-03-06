@@ -36,12 +36,20 @@
         <link rel="stylesheet" href="{{ asset('css/pembayaran.css') }}?v={{ time() }}">
     @elseif (Request::is('pusatinformasi'))
         <link rel="stylesheet" href="{{ asset('css/pusatinformasi.css') }}?v={{ time() }}">
+    @elseif (Request::is('galeri'))
+        <link rel="stylesheet" href="{{ asset('css/galeri.css') }}?v={{ time() }}">
     @elseif (Request::is('timeline'))
         <link rel="stylesheet" href="{{ asset('css/timeline.css') }}?v={{ time() }}">
     @elseif (Request::is('faq'))
         <link rel="stylesheet" href="{{ asset('css/faq.css') }}?v={{ time() }}">
     @elseif (Request::is('panitia'))
         <link rel="stylesheet" href="{{ asset('css/panitia.css') }}?v={{ time() }}">
+    @elseif (Request::is('pengumuman'))
+        <link rel="stylesheet" href="{{ asset('css/pengumuman.css') }}?v={{ time() }}">
+    @elseif (Request::is('attribute'))
+        <link rel="stylesheet" href="{{ asset('css/attribute.css') }}?v={{ time() }}">
+    @elseif (Request::is('ukm'))
+        <link rel="stylesheet" href="{{ asset('css/ukm.css') }}?v={{ time() }}">
     @endif
 
     {{-- Google Fonts --}}
@@ -55,7 +63,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -99,6 +108,10 @@
         <script src="{{ asset('js/barang.js') }}?v={{ time() }}"></script>
     @elseif (Request::is('contact'))
         <script src="{{ asset('js/contact.js') }}?v={{ time() }}"></script>
+    @elseif (Request::is('panitia'))
+        <script src="{{ asset('js/panitia.js') }}?v={{ time() }}"></script>
+    @elseif (Request::is('attribute'))
+        <script src="{{ asset('js/attribute.js') }}?v={{ time() }}"></script>
     @elseif (Request::is('jurusan'))
         <script src="{{ asset('js/jurusan.js') }}?v={{ time() }}"></script>
     @elseif (Request::is('pembayaran'))
@@ -107,6 +120,8 @@
         <script src="{{ asset('js/pusatinformasi.js') }}?v={{ time() }}"></script>
     @elseif (Request::is('faq'))
         <script src="{{ asset('js/faq.js') }}?v={{ time() }}"></script>
+    @elseif (Request::is('ukm'))
+        <script src="{{ asset('js/ukm.js') }}?v={{ time() }}"></script>
     @endif
     <script src="{{ asset('js/navbar.js') }}"></script>
 </body>

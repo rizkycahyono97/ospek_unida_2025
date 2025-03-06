@@ -54,12 +54,14 @@
                                     <div class="row">
                                         <div class="label-header">
                                             <div class="icon">3</div>
-                                            <h4>Bagaimana cara mendaftar dan mendapatkan jadwal OSPEK?</h4>
+                                            <h4>Apakah ada media sosial resmi OSPEK yang bisa diikuti?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
-                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
-                                                repudiandae quia earum quos fugiat voluptas.</p>
+                                            <p>Ya, untuk mendapatkan informasi terbaru seputar OSPEK, panitia telah
+                                                menyediakan media sosial resmi, seperti akun Instagram
+                                                <span>@ospek.2025</span> dan kanal
+                                                YouTube <span> OspekSyaheen2025</span>.
+                                            </p>
                                         </div>
                                     </div>
                                 </label>
@@ -112,7 +114,6 @@
                                     </div>
                                 </label>
                             </div>
-
                             <div class="info-card">
                                 <input type="radio" name="slide" id="c7">
                                 <label for="c7" class="label">
@@ -122,9 +123,9 @@
                                             <h4>Apa konsekuensi jika tidak mengikuti OSPEK?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Konsekuensi dalam kehadiran Ospek,berpengaruh pada kelulusan ospek,jika
-                                                peserta belum dinyatakan lulus,maka peserta harus mengulang Ospek di Tahun
-                                                Depan</p>
+                                            <p>Konsekuensi dalam kehadiran ospek berpengaruh pada kelulusan ospek, jika
+                                                peserta belum dinyatakan lulus, maka peserta harus mengulang ospek di tahun
+                                                depan</p>
                                         </div>
                                     </div>
                                 </label>
@@ -183,13 +184,14 @@
                                     <div class="row">
                                         <div class="label-header">
                                             <div class="icon">11</div>
-                                            <h4>Apa saja kegiatan yang akan dilakukan selama OSPEK?</h4>
+                                            <h4>Bagaimana cara menghubungi panitia ?</h4>
                                         </div>
                                         <div class="description">
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas perferendis
-                                                quo maxime recusandae. Perferendis quo neque voluptatum, dolores magni
-                                                eaque, minima molestias animi odio laudantium aut vel quaerat, fuga cumque.
-                                            </p>
+                                            <p>Peserta dapat menghubungi panitia ospek melalui beberapa cara, seperti
+                                                menghubungi langsung ketua panitia, mengontak panitia yang bertugas, atau
+                                                mengirim pesan ke akun instagram resmi <span> @ospek.2025</span>. Panitia
+                                                siap membantu
+                                                menjawab pertanyaan dan memberikan informasi yang dibutuhkan.</p>
                                         </div>
                                     </div>
                                 </label>
@@ -207,55 +209,6 @@
                                                 tersedia bagi peserta. Selain itu, untuk makan utama, peserta diarahkan
                                                 untuk menggunakan fasilitas dapur masing-masing sesuai dengan ketentuan yang
                                                 telah ditetapkan.</p>
-                                        </div>
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="info-card">
-                                <input type="radio" name="slide" id="c13">
-                                <label for="c13" class="label">
-                                    <div class="row">
-                                        <div class="label-header">
-                                            <div class="icon">13</div>
-                                            <h4>Apakah ada tugas yang harus dikerjakan selama OSPEK?</h4>
-                                        </div>
-                                        <div class="description">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus enim in sit
-                                                nesciunt velit dolor, eum rerum quia vitae odit culpa impedit porro. A
-                                                repudiandae quia earum quos fugiat voluptas.</p>
-                                        </div>
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="info-card">
-                                <input type="radio" name="slide" id="c14">
-                                <label for="c14" class="label">
-                                    <div class="row">
-                                        <div class="label-header">
-                                            <div class="icon">14</div>
-                                            <h4>Apakah ada media sosial resmi OSPEK yang bisa diikuti?</h4>
-                                        </div>
-                                        <div class="description">
-                                            <p>Ya, untuk mendapatkan informasi terbaru seputar OSPEK, panitia telah
-                                                menyediakan media sosial resmi, seperti akun Instagram @ospek.2025 dan kanal
-                                                YouTube OspekSyaheen2025. </p>
-                                        </div>
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="info-card">
-                                <input type="radio" name="slide" id="c15">
-                                <label for="c15" class="label">
-                                    <div class="row">
-                                        <div class="label-header">
-                                            <div class="icon">15</div>
-                                            <h4>Bagaimana cara menghubungi panitia ?</h4>
-                                        </div>
-                                        <div class="description">
-                                            <p>Peserta dapat menghubungi panitia OSPEK melalui beberapa cara, seperti
-                                                menghubungi langsung ketua panitia, mengontak panitia yang bertugas, atau
-                                                mengirim pesan ke akun Instagram resmi @ospek.2025. Panitia siap membantu
-                                                menjawab pertanyaan dan memberikan informasi yang dibutuhkan.</p>
                                         </div>
                                     </div>
                                 </label>
