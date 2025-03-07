@@ -199,8 +199,46 @@
   {{-- section 4 --}}
   <section class="home-section-4 justify-content-center align-items-center pb-5" id="home-section-4">
 
+    <div class="container text-center py-3">
+      <!-- UNIDA -->
+      <div class="text-container" data-aos="zoom-in">
+        <h1 class="fw-bold">UNIVERSITAS <br> DARUSSALAM GONTOR</h1>
+        <img src="{{ asset('assets/home/unida-logo.png') }}" alt="Universitas Darussalam Gontor" class="img-fluid pt-2">
+        <p class="mt-3">
+          <span class="text-primary fw-bold">UNIDA GONTOR</span> merupakan perguruan tinggi waqaf yang berada di bawah naungan Pondok Modern Darussalam Gontor. Oleh sebab itu, dalam melaksanakan Tri Dharmanya, UNIDA Gontor mempertahankan visi, misi, dan jiwa pesantren.
+        </p>
+        <a href="https://unida.gontor.ac.id" class="mt-3">
+          <button class="cta mt-3">
+            <span>Kunjungi Website UNIDA GONTOR</span>
+            <svg width="15px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>        
+        </a>
+      </div>
+    
+      <!-- PMB -->
+      <div class="text-container mt-4">
+        <h1 class="fw-bold" data-aos-once="false">PENERIMAAN <br> MAHASISWA BARU</h1>
+        <img src="{{ asset('assets/home/pmb-logo-2.png') }}" alt="pmb" class="img-fluid pt-2">
+        <p class="mt-3">
+          <span class="text-primary fw-bold">"Panitia Penerimaan Mahasiswa Baru"</span> atau "PMB" adalah tim yang menangani proses penerimaan siswa baru. Mereka menilai aplikasi, mengatur ujian masuk, dan mendata mahasiswa baru untuk keperluan administratif dan akademis.
+        </p>
+        <a href="https://unida.gontor.ac.id/admission/">
+          <button class="cta mt-3">
+            <span>Kunjungi Website pmb</span>
+            <svg width="15px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>        
+        </a>
+      </div>
+    </div>
+
     {{-- unida --}}
-    <div class="text-container text-center container" >
+    {{-- <div class="text-container text-center container" >
       <h1 class="" data-aos="zoom-in">UNIVERSITAS <br> DARUSSALAM GONTOR</h1>
       <div class="overflow-x-hidden">
         <img src="{{ asset('assets/home/unida-logo.png') }}" alt="Universitas Darussalam Gontor" class="pt-2">
@@ -217,10 +255,10 @@
           </svg>
         </button>        
       </a>
-    </div>
+    </div> --}}
 
     {{-- pmb --}}
-    <div class="text-container text-center container mt-3 pt-3">
+    {{-- <div class="text-container text-center container mt-3 pt-3">
       <h1 class=""  data-aos-once="false">PENERIMAAN <br> MAHASISWA BARU</h1>
       <div class="mt-5"   data-aos-once="false">
         <img src="{{ asset('assets/home/pmb-logo-2.png') }}" alt="pmb" class="img-fluid pt-1">
@@ -238,105 +276,8 @@
           </svg>
         </button>        
       </a>
-    </div>
-
-    {{-- barang lain --}}
-    {{-- <div class="text-center container">
-      <h3>Hal Lain <br> Yang Perlu Diketahui</h3>
-      <div class="row">
-
-        <div class="col-md-3 col-sm-6 mb-3">
-          <div class="card">
-            <a href="{{ route('barang') }}">
-              <div class="card wallet">
-                <div class="overlay"></div>
-                  <div class="circle">
-                    <div class="card-content">
-                      <img src="{{ asset('assets/home/barang-2.png') }}" alt="barang bawaan">
-                    </div>
-                  </div>
-                <p>Barang</p>
-              </div>          
-            </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-3">
-          <div class="card">
-            <a href="{{ route('timeline') }}">
-              <div class="card wallet">
-                <div class="overlay"></div>
-                  <div class="circle">
-                    <div class="card-content">
-                      <img src="{{ asset('assets/home/timeline-2.png') }}" alt="barang bawaan">
-                    </div>
-                  </div>
-                <p>Timeline</p>
-              </div>          
-
-            </a>
-        </div>
-        <div class="col-md-3 col-sm-6 mb-3">
-          <div class="card">
-            <a href="{{ route('attribute') }}">
-              <div class="card wallet">
-                <div class="overlay"></div>
-                  <div class="circle">
-                    <div class="card-content">
-                      <img src="{{ asset('assets/home/baju.png') }}" alt="baju">
-
-                    </div>
-                </div>
-
-        <div class="col-md-3 col-sm-6 mb-3">
-          <div class="card">
-            <a href="{{ route('pusatinformasi') }}">
-              <div class="card wallet">
-                <div class="overlay"></div>
-                  <div class="circle">
-                    <div class="card-content">
-                      <img src="{{ asset('assets/home/lainya.png') }}" alt="lainya">
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 mb-3">
-                    <div class="card">
-                        <a href="{{ route('attribute') }}">
-                            <div class="card wallet">
-                                <div class="overlay"></div>
-                                <div class="circle">
-                                    <div class="card-content">
-                                        <img src="{{ asset('assets/home/baju.png') }}" alt="baju">
-                                    </div>
-                                </div>
-                                <p>Attribute</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 mb-3">
-                    <div class="card">
-                        <a href="{{ route('pusatinformasi') }}">
-                            <div class="card wallet">
-                                <div class="overlay"></div>
-                                <div class="circle">
-                                    <div class="card-content">
-                                        <img src="{{ asset('assets/home/lainya.png') }}" alt="lainya">
-                                    </div>
-                                </div>
-                                <p>Lainya</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-      </div>
-
     </div> --}}
+
   </section>
 
 @endsection

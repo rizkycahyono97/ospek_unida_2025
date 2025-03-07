@@ -548,6 +548,30 @@ section {
   .logo-text p {
     font-size: 14px;
   }
+  /* --------------- */
+  /* end section 3 */
+  /* --------------- */
+
+  /* --------------- */
+  /* section 4 */
+  /* -------------- */
+  .text-container {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .cta {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* tablet */
