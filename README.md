@@ -1,7 +1,12 @@
 
 # Ospek Unida 2025 Laravel Application
 
-## Requirements
+## 📷 Screenshot
+
+### Home Overview
+![Home](/public/assets/home/Screenshot%20from%202025-01-28%2015-44-38.png)
+
+## 📌 Requirements
 
 Before running the application, make sure you have the following installed on your system:
 
@@ -11,7 +16,7 @@ Before running the application, make sure you have the following installed on yo
 - Node.js and npm (for frontend assets)
 - Laravel 11.x
 
-## Installation
+## 🛠 Installation
 
 Follow these steps to set up the application:
 
@@ -105,12 +110,12 @@ npm run dev
 
 Your application should now be running at `http://127.0.0.1:8000`.
 
-## Additional Commands
+## 📜 Additional Commands
 
 - Run tests: `php artisan test`
 - Clear cache: `php artisan cache:clear`
 - Queue listener: `php artisan queue:work`
 
-## License
+## ⚖️ License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

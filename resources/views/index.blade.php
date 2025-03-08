@@ -236,48 +236,6 @@
         </a>
       </div>
     </div>
-
-    {{-- unida --}}
-    {{-- <div class="text-container text-center container" >
-      <h1 class="" data-aos="zoom-in">UNIVERSITAS <br> DARUSSALAM GONTOR</h1>
-      <div class="overflow-x-hidden">
-        <img src="{{ asset('assets/home/unida-logo.png') }}" alt="Universitas Darussalam Gontor" class="pt-2">
-      </div>
-      <p class="mt-4 fs-4">
-        <span class="text-primary fw-bold">UNIDA GONTOR (Universitas Darussalam Gontor)</span> merupakan perguruan tinggi waqaf yang berada di bawah naungan Pondok Modern Darussalam Gontor. Oleh sebab itu, dalam melaksanakan Tri Dharmanya, UNIDA Gontor mempertahankan visi, misi, dan jiwa pesantren.
-      </p>
-      <a href="https://unida.gontor.ac.id" class="mt-3">
-        <button class="cta mt-3">
-          <span>Kunjungi Website UNIDA GONTOR</span>
-          <svg width="15px" height="10px" viewBox="0 0 13 10">
-            <path d="M1,5 L11,5"></path>
-            <polyline points="8 1 12 5 8 9"></polyline>
-          </svg>
-        </button>        
-      </a>
-    </div> --}}
-
-    {{-- pmb --}}
-    {{-- <div class="text-container text-center container mt-3 pt-3">
-      <h1 class=""  data-aos-once="false">PENERIMAAN <br> MAHASISWA BARU</h1>
-      <div class="mt-5"   data-aos-once="false">
-        <img src="{{ asset('assets/home/pmb-logo-2.png') }}" alt="pmb" class="img-fluid pt-1">
-      </div>
-      <p class="mt-4 fs-4">
-        <span class="text-primary fw-bold">"Panitia Penerimaan Mahasiswa Baru" atau disingkat "PMB".</span>
-        Mereka adalah tim di perguruan tinggi yang menangani proses penerimaan siswa baru. Mereka menilai aplikasi, mengatur ujian masuk (jika diperlukan), dan membuat keputusan tentang penerimaan siswa baru. Selain itu, PMB juga bertanggung jawab atas pendataan mahasiswa baru yang diterima untuk keperluan administratif dan akademis.
-      </p>
-      <a href="https://unida.gontor.ac.id/admission/">
-        <button class="cta mt-3">
-          <span>Kunjungi Website pmb</span>
-          <svg width="15px" height="10px" viewBox="0 0 13 10">
-            <path d="M1,5 L11,5"></path>
-            <polyline points="8 1 12 5 8 9"></polyline>
-          </svg>
-        </button>        
-      </a>
-    </div> --}}
-
   </section>
 
 @endsection
