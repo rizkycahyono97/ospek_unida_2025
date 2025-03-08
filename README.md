@@ -4,7 +4,7 @@
 ## 📷 Screenshot
 
 ### Home Overview
-![Home](/public/assets/home/Screenshot%20from%202025-01-28%2015-44-38.png)
+![Home](/public/assets/home/home-overview.png)
 
 ## 📌 Requirements
 
