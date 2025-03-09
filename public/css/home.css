@@ -24,7 +24,7 @@ section {
     "wdth" 100;
     font-style: normal;
   position: absolute;
-  font-size: 8.5rem;
+  font-size: 7rem;
   z-index: 2;
 }
 
@@ -76,6 +76,10 @@ section {
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+}
+
+.number {
+  font-family: 'Times New Roman', Times, serif;
 }
 /* ------------- */
 /* end section 2 */
@@ -402,6 +406,10 @@ section {
   .logo-ospek img {
     width: 150px; 
   }
+
+  .sayap-kanan img, .sayap-kiri img {
+    display: none !important;
+  }
    /* ------------- */
   /* end section 1 */
   /* ------------- */
@@ -414,7 +422,8 @@ section {
   }
 
   .home-section-2-text {
-    padding: 1rem;
+    padding: 0.8rem;
+    width: 90% !important;
   }
   
   .home-section-2-text p {
@@ -477,7 +486,7 @@ section {
   /* section 1 */
   /* ------------- */  
   .home-section-1 h1 {
-    font-size: 4.5rem;
+    font-size: 3.7rem;
     font-weight: 700;
   }
   /* ------------- */
@@ -580,7 +589,7 @@ section {
   /* section 1 */
   /* ------------- */
   .home-section-1 h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   /* ------------- */
@@ -620,7 +629,7 @@ section {
   /* section 1 */
   /* ------------- */
   .home-section-1 h1 {
-    font-size: 11.5rem;
+    font-size: 10rem;
   }
 
   /* -------------- */

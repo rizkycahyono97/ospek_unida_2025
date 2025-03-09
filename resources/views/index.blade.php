@@ -33,7 +33,7 @@
     {{-- pengenalan-ospek --}}
     <div class="pengenalan-ospek d-flex flex-column align-items-center text-center">
       <div class="home-section-2-judul mt-5">
-        <h1 class="fw-bold">Pengenalan <br> Ospek SYAAHEEN 2025</h1>
+        <h1 class="fw-bold">Pengenalan <br> Ospek SYAAHEEN <span class="number">2025</span></h1>
       </div>
       <div class="home-section-2-text col-md-8 col-lg-6 mt-3">
         <p class="fs-5">Ospek SYAAHEEN adalah Orientasi mahasiswa baru dikenal juga dengan istilah Orientasi Studi dan pengenalan Kampus atau OSPEK. Kegiatan ini bertujuan untuk mengenal dan memahami lingkungan kampus sebagai suatu lingkungan akademis serta memahami mekanisme yang berlaku didalamnya.</p>
