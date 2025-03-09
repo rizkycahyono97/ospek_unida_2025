@@ -51,6 +51,15 @@
                         </div>
                     </div>
 
+                    <div class="col-md-4 col-sm-6">
+                        <div class="ukm-card">
+                            <img src="{{ asset('assets/ukm-m/bola.png') }}" class="card-img-top img-fluid "
+                                alt="Dummy Image">
+                            <div class="card-body ">
+                                <p class="ukm-card-title">UKM Bola</p>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="col-md-4 col-sm-6">
                         <div class="ukm-card">
@@ -191,7 +200,7 @@
                             <img src="{{ asset('assets/ukm-f/debat.JPG') }}" class="card-img-top img-fluid "
                                 alt="Dummy Image">
                             <div class="card-body ">
-                                <p class="ukm-card-title">UKM Al-Hikmah</p>
+                                <p class="ukm-card-title">UKM Debat (Al-Hikmah)</p>
                             </div>
                         </div>
                     </div>

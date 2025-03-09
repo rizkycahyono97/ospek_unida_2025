@@ -4,6 +4,7 @@
     position: relative;
     display: flex;
     z-index: 1;
+    background-color: #ffffff;
     background-image: url(../assets/jurusan/jurusan-bg.png);
     background-size: cover;
     background-attachment: fixed;
@@ -11,17 +12,12 @@
     font-family: "Spectral SC", serif;
 }
 
-.pembayaran-banner {
-    width: 100%;
-    min-height: inherit;
-}
-
 .pembayaran-section::before {
     content: "";
     display: block;
     position: absolute;
     width: 100%;
-    height: 13%;
+    height: 100px;
     top: 0;
     background: linear-gradient(to top, rgba(231, 229, 229, 0), rgb(255, 253, 253));
 }
@@ -31,9 +27,16 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 10%;
+    height: 100px;
     bottom: 0;
     background: linear-gradient(to top, rgba(19, 29, 20, 1), rgba(21, 34, 22, 0));
+}
+
+.pembayaran-banner {
+    margin: auto;
+    min-height: inherit;
+    justify-content: center;
+    align-items: center;
 }
 
 .pembayaran-header {
@@ -41,114 +44,177 @@
     text-align: center;
 }
 
-.pembayaran-column {
-    padding: 2rem;
+.btn-group {
+    margin: auto;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(17px);
-    border-radius: 23px;
+    margin-bottom: 1rem;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.btn-transparent.active {
+    color: #317F80;
+}
+
+/* Garis bawah untuk tombol yang aktif */
+.btn-transparent.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #317F80;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#maklumat {
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+
+.maklumat-card {
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 10px 10px;
+    /* display: flex; */
+    align-items: flex-start;
+    padding: 3rem 1rem;
+    box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease;
+}
+
+#maklumat img {
+    transition: transform 0.3s ease;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabel-mahasiswa,
+#tabel-mahasiswi {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1rem;
+    backdrop-filter: blur(20px);
     box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+    margin-bottom: 7rem;
+    overflow-x: scroll;
 }
 
-.pembayaran-title {
-    justify-content: center;
-    display: flex;
+#tabel-mahasiswa table,
+#tabel-mahasiswi table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    white-space: nowrap;
+    font-family: 'Times New Roman', Times, serif;
 }
 
+#tabel-mahasiswa tr td:nth-child(1),
+#tabel-mahasiswa tr th,
+#tabel-mahasiswi tr td:nth-child(1),
+#tabel-mahasiswi tr th {
+    text-align: center;
+}
+
+#tabel-mahasiswa tr td,
+#tabel-mahasiswa tr th,
+#tabel-mahasiswi tr td,
+#tabel-mahasiswi tr th {
+    border: 1px solid black;
+    padding: 2px 5px;
+}
 
 /* regular smartphone */
 @media (max-width: 480px) {
     .pembayaran-section::before {
-        height: 5%;
+        height: 70px;
     }
 
     .pembayaran-section::after {
-        height: 5%;
+        height: 70px;
+    }
+
+    .maklumat-card {
+        padding: 1rem 10px;
+        border-radius: 15px;
+    }
+
+    .pembayaran-header h5,
+    .btn-group button {
+        font-size: 0.7rem;
+    }
+
+    #maklumat img {
+        width: 100%;
+    }
+
+    #tabel-mahasiswa tr td,
+    #tabel-mahasiswa tr th,
+    #tabel-mahasiswi tr td,
+    #tabel-mahasiswi tr th {
+        font-size: 0.7rem;
     }
 
     .pembayaran-header {
         margin-top: 3.5rem;
         text-align: center;
     }
-
-    .pembayaran-column {
-        display: contents;
-        gap: 0;
-        font-size: 0.9rem;
-    }
-
-    .pembayaran-form {
-        padding: 0.7rem;
-        width: 100%;
-        border-radius: 13px;
-    }
-
-    .pembayaran-form p {
-        text-align: justify;
-    }
-
-    .pembayaran-info {
-        padding: 0.7rem;
-        width: 100%;
-        margin: 3rem 0;
-        border-radius: 13px;
-    }
-
-    .pembayaran-info p {
-        text-align: justify;
-    }
-
 }
 
 /* Large Phone (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
     .pembayaran-section::before {
-        height: 5%;
+        height: 70px;
+    }
+
+    .maklumat-card {
+        padding: 1.3rem 10px;
+        border-radius: 20px;
+    }
+
+    .pembayaran-header h5,
+    .btn-group button {
+        font-size: 1rem;
+    }
+
+    #maklumat img {
+        width: 100%;
+    }
+
+    #tabel-mahasiswa tr td,
+    #tabel-mahasiswa tr th,
+    #tabel-mahasiswi tr td,
+    #tabel-mahasiswi tr th {
+        font-size: 0.9rem;
     }
 
     .pembayaran-section::after {
-        height: 5%;
+        height: 70px;
     }
 
     .pembayaran-header {
         margin-top: 3.5rem;
         text-align: center;
     }
-
-    .pembayaran-column {
-        display: contents;
-        gap: 0;
-    }
-
-    .pembayaran-form {
-        padding: 1.5rem;
-        width: 100%;
-    }
-
-    .pembayaran-info {
-        padding: 1.5rem;
-        width: 100%;
-        margin: 3rem 0;
-    }
 }
 
 /* tablet */
-@media (min-width: 768px) and (max-width: 1025px) {
-    .pembayaran-column {
-        display: contents;
-        gap: 0;
-    }
-
-    .pembayaran-form {
-        padding: 1.5rem;
-        width: 100%;
-    }
-
-    .pembayaran-info {
-        padding: 1.5rem;
-        width: 100%;
-        margin: 3rem 0;
-    }
-}
+@media (min-width: 768px) and (max-width: 1025px) {}

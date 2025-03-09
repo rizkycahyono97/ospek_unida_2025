@@ -5,7 +5,7 @@
     z-index: 1;
     min-height: 100vh;
     background-color: #ffffff;
-    background-image: url(../assets/pusatinformasi/info-bg.jpeg);
+    background-image: url(../assets/pusatinformasi/info-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -42,6 +42,7 @@
     margin-top: 7.5rem;
     text-align: center;
     border-bottom: 2px solid #e7c38d;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255);
 }
 
 .info-header h5 {
@@ -81,7 +82,7 @@ input {
 .label {
     width: 1025px;
     height: 75px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 1);
     backdrop-filter: blur(10px);
     cursor: pointer;
     overflow: hidden;
@@ -90,9 +91,9 @@ input {
     display: flex;
     align-items: flex-start;
     padding: 0rem 0.5rem;
-    box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.55);
     transition: all 0.3s ease;
 }
 
@@ -122,9 +123,9 @@ input {
     justify-content: center;
     align-items: center;
     margin: 13px 5px;
-    box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.55);
     text-shadow: 0.5px 0.5px 1px rgb(19, 29, 20);
 }
 
@@ -134,7 +135,6 @@ input {
 
 .label .row .description {
     width: 1000px;
-
     justify-content: center;
     text-align: justify;
     font-size: 1.1rem;
@@ -152,8 +152,18 @@ input {
     min-width: 95%;
 }
 
+#maklumat img {
+    transition: transform 0.3s ease;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 input:checked+label {
-    height: 180px;
+    height: 1200px;
 }
 
 input:has(:not(:checked))+label {
@@ -168,12 +178,17 @@ input:checked+label .description {
 }
 
 @media (max-width: 480px) {
+
+    .info-section::before {
+        height: 70px;
+    }
+
     .info-header {
         margin-top: 3.5rem;
     }
 
     .info-header h5 {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
     .info-cards {
@@ -184,7 +199,7 @@ input:checked+label .description {
 
     .label {
         max-width: 300px;
-        height: 65px;
+        height: 60px;
         border-radius: 1.35rem;
     }
 
@@ -206,14 +221,32 @@ input:checked+label .description {
         margin: 0.5rem;
     }
 
+    #maklumat img {
+        transition: transform 0.3s ease;
+        height: auto;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .label .row .description p {
         font-size: 0.7rem;
         max-width: 96%;
+    }
+
+    input:checked+label {
+        height: 430px;
     }
 }
 
 /* Large Phone (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
+    .info-header h5 {
+        font-size: 1rem;
+    }
+
     .info-cards {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 0;
@@ -222,7 +255,7 @@ input:checked+label .description {
 
     .label {
         width: 435px;
-        height: 70px;
+        height: 43px;
         border-radius: 1.3rem;
     }
 
@@ -232,7 +265,7 @@ input:checked+label .description {
 
     .label .row h4 {
         padding-top: 13px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding-left: 8px;
     }
 
@@ -246,12 +279,16 @@ input:checked+label .description {
         font-size: 0.7rem;
         max-width: 96%;
     }
+
+    input:checked+label {
+        height: 520px;
+    }
 }
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 999px) {
     .info-section {
-        min-height: 140vh;
+        min-height: 100vh;
     }
 
     .info-cards {
@@ -295,6 +332,10 @@ input:checked+label .description {
 
     .label .row .description p {
         max-width: 96%;
+    }
+
+    input:checked+label {
+        height: 800px;
     }
 }
 
@@ -340,5 +381,9 @@ input:checked+label .description {
 
     .label .row .description p {
         max-width: 96%;
+    }
+
+    input:checked+label {
+        height: 1000px;
     }
 }

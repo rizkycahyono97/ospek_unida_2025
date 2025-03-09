@@ -3,14 +3,14 @@
     position: relative;
     display: flex;
     z-index: 1;
-    height: auto;
+    min-height: auto;
     background-color: #ffffff;
-    background-image: url(../assets/pusatinformasi/info-bg.jpeg);
+    background-image: url(../assets/pusatinformasi/info-bg.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     font-family: "Spectral SC", serif;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .info-section::before {
@@ -18,7 +18,7 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 13%;
+    height: 100px;
     top: 0;
     background: linear-gradient(to top, rgba(231, 229, 229, 0), rgb(255, 253, 253));
 }
@@ -77,8 +77,8 @@ input {
 .label {
     width: 525px;
     height: 75px;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
     cursor: pointer;
     overflow: hidden;
     border-radius: 2rem;
@@ -169,6 +169,10 @@ input:checked+label .description {
 }
 
 @media (max-width: 480px) {
+    .info-section::before {
+        height: 70px;
+    }
+
     .info-header {
         margin-top: 3.5rem;
     }
@@ -197,13 +201,9 @@ input:checked+label .description {
         margin: 5px 0px;
         text-shadow:
             -0.7px -0.7px 0px #f3eae3,
-            /* Bayangan ke kiri atas */
             0.7px -0.7px 0px #e9e1db,
-            /* Bayangan ke kanan atas */
             -0.7px 0.7px 0px #dacdc2,
-            /* Bayangan ke kiri bawah */
             0.7px 0.7px 0px #dba67a;
-        /* Bayangan ke kanan bawah */
     }
 
     .label .row h4 {
@@ -223,6 +223,10 @@ input:checked+label .description {
 
 /* Large Phone (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
+    .info-section::before {
+        height: 80px;
+    }
+
     .info-cards {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 0;
@@ -271,6 +275,10 @@ input:checked+label .description {
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 999px) {
+    .info-section::before {
+        height: 90px;
+    }
+
     .info-cards {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 0;
