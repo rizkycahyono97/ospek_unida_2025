@@ -429,6 +429,10 @@ section {
     font-size: 2.5rem !important;
   }
 
+  .home-section-1 .tulisan #text-kanan {
+    font-weight: 500;
+  }
+
   .logo-ospek img {
     width: 150px;
   }
