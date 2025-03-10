@@ -184,6 +184,16 @@
 
                     <div class="col-md-3 col-sm-6">
                         <div class="barang-card">
+                            <img src="{{ asset('assets/barang/pria/gayung.png') }}"
+                                class="card-img-top img-fluid rounded-4" alt="Dummy Image">
+                            <div class="card-body text-center mt-2">
+                                <h5 class="barang-card-title p-3">Gayung</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="barang-card">
                             <img src="{{ asset('assets/barang/pria/kaos-kaki-2.png') }}"
                                 class="card-img-top img-fluid rounded-4" alt="Dummy Image">
                             <div class="card-body text-center mt-2">

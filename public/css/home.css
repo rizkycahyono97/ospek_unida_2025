@@ -13,12 +13,31 @@ section {
 }
 
 .home-section-1 img {
-  width: 200px; 
+  width: 200px;
   height: auto;
 }
 
-.home-section-1 h1 {
-  font-family: "Roboto", serif;
+.home-section-1 #text-kiri,
+.home-section-1 #text-kanan {
+  height: 100px;
+  width: auto;
+  position: absolute;
+}
+
+
+.home-section-1 .tulisan #text-kiri {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 900;
+  font-variation-settings:
+    "wdth" 100;
+    font-style: normal;
+  position: absolute;
+  font-size: 7rem;
+  z-index: 2;
+}
+
+.home-section-1 .tulisan #text-kanan {
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 900;
   font-variation-settings:
     "wdth" 100;
@@ -51,6 +70,7 @@ section {
   height: 100%;
   width: auto;
 }
+
 /* ------------- */
 /* end section 1 */
 /* ------------- */
@@ -67,20 +87,25 @@ section {
   font-family: "Spectral SC", serif;
 }
 
+.home-section-2-judul span {
+  font-family: "Cormorant Garamond", serif;
+}
+
 .home-section-2-text {
   padding: 2rem;
   width: 65%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(17px);
   border-radius: 23px;
-  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.55);
 }
 
-.number {
+#home-section-2 .number {
   font-family: 'Times New Roman', Times, serif;
 }
+
 /* ------------- */
 /* end section 2 */
 /* ------------- */
@@ -200,6 +225,7 @@ section {
 .custom-shape-divider-bottom-1739863208 .shape-fill {
   fill: #FFFFFF;
 }
+
 /* --------------- */
 /* end section 3 */
 /* --------------- */
@@ -214,7 +240,7 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(10px);
   z-index: 9;
 }
 
@@ -382,6 +408,7 @@ section {
   z-index: 0;
   transition: transform 0.3s ease-out;
 }
+
 /* --------------- */
 /* end section 5 */
 /* --------------- */
@@ -391,20 +418,21 @@ section {
 /* -------------- */
 /* Small Phone(max-width: 480px) */
 @media (max-width: 480px) {
+
   /* ------------- */
   /* section 1 */
   /* ------------- */
   .home-section-1 {
     flex-direction: column;
-    gap: 8px; 
+    gap: 8px;
   }
 
   .home-section-1 h1 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
 
   .logo-ospek img {
-    width: 150px; 
+    width: 150px;
   }
 
   .sayap-kanan img, .sayap-kiri img {
@@ -416,22 +444,23 @@ section {
 
   /* ------------- */
   /* section 2 */
-  /* ------------- */  
+  /* ------------- */
   .home-section-2 h1 {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .home-section-2-text {
     padding: 0.8rem;
     width: 90% !important;
   }
-  
+
   .home-section-2-text p {
-    font-size: 14px !important;
+    font-size: 0.7rem !important;
   }
+
   /* ------------- */
   /* end of section 2 */
-  /* ------------- */  
+  /* ------------- */
 
   /* ------------- */
   /* section 3 */
@@ -482,20 +511,22 @@ section {
 
 /* Large Phone (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
+
   /* ------------- */
   /* section 1 */
-  /* ------------- */  
+  /* ------------- */
   .home-section-1 h1 {
     font-size: 3.7rem;
     font-weight: 700;
   }
+
   /* ------------- */
   /* end section 1 */
-  /* ------------- */  
+  /* ------------- */
 
   /* ------------- */
   /* section 2 */
-  /* ------------- */  
+  /* ------------- */
   .home-section-2 h1 {
     font-size: 45px;
   }
@@ -503,9 +534,10 @@ section {
   .home-section-2 h2 {
     font-size: 30px;
   }
+
   /* ------------- */
   /* end of section 2 */
-  /* ------------- */  
+  /* ------------- */
 
   /* ------------- */
   /* section 3 */
@@ -524,7 +556,8 @@ section {
   .logo-section {
     width: 100vw;
     height: auto;
-    flex-direction: column; /* Stack item secara vertikal */
+    flex-direction: column;
+    /* Stack item secara vertikal */
     padding: 40px 20px;
     text-align: center;
   }
@@ -585,6 +618,7 @@ section {
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 1025px) {
+
   /* ------------- */
   /* section 1 */
   /* ------------- */
@@ -594,17 +628,18 @@ section {
 
   /* ------------- */
   /* end of section 1 */
-  /* ------------- */  
+  /* ------------- */
 
   /* ------------- */
   /* section 2 */
-  /* ------------- */  
+  /* ------------- */
   .home-section-2 h1 {
     font-size: 60px;
   }
+
   /* ------------- */
   /* end of section 2 */
-  /* ------------- */  
+  /* ------------- */
 
   /* ----------------- */
   /* section 3 */
@@ -625,6 +660,7 @@ section {
 
 /* Desktop (1441px - 1920px) */
 @media (min-width: 1441px) and (max-width: 1920px) {
+
   /* ------------- */
   /* section 1 */
   /* ------------- */
@@ -678,6 +714,7 @@ section {
 
 /* Large Monitor +1921px */
 @media (min-width: 1921px) {
+
   /* ------------- */
   /* section 1 */
   /* ------------- */

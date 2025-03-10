@@ -5,7 +5,7 @@
     z-index: 1;
     min-height: 150vh;
     background-color: #ffffff;
-    background-image: url(../assets/pusatinformasi/info-bg.jpeg);
+    background-image: url(../assets/pusatinformasi/info-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -145,7 +145,7 @@
 .text-box {
     backdrop-filter: blur(40px);
     padding: 10px 0px 0px 20px;
-    background-color: rgba(221, 220, 220, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     position: relative;
     border-radius: 1.5rem;
     box-shadow: 1px 1px 7px 4px rgba(0, 0, 0, 0.75);

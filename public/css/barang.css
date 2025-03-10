@@ -6,7 +6,7 @@
     z-index: 1;
     min-height: 100vh;
     background-color: #ffffff;
-    background-image: url(../assets/pusatinformasi/info-bg.jpeg);
+    background-image: url(../assets/pusatinformasi/info-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -49,7 +49,7 @@
     position: relative;
     /* width: 1025px;
     height: 75px; */
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
     cursor: pointer;
     overflow: hidden;
@@ -89,4 +89,3 @@
     -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
 }
-
