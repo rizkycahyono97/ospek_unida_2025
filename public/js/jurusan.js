@@ -27,7 +27,7 @@ $(document).ready(function() {
 	$(document).on('mousemove touchmove', function(e) {
 		if (isDragging) {
 			let moveX = (e.pageX || e.originalEvent.touches[0].pageX) - startX;
-			currentRotation += moveX * 0.2; // Sensitivitas rotasi
+			currentRotation += moveX * 0.9; // Sensitivitas rotasi
 			$('.slider').css(
 				'transform',
 				`perspective(2000px) rotateX(-2deg) rotateY(${currentRotation}deg)`

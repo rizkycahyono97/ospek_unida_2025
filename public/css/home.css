@@ -431,6 +431,7 @@ section {
 
   .home-section-1 .tulisan #text-kanan {
     font-weight: 500;
+    font-size: 2.3rem !important;
   }
 
   .logo-ospek img {
@@ -522,6 +523,10 @@ section {
     font-weight: 700;
   }
 
+  .home-section-1 .tulisan #text-kanan {
+    /* font-weight: 500; */
+    font-size: 3.5rem !important;
+  }
   /* ------------- */
   /* end section 1 */
   /* ------------- */
@@ -626,6 +631,11 @@ section {
   /* ------------- */
   .home-section-1 h1 {
     font-size: 5rem !important;
+  }
+
+  .home-section-1 .tulisan #text-kanan {
+    /* font-weight: 500; */
+    font-size: 4.8rem !important;
   }
 
   /* ------------- */
