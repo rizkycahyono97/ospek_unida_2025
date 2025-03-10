@@ -173,9 +173,9 @@
                 <!-- Gambar di kiri -->
                 <div class="col-md-6 text-center position-relative">
                     <div class="logo-container d-flex flex-column align-items-center">
-                        <img src="{{ asset('assets/home/logo-menara.png') }}" alt="Logo 2" class="logo" class="logo tilt-effect" data-tilt data-tilt-max="70" data-tilt-speed="50" data-tilt-glare="false">
-                        <img src="{{ asset('assets/home/tatakan.png') }}" alt="tatakan" class="tatakan">
+                        <img src="{{ asset('assets/home/motto-2.png') }}" alt="Logo 2" class="logo" class="logo tilt-effect" data-tilt data-tilt-max="70" data-tilt-speed="50" data-tilt-glare="false">
                     </div>
+                    <img src="{{ asset('assets/home/tatakan.png') }}" alt="tatakan" class="tatakan">
                 </div>
                 <!-- Teks di kanan -->
                 <div class="col-md-6 logo-text">

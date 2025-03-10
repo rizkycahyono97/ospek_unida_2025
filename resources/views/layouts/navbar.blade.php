@@ -34,7 +34,7 @@
     <!-- Logo dan tombol tutup -->
     <div class="sidebar-header mb-5 pb-2 border-bottom d-flex justify-content-between align-items-center">
         <a href="{{ route('index') }}">
-            <img src="{{ asset('assets/navbar/BESIDE MAIN EFFECT.png') }}" alt="Logo" class="sidebar-logo" style="height: 80px; width: auto">
+            <img src="{{ asset('assets/navbar/beside-main-effect.png') }}" alt="Logo" class="sidebar-logo" style="height: 80px; width: auto">
         </a>
         <button id="closeSidebar" class="close-btn ps-5">&times;</button>
     </div>
