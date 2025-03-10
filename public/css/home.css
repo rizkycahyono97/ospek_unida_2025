@@ -43,7 +43,7 @@ section {
     "wdth" 100;
     font-style: normal;
   position: absolute;
-  font-size: 7rem;
+  font-size: 6.7rem;
   z-index: 2;
 }
 
@@ -428,7 +428,7 @@ section {
   }
 
   .home-section-1 h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
   }
 
   .logo-ospek img {
@@ -516,7 +516,7 @@ section {
   /* section 1 */
   /* ------------- */
   .home-section-1 h1 {
-    font-size: 3.7rem;
+    font-size: 3.7rem !important;
     font-weight: 700;
   }
 
@@ -623,7 +623,7 @@ section {
   /* section 1 */
   /* ------------- */
   .home-section-1 h1 {
-    font-size: 5rem;
+    font-size: 5rem !important;
   }
 
   /* ------------- */
@@ -658,14 +658,14 @@ section {
 }
 
 
-/* Desktop (1441px - 1920px) */
-@media (min-width: 1441px) and (max-width: 1920px) {
+/* Desktop (1441px) */
+@media (min-width: 1441px) {
 
   /* ------------- */
   /* section 1 */
   /* ------------- */
   .home-section-1 h1 {
-    font-size: 10rem;
+    font-size: 10rem !important;
   }
 
   /* -------------- */
@@ -709,16 +709,5 @@ section {
 
   .img-fluid-ospek {
     width: 350px !important;
-  }
-}
-
-/* Large Monitor +1921px */
-@media (min-width: 1921px) {
-
-  /* ------------- */
-  /* section 1 */
-  /* ------------- */
-  .home-section-1 h1 {
-    font-size: 14rem;
   }
 }
