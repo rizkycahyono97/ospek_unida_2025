@@ -27,10 +27,8 @@ section {
 
 .home-section-1 .tulisan #text-kiri {
   font-family: "Cormorant Garamond", serif;
-  font-weight: 900;
-  font-variation-settings:
-    "wdth" 100;
-    font-style: normal;
+  font-weight: 700;
+  font-style: normal;
   position: absolute;
   font-size: 7rem;
   z-index: 2;
@@ -38,7 +36,7 @@ section {
 
 .home-section-1 .tulisan #text-kanan {
   font-family: 'Times New Roman', Times, serif;
-  font-weight: 900;
+  font-weight: 600;
   font-variation-settings:
     "wdth" 100;
     font-style: normal;

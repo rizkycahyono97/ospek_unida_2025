@@ -16,7 +16,7 @@
 
       <img id="logo-ospek" src="{{ asset('assets/home/logo_2.png') }}" alt="Logo OSPEK" class="img-fluid">
 
-      <h1 id="text-kanan" class="text-tahun ms-4 text-uppercase fw-bold">2 0 2 5</h1>
+      <h1 id="text-kanan" class="text-tahun ms-4 text-uppercase">2 0 2 5</h1>
     </div>
 
     <!-- Sayap Kanan -->
