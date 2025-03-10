@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   gsap.matchMedia().add(breakpoints.smallPhone, () => {
-    gsap.fromTo(textKanan, {x: 350, y: -60}, {x: 70, y:-170, duration: 2, delay: 2.3, ease: "power2.out"});
+    gsap.fromTo(textKanan, {x: 350, y: -60}, {x: 70, y:-167, duration: 2, delay: 2.3, ease: "power2.out"});
   });
 
 
