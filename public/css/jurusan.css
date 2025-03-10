@@ -15,7 +15,7 @@
     position: relative;
     z-index: 1;
     background-color: #ffffff;
-    background-image: url(../assets/jurusan/jurusan-bg.png);
+    background-image: url(../assets/jurusan/jurusan-bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -118,7 +118,7 @@
     display: flex;
     z-index: 1;
     font-family: "Spectral SC", serif;
-    background-image: url(../assets/jurusan/jurusan-bg2.png);
+    background-image: url(../assets/jurusan/jurusan-bg2.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
