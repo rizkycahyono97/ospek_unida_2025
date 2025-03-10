@@ -7,6 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {{-- force light mode --}}
     <meta name="color-scheme" content="light">
+    {{-- SEO --}}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="OSPEK SYAAHEEN 2025">
+    <meta property="og:description" content="Ospek Syaaheen 2025 adalah sebuah website orientasi pengenalan kampus di Universitas Darussalam Gontor.">
+    <meta property="og:image" content="{{ asset('seo-icon.png') }}">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta name="description" content="Ospek Syaaheen 2025 adalah sebuah website orientasi pengenalan kampus di Universitas Darussalam Gontor. Dapatkan informasi lengkap tentang kegiatan, jadwal, dan tata cara OSPEK 2025.">
+
+
+    {{-- SEO icon --}}
+    <link rel="icon" type="image/png" href="{{ asset('seo-icon.png') }}">
     <title>OSPEK SYAAHEEN 2025</title>
     {{-- icon --}}
     <link rel="icon" href="{{ asset('assets/navbar/icon-logo.png') }}">
@@ -60,6 +71,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    {{-- SEO --}}
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            "name": "OSPEK SYAAHEEN 2025",
+            "description": "Ospek Syaaheen 2025 adalah website resmi orientasi pengenalan kampus di Universitas Darussalam Gontor. Dapatkan informasi tentang kegiatan, jadwal, dan tata cara OSPEK 2025.",
+            "url": "https://ospeksyaaheen.com",
+            "logo": "https://ospeksyaaheen.com/seo-icon.png",
+        }
+    </script>
+        
 </head>
 
 <body>
@@ -121,4 +145,4 @@
     <script src="{{ asset('js/navbar.js') }}"></script>
 </body>
 
-</html>
+</html>    
